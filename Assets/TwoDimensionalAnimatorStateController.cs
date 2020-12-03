@@ -15,8 +15,20 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
     public float maximumRunVelocity = 2.0f;
 
     public float speed = 1.0f;
+        /****/
+    public float rotationalSpeed = 10.0f;
 
-    //public GameObject followCamera;
+    public Transform followCamera;
+
+    //public CharacterController controller;
+
+    public float turnSmoothTime = 0.1f;
+    float turnSmoothVelocity;
+    /****/
+
+    //Rigidbody
+    [SerializeField]
+    private Rigidbody playerBody;
 
     //Increase performance
     int VelocityZHash;
@@ -27,6 +39,7 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        playerBody = GetComponent<Rigidbody>();
 
         //Increase performance
         VelocityZHash = Animator.StringToHash("Velocity Z");
@@ -166,19 +179,69 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
     void OnAnimatorMove()
     {
         Animator animator = GetComponent<Animator>();
-        
+
         if (animator)
         {
+
+            float horizontal = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
+            Vector3 dir = new Vector3(horizontal, 0f, vertical).normalized;
+
+            //Allign the camera to the back of the character
+                float targetAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + followCamera.eulerAngles.y;
+                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
+                
+                Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                playerBody.velocity = new Vector3(animator.GetFloat(VelocityXHash), playerBody.velocity.y, animator.GetFloat(VelocityZHash));
+                //playerBody.MovePosition(moveDir.normalized * animator.GetFloat(VelocityZHash) * speed * Time.deltaTime);
+
+            //Debug.DrawLine(transform.position + dir, transform.position + dir*dir.magnitude,Color.red);
+
+            if (dir.magnitude >= 0.0f)
+            {
+                
+
+                /*
+               
+
+                //controller.Move(moveDir.normalized * animator.GetFloat(VelocityZHash) * speed * Time.deltaTime);
+
+                Vector3 cent = controller.center;
+                Collider m_Collider = GetComponent<Collider>();
+
+                    Vector3 m_Max = m_Collider.bounds.max;
+                //Debug.Log(controller.isGrounded);
+                if (animator.GetFloat(VelocityZHash) > 1.5f)
+                {   
+                    
+                    //controller.height = 0.9f;
+                    //controller.center = new Vector3(cent.x, 0.55f, cent.z);
+                }
+                */
+                /*else
+                {
+                    controller.height = 1.3f;
+                    controller.center = new Vector3(cent.x, controller.height / 2 + 10, cent.z);
+                }*/
+            }
+
+            /*
+            Quaternion currentRotation = transform.rotation;
+            transform.rotation = Quaternion.Euler(0f, currentRotation.eulerAngles.y + animator.GetFloat(VelocityXHash) * Time.deltaTime *  rotationalSpeed, 0f);
+
             Vector3 newPosition = transform.position;
             newPosition.z += animator.GetFloat(VelocityZHash) * Time.deltaTime * speed;
             newPosition.x += animator.GetFloat(VelocityXHash) * Time.deltaTime * speed;
+
             transform.position = newPosition;
-/*
-            Vector3 camerPos = followCamera.transform.position;
-            camerPos.z += animator.GetFloat(VelocityZHash) * Time.deltaTime * speed;
-            camerPos.x += animator.GetFloat(VelocityXHash) * Time.deltaTime * speed;
-            followCamera.transform.position = camerPos;
 */
+            /*
+                        Vector3 camerPos = followCamera.transform.position;
+                        camerPos.z += animator.GetFloat(VelocityZHash) * Time.deltaTime * speed;
+                        camerPos.x += animator.GetFloat(VelocityXHash) * Time.deltaTime * speed;
+                        followCamera.transform.position = camerPos;
+            */
 
         }
     }

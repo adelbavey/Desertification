@@ -7,6 +7,7 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
 
     Animator animator;
     float velocityX = 0.0f;
+    float velocityY = 0.0f;
     float velocityZ = 0.0f;
 
     public float acceleration = 2.0f;
@@ -15,34 +16,48 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
     public float maximumRunVelocity = 2.0f;
 
     public float speed = 1.0f;
-        /****/
+    /****/
     public float rotationalSpeed = 10.0f;
 
     public Transform followCamera;
 
-    //public CharacterController controller;
+    public CharacterController controller;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
+
+    public float jumpHeight;
+    public float gravity = -9.81f;
+
+    bool isJumping;
+    bool isFalling;
+
+    Vector3 velocity;
+
+    Vector3 rootMotion;
+
+    public float stepDown;
+    public float jumpDamp;
     /****/
 
     //Rigidbody
-    [SerializeField]
-    private Rigidbody playerBody;
+    //[SerializeField]
+    //private Rigidbody playerBody;
 
     //Increase performance
     int VelocityZHash;
     int VelocityXHash;
-
+    int VelocityYHash;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        playerBody = GetComponent<Rigidbody>();
+        //playerBody = GetComponent<Rigidbody>();
 
         //Increase performance
         VelocityZHash = Animator.StringToHash("Velocity Z");
+        VelocityYHash = Animator.StringToHash("Velocity Y");
         VelocityXHash = Animator.StringToHash("Velocity X");
     }
 
@@ -50,9 +65,11 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
     void Update()
     {
         bool forwardPressed = Input.GetKey(KeyCode.W);
+        bool backwardPressed = Input.GetKey(KeyCode.S);
         bool leftPressed = Input.GetKey(KeyCode.A);
         bool rightPressed = Input.GetKey(KeyCode.D);
         bool runPressed = Input.GetKey(KeyCode.LeftShift);
+        bool jumpPressed = Input.GetKey(KeyCode.Space);
 
         //Set current maxVelocity
         float currentMaxVelocity = runPressed ? maximumRunVelocity : maximumWalkVelocity;
@@ -61,6 +78,11 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
         {
             velocityZ += Time.deltaTime * acceleration;
         }
+        /*if (backwardPressed && velocityZ > -currentMaxVelocity)
+        {
+            velocityZ -= Time.deltaTime * acceleration;
+        }*/
+
         if (leftPressed && velocityX > -currentMaxVelocity)
         {
             velocityX -= Time.deltaTime * acceleration;
@@ -170,6 +192,16 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
         }
 
 
+        //Jumping
+
+        if (jumpPressed)
+            {
+                Jump();
+            }
+
+
+
+
         animator.SetFloat(VelocityZHash, velocityZ);
         animator.SetFloat(VelocityXHash, velocityX);
 
@@ -178,71 +210,76 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
 
     void OnAnimatorMove()
     {
-        Animator animator = GetComponent<Animator>();
+       rootMotion += animator.deltaPosition;
+
+        
+    }
+
+    private void FixedUpdate() {
 
         if (animator)
         {
+            controller.Move(rootMotion);
+            rootMotion = Vector3.zero;
 
+            //Camera follow mouse variables
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
             Vector3 dir = new Vector3(horizontal, 0f, vertical).normalized;
 
-            //Allign the camera to the back of the character
-                float targetAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + followCamera.eulerAngles.y;
-                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-                transform.rotation = Quaternion.Euler(0f, angle, 0f);
-                
-                Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-                playerBody.velocity = new Vector3(animator.GetFloat(VelocityXHash), playerBody.velocity.y, animator.GetFloat(VelocityZHash));
-                //playerBody.MovePosition(moveDir.normalized * animator.GetFloat(VelocityZHash) * speed * Time.deltaTime);
+
 
             //Debug.DrawLine(transform.position + dir, transform.position + dir*dir.magnitude,Color.red);
 
             if (dir.magnitude >= 0.0f)
             {
-                
 
-                /*
-               
+                //Allign the camera to the back of the character
+                float targetAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + followCamera.eulerAngles.y;
+                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-                //controller.Move(moveDir.normalized * animator.GetFloat(VelocityZHash) * speed * Time.deltaTime);
+                Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                controller.Move(moveDir.normalized * animator.GetFloat(VelocityZHash) * speed * Time.deltaTime);
+                Debug.DrawRay(transform.position + new Vector3(0,1,0), moveDir.normalized, Color.red, 1);
 
-                Vector3 cent = controller.center;
-                Collider m_Collider = GetComponent<Collider>();
-
-                    Vector3 m_Max = m_Collider.bounds.max;
-                //Debug.Log(controller.isGrounded);
-                if (animator.GetFloat(VelocityZHash) > 1.5f)
-                {   
-                    
-                    //controller.height = 0.9f;
-                    //controller.center = new Vector3(cent.x, 0.55f, cent.z);
-                }
-                */
-                /*else
-                {
-                    controller.height = 1.3f;
-                    controller.center = new Vector3(cent.x, controller.height / 2 + 10, cent.z);
-                }*/
             }
 
-            /*
-            Quaternion currentRotation = transform.rotation;
-            transform.rotation = Quaternion.Euler(0f, currentRotation.eulerAngles.y + animator.GetFloat(VelocityXHash) * Time.deltaTime *  rotationalSpeed, 0f);
+            //Side walking
 
-            Vector3 newPosition = transform.position;
-            newPosition.z += animator.GetFloat(VelocityZHash) * Time.deltaTime * speed;
-            newPosition.x += animator.GetFloat(VelocityXHash) * Time.deltaTime * speed;
 
-            transform.position = newPosition;
-*/
-            /*
-                        Vector3 camerPos = followCamera.transform.position;
-                        camerPos.z += animator.GetFloat(VelocityZHash) * Time.deltaTime * speed;
-                        camerPos.x += animator.GetFloat(VelocityXHash) * Time.deltaTime * speed;
-                        followCamera.transform.position = camerPos;
-            */
+        }
+        
 
+
+        if (isJumping)
+        {//is inAir state
+            velocity.y += gravity * Time.fixedDeltaTime;
+            controller.Move(velocity*Time.fixedDeltaTime);
+            isJumping = !controller.isGrounded;
+            rootMotion = Vector3.zero;
+            
+        }else{//IsGrounded state
+            controller.Move(rootMotion + Vector3.down * stepDown);
+            rootMotion = Vector3.zero;
+            animator.SetBool("isJumping", false);
+            if (controller.isGrounded)
+            {
+                isJumping = true;
+                velocity = animator.velocity * jumpDamp;
+                velocity.y = 0;
+            }
+        } 
+        
+
+    }
+
+    void Jump(){
+        if(!isJumping){
+            isJumping = true;
+            velocity = animator.velocity * jumpDamp;
+            velocity.y = Mathf.Sqrt(2*-gravity*jumpHeight);
+            animator.SetBool("isJumping", true);
         }
     }
 

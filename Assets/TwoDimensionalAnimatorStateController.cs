@@ -195,9 +195,9 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
         //Jumping
 
         if (jumpPressed)
-            {
-                Jump();
-            }
+        {
+            Jump();
+        }
 
 
 
@@ -210,12 +210,13 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
 
     void OnAnimatorMove()
     {
-       rootMotion += animator.deltaPosition;
+        rootMotion += animator.deltaPosition;
 
-        
+
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
 
         if (animator)
         {
@@ -230,18 +231,35 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
 
 
             //Debug.DrawLine(transform.position + dir, transform.position + dir*dir.magnitude,Color.red);
-
+            
             if (dir.magnitude >= 0.0f)
             {
 
                 //Allign the camera to the back of the character
-                float targetAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + followCamera.eulerAngles.y;
+                //Changed to 0 from dir.x since rotation was wrong direction
+                float targetAngle = Mathf.Atan2(0, dir.z) * Mathf.Rad2Deg + followCamera.eulerAngles.y;
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
                 transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
                 Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-                controller.Move(moveDir.normalized * animator.GetFloat(VelocityZHash) * speed * Time.deltaTime);
+                
                 Debug.DrawRay(transform.position + new Vector3(0,1,0), moveDir.normalized, Color.red, 1);
+
+                if(animator.GetFloat(VelocityXHash) != 0){
+                    Vector3 moveAmount = new Vector3(0,0,0);
+                    //Z axis
+                    moveAmount += moveDir;
+                    //X Axis
+                    moveAmount = moveAmount.normalized;
+                    moveAmount *=  animator.GetFloat(VelocityZHash);
+                    moveAmount += new Vector3(moveDir.z, moveDir.y, -moveDir.x).normalized * animator.GetFloat(VelocityXHash);
+                    
+                    
+                    controller.Move(moveAmount * speed * Time.deltaTime);
+
+                }else{
+                    controller.Move(moveDir.normalized * animator.GetFloat(VelocityZHash) * speed * Time.deltaTime);
+                }
 
             }
 
@@ -249,17 +267,19 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
 
 
         }
-        
+
 
 
         if (isJumping)
         {//is inAir state
             velocity.y += gravity * Time.fixedDeltaTime;
-            controller.Move(velocity*Time.fixedDeltaTime);
+            controller.Move(velocity * Time.fixedDeltaTime);
             isJumping = !controller.isGrounded;
             rootMotion = Vector3.zero;
-            
-        }else{//IsGrounded state
+
+        }
+        else
+        {//IsGrounded state
             controller.Move(rootMotion + Vector3.down * stepDown);
             rootMotion = Vector3.zero;
             animator.SetBool("isJumping", false);
@@ -269,16 +289,18 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
                 velocity = animator.velocity * jumpDamp;
                 velocity.y = 0;
             }
-        } 
-        
+        }
+
 
     }
 
-    void Jump(){
-        if(!isJumping){
+    void Jump()
+    {
+        if (!isJumping)
+        {
             isJumping = true;
             velocity = animator.velocity * jumpDamp;
-            velocity.y = Mathf.Sqrt(2*-gravity*jumpHeight);
+            velocity.y = Mathf.Sqrt(2 * -gravity * jumpHeight);
             animator.SetBool("isJumping", true);
         }
     }

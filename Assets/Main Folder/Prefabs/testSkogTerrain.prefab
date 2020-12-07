@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4724412243662942128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5394093317564232970}
+  - component: {fileID: 9039974452044397231}
+  - component: {fileID: 6525864945398484581}
+  - component: {fileID: 4724412243662942131}
+  - component: {fileID: 4724412243662942130}
+  m_Layer: 0
+  m_Name: testSkogTerrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5394093317564232970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724412243662942128}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &9039974452044397231
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724412243662942128}
+  m_Mesh: {fileID: 1967472078271676955, guid: d03b2f3e5515f744a8a08be1d3327d66, type: 3}
+--- !u!23 &6525864945398484581
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724412243662942128}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -2400404728525148765, guid: d03b2f3e5515f744a8a08be1d3327d66, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &4724412243662942131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724412243662942128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a34088a5d87e44185db61dec8582a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plane: {fileID: 4724412243662942128}
+  tree1: {fileID: 667159666404575079, guid: 281a97ccaeced3c4bb1484ea4d4ffc5f, type: 3}
+  tree2: {fileID: -1070317080800235680, guid: 1196d5c34defcd1488bcf100cf98cc38, type: 3}
+  numberOfTrees: 250
+  numberOfRocks: 200
+  grass: {fileID: 4474373345957581861, guid: 8ef9c3484e2fa6342a25850dc2801472, type: 3}
+  numberOfGras: 3000
+  rocks:
+  - {fileID: 8367166752525758007, guid: c0661fb29af217e4cb2b50775aff8862, type: 3}
+  - {fileID: 4123645491220178524, guid: c9d5f0b2180e2254da07b43db13cec94, type: 3}
+  - {fileID: 2423063369665759935, guid: bed6d6b3b1ace5f49b3085d063c4adba, type: 3}
+  - {fileID: 1230851139730738394, guid: 0f5fcb91d2968cc4297a5a1e3dbb5fe0, type: 3}
+  - {fileID: 8232065666280913521, guid: c71f1cac324cc1b428a4a51f12c56d2c, type: 3}
+  - {fileID: 5514440319311852261, guid: 2e5d0bc5760b5ca4784d4cd8672abe7b, type: 3}
+  - {fileID: 5069205879530477972, guid: 8f78f0988be31454298423daddb65cc1, type: 3}
+  - {fileID: 6689944186873896965, guid: 23345d992d558934398e0f4e2570f72e, type: 3}
+  - {fileID: 5413040599353338447, guid: db337ffa83170af4c89b326d414f0594, type: 3}
+  - {fileID: 6581136864099574478, guid: 4520363b53c206e4b87272a30cff0ec3, type: 3}
+  - {fileID: 6590393550590030697, guid: 064d59e7c62d4e54a95895537359d03a, type: 3}
+  - {fileID: 2388599310596838031, guid: 19f93d42ad8381a41aa45ae660966798, type: 3}
+  spawns: []
+--- !u!64 &4724412243662942130
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724412243662942128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1967472078271676955, guid: d03b2f3e5515f744a8a08be1d3327d66, type: 3}

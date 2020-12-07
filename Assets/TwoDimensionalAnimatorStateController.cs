@@ -7,7 +7,6 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
 
     Animator animator;
     float velocityX = 0.0f;
-    float velocityY = 0.0f;
     float velocityZ = 0.0f;
 
     public float acceleration = 2.0f;
@@ -29,15 +28,9 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
     public float jumpHeight;
     public float gravity = -9.81f;
 
+    Vector3 rootMotion;
     bool isJumping;
     bool isFalling;
-
-    Vector3 velocity;
-
-    Vector3 rootMotion;
-
-    public float stepDown;
-    public float jumpDamp;
     /****/
 
     //Rigidbody
@@ -47,7 +40,7 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
     //Increase performance
     int VelocityZHash;
     int VelocityXHash;
-    int VelocityYHash;
+
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +50,6 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
 
         //Increase performance
         VelocityZHash = Animator.StringToHash("Velocity Z");
-        VelocityYHash = Animator.StringToHash("Velocity Y");
         VelocityXHash = Animator.StringToHash("Velocity X");
     }
 
@@ -65,11 +57,9 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
     void Update()
     {
         bool forwardPressed = Input.GetKey(KeyCode.W);
-        bool backwardPressed = Input.GetKey(KeyCode.S);
         bool leftPressed = Input.GetKey(KeyCode.A);
         bool rightPressed = Input.GetKey(KeyCode.D);
         bool runPressed = Input.GetKey(KeyCode.LeftShift);
-        bool jumpPressed = Input.GetKey(KeyCode.Space);
 
         //Set current maxVelocity
         float currentMaxVelocity = runPressed ? maximumRunVelocity : maximumWalkVelocity;
@@ -78,11 +68,6 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
         {
             velocityZ += Time.deltaTime * acceleration;
         }
-        /*if (backwardPressed && velocityZ > -currentMaxVelocity)
-        {
-            velocityZ -= Time.deltaTime * acceleration;
-        }*/
-
         if (leftPressed && velocityX > -currentMaxVelocity)
         {
             velocityX -= Time.deltaTime * acceleration;
@@ -192,16 +177,6 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
         }
 
 
-        //Jumping
-
-        if (jumpPressed)
-        {
-            Jump();
-        }
-
-
-
-
         animator.SetFloat(VelocityZHash, velocityZ);
         animator.SetFloat(VelocityXHash, velocityX);
 
@@ -210,20 +185,11 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
 
     void OnAnimatorMove()
     {
-        rootMotion += animator.deltaPosition;
-
-
-    }
-
-    private void FixedUpdate()
-    {
+        Animator animator = GetComponent<Animator>();
 
         if (animator)
         {
-            controller.Move(rootMotion);
-            rootMotion = Vector3.zero;
 
-            //Camera follow mouse variables
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
             Vector3 dir = new Vector3(horizontal, 0f, vertical).normalized;
@@ -231,77 +197,33 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
 
 
             //Debug.DrawLine(transform.position + dir, transform.position + dir*dir.magnitude,Color.red);
-            
+
             if (dir.magnitude >= 0.0f)
             {
 
                 //Allign the camera to the back of the character
-                //Changed to 0 from dir.x since rotation was wrong direction
-                float targetAngle = Mathf.Atan2(0, dir.z) * Mathf.Rad2Deg + followCamera.eulerAngles.y;
+                float targetAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + followCamera.eulerAngles.y;
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
                 transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
                 Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-                
-                Debug.DrawRay(transform.position + new Vector3(0,1,0), moveDir.normalized, Color.red, 1);
-
-                if(animator.GetFloat(VelocityXHash) != 0){
-                    Vector3 moveAmount = new Vector3(0,0,0);
-                    //Z axis
-                    moveAmount += moveDir;
-                    //X Axis
-                    moveAmount = moveAmount.normalized;
-                    moveAmount *=  animator.GetFloat(VelocityZHash);
-                    moveAmount += new Vector3(moveDir.z, moveDir.y, -moveDir.x).normalized * animator.GetFloat(VelocityXHash);
-                    
-                    
-                    controller.Move(moveAmount * speed * Time.deltaTime);
-
-                }else{
-                    controller.Move(moveDir.normalized * animator.GetFloat(VelocityZHash) * speed * Time.deltaTime);
-                }
+                controller.Move(moveDir.normalized * animator.GetFloat(VelocityZHash) * speed * Time.deltaTime);
 
             }
 
-            //Side walking
-
-
-        }
-
-
-
-        if (isJumping)
-        {//is inAir state
-            velocity.y += gravity * Time.fixedDeltaTime;
-            controller.Move(velocity * Time.fixedDeltaTime);
-            isJumping = !controller.isGrounded;
-            rootMotion = Vector3.zero;
-
-        }
-        else
-        {//IsGrounded state
-            controller.Move(rootMotion + Vector3.down * stepDown);
-            rootMotion = Vector3.zero;
-            animator.SetBool("isJumping", false);
-            if (controller.isGrounded)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                isJumping = true;
-                velocity = animator.velocity * jumpDamp;
-                velocity.y = 0;
+                Jump();
             }
+
+
         }
-
-
     }
 
-    void Jump()
-    {
-        if (!isJumping)
-        {
+    void Jump(){
+        if(!isJumping){
             isJumping = true;
-            velocity = animator.velocity * jumpDamp;
-            velocity.y = Mathf.Sqrt(2 * -gravity * jumpHeight);
-            animator.SetBool("isJumping", true);
+            
         }
     }
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1C8B9FE6-957B-4C02-817F-73C3D038B361}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{1C8B9FE6-957B-4C02-817F-73C3D038B361}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="forest soundscape" ID="{DD47B39C-2112-4B87-AC2E-DEAE93ACAD90}" ShortID="717768773">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B18A7338-AC51-4A2D-8BBF-5076FDADEFA9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D558DC1F-A4E9-4200-A5EE-B0F59C7A4422}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="forest soundscape" ID="{2EB725EB-4697-41C7-9272-7B6D0813094B}">
+							<Language>SFX</Language>
+							<AudioFile>forest soundscape.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="288831275"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="forest soundscape" ID="{2EB725EB-4697-41C7-9272-7B6D0813094B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

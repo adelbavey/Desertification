@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A674C185-8AA9-4FFB-9874-4E10DD4F5DC2}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{A674C185-8AA9-4FFB-9874-4E10DD4F5DC2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="testSound" ID="{03347D38-65A6-454D-A675-371E7911CED2}">
+					<ChildrenList>
+						<Action Name="" ID="{E8C17EF9-B5D1-41D6-9087-A89D6B7006ED}" ShortID="62098414">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="forest soundscape" ID="{DD47B39C-2112-4B87-AC2E-DEAE93ACAD90}" WorkUnitID="{1C8B9FE6-957B-4C02-817F-73C3D038B361}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

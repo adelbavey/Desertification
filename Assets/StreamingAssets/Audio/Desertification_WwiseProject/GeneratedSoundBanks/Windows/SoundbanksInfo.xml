@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>G:\Documents\KTH\DH2650\Git\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>G:\Documents\KTH\DH2650\Git\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>G:\Documents\KTH\DH2650\Git\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>G:\Documents\KTH\DH2650\Git\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3839947695">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="38624190" Name="testSound" ObjectPath="\Events\Default Work Unit\testSound" DurationType="OneShot" DurationMin="194.501297" DurationMax="194.501297">
+					<IncludedMemoryFiles>
+						<File Id="288831275" Language="SFX">
+							<ShortName>forest soundscape.wav</ShortName>
+							<Path>SFX\forest soundscape_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

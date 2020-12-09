@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	38624190	testSound			\Default Work Unit\testSound	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	288831275	forest soundscape	G:\Documents\KTH\DH2650\Git\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\forest soundscape_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\forest soundscape		37344312
+

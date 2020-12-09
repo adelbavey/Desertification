@@ -12,14 +12,164 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ac631d9311a7547980de23285a67bc, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
-  autoPopulateEnabled: 1
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 7968a5b40caab941b078bc6e6b5b84f6
+    GuidInternal: 
+    m_lastTime: -8585955478569045215
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 967d13d21c6cb64487cba09173d917c7
+    GuidInternal: 
+    m_lastTime: -8585955478569294546
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: e59703e19b56124bb15f19d6880c283a
+    GuidInternal: 
+    m_lastTime: -8585940673358782773
+    List:
+    - name: Main
+      guid: 1adb74a34af57a4db470e44edbd65ba1
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 13bf86ab677d0340aff56230e1ef133a
+    GuidInternal: 
+    m_lastTime: -8585940673359012161
+    List:
+    - name: footstep_player
+      guid: 19a64f56c6adc644baf64f10264e8875
+      id: 648916573
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: footstep_player
+        ObjectType: 3
+      Path: Default Work Unit\footstep_player
+      maxAttenuation: 0
+      maxDuration: 0.673678
+      minDuration: 0.105946
+    - name: jump_player
+      guid: 92ec2ae4a856e043b47fef69cc15449b
+      id: 2584346859
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: jump_player
+        ObjectType: 3
+      Path: Default Work Unit\jump_player
+      maxAttenuation: 0
+      maxDuration: 1.457984
+      minDuration: 0.95843
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 906731d1342ad248a80d33eccced963d
+    GuidInternal: 
+    m_lastTime: -8585955478569354267
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: c410a93ad1f60e4fb0796a23ec3cbce2
+    GuidInternal: 
+    m_lastTime: -8585955478569234707
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 5a3b462aa791064ea0ac23e41e2a0710
+    GuidInternal: 
+    m_lastTime: -8585940673358573327
+    List:
+    - name: Material
+      guid: 28722df2beaab948b8de60b0888ff3bd
+      id: 3865314626
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Material
+        ObjectType: 11
+      Path: Default Work Unit\Material
+      values:
+      - name: Grass
+        guid: 61482f416b539b488207aa1d646afb3a
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Grass
+          ObjectType: 10
+      - name: Sand
+        guid: dfdac4c44628984eb775d539fb9e2f7d
+        id: 803837735
+        PathAndIcons:
+        - ElementName: Sand
+          ObjectType: 10
+      - name: Wood
+        guid: 4b6cd93e4b353f41b5bbb083391c459e
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: bf1b94ab46460c4ea3fbb281fb1f4f08
+    GuidInternal: 
+    m_lastTime: -8585955478569663245
+    List: []
+  ExpandedItems:
+  - /Game Design Course
+  - /Game Design Course/Events
+  - /Game Design Course/Events/Default Work Unit
+  - /Game Design Course/SoundBanks
+  - /Game Design Course/SoundBanks/Default Work Unit
+  autoPopulateEnabled: 0
   CurrentPluginConfig: 

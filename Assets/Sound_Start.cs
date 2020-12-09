@@ -7,12 +7,15 @@ public class Sound_Start : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AkSoundEngine.PostEvent("testSound", gameObject);   
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+     if(Input.GetKey(KeyCode.G)){
+            AkSoundEngine.PostEvent("footstep_player", gameObject);   
+        }    
     }
 }

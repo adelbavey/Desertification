@@ -12,14 +12,160 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01a3840492cd994a9b8ee39f75767b7, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 12b86b0dc83b024690be193fdd711d1f
+    GuidInternal: 
+    m_lastTime: -8585940689251540201
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 1fdc58d5e9a40042a5eeb0f59c7a4422
+    GuidInternal: 
+    m_lastTime: -8585940689252289428
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: e59703e19b56124bb15f19d6880c283a
+    GuidInternal: 
+    m_lastTime: -8585940547136841575
+    List:
+    - name: Main_Nina
+      guid: 1adb74a34af57a4db470e44edbd65ba1
+      id: 155811837
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_Nina
+        ObjectType: 7
+      Path: Default Work Unit\Main_Nina
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 85c174a6a98afb4f98744e10dd4f5dc2
+    GuidInternal: 
+    m_lastTime: -8585940517723421384
+    List:
+    - name: stepSound
+      guid: af607f00345c794a89d87958d0ac7ce3
+      id: 1605335588
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: stepSound
+        ObjectType: 3
+      Path: Default Work Unit\stepSound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: testSound
+      guid: 387d3403a6654d45a675371e7911ced2
+      id: 38624190
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: testSound
+        ObjectType: 3
+      Path: Default Work Unit\testSound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 688169fd28a57f438f167b653da54516
+    GuidInternal: 
+    m_lastTime: -8585940689252129587
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: d2879ff9176a6149be4978d72c8634ee
+    GuidInternal: 
+    m_lastTime: -8585940689252099628
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 5a3b462aa791064ea0ac23e41e2a0710
+    GuidInternal: 
+    m_lastTime: -8585940673354775808
+    List:
+    - name: Material
+      guid: 28722df2beaab948b8de60b0888ff3bd
+      id: 3865314626
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Material
+        ObjectType: 11
+      Path: Default Work Unit\Material
+      values:
+      - name: Grass
+        guid: 61482f416b539b488207aa1d646afb3a
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Grass
+          ObjectType: 10
+      - name: Sand
+        guid: dfdac4c44628984eb775d539fb9e2f7d
+        id: 803837735
+        PathAndIcons:
+        - ElementName: Sand
+          ObjectType: 10
+      - name: Wood
+        guid: 4b6cd93e4b353f41b5bbb083391c459e
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: b7d7786638f5f24c8e0ae2b18e21d713
+    GuidInternal: 
+    m_lastTime: -8585940689252039692
+    List: []
+  ExpandedItems:
+  - /Desertification_WwiseProject
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

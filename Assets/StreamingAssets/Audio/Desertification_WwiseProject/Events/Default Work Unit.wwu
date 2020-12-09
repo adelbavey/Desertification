@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{A674C185-8AA9-4FFB-9874-4E10DD4F5DC2}" SchemaVersion="97">
+<WwiseDocument Type="WorkUnit" ID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{A674C185-8AA9-4FFB-9874-4E10DD4F5DC2}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="testSound" ID="{03347D38-65A6-454D-A675-371E7911CED2}">
+				<Event Name="footstep_player" ID="{564FA619-ADC6-44C6-BAF6-4F10264E8875}">
 					<ChildrenList>
-						<Action Name="" ID="{E8C17EF9-B5D1-41D6-9087-A89D6B7006ED}" ShortID="62098414">
+						<Action Name="" ID="{AA30A442-55A1-4AE6-B101-2559D0DDF90E}" ShortID="483861147">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="forest soundscape" ID="{DD47B39C-2112-4B87-AC2E-DEAE93ACAD90}" WorkUnitID="{1C8B9FE6-957B-4C02-817F-73C3D038B361}"/>
+									<ObjectRef Name="footsteps" ID="{A54B4090-2492-47E1-8C70-2D83EF3D8B53}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="jump_player" ID="{E42AEC92-56A8-43E0-B47F-EF69CC15449B}">
+					<ChildrenList>
+						<Action Name="" ID="{EC66B98B-9059-4BBD-B072-5B0D2F8ED2C1}" ShortID="437436788">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jump" ID="{52F9F5AA-902B-4337-9208-9A7BC25E11A2}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

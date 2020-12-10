@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3bce34c5755b3243a21d48a1e45d224, type: 3}
   m_Name: A374DB1A-F54A-4D7A-B470-E44EDBD65BA1
   m_EditorClassIdentifier: 
-  objectName: Main_Nina
-  id: 155811837
+  objectName: Main
+  id: 3161908922
   guid: A374DB1A-F54A-4D7A-B470-E44EDBD65BA1

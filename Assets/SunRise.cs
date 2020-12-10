@@ -14,7 +14,12 @@ public class SunRise : MonoBehaviour
     void Update()
     {
         Vector3 currentRot = transform.rotation.eulerAngles;
-        currentRot.x += 0.01f;
+        Debug.Log(currentRot);
+        if(currentRot.x <= 25.0f || currentRot.x > 335){
+            currentRot.x -= 0.05f;
+        }
+        
+
         Quaternion rot = Quaternion.Euler(currentRot);
         transform.rotation = rot;
 

@@ -302,9 +302,7 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
             velocity = animator.velocity * jumpDamp;
             velocity.y = Mathf.Sqrt(2 * -gravity * jumpHeight);
             animator.SetBool("isJumping", true);
-            //Test audio
-            AkSoundEngine.PostEvent("stepSound", gameObject);   
-            //
+
         }
     }
 

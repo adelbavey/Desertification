@@ -49,17 +49,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e59703e19b56124bb15f19d6880c283a
     GuidInternal: 
-    m_lastTime: -8585939935891024728
+    m_lastTime: -8585939891403026092
     List:
-    - name: Main_Nina
+    - name: Main
       guid: 1adb74a34af57a4db470e44edbd65ba1
-      id: 155811837
+      id: 3161908922
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Main_Nina
+      - ElementName: Main
         ObjectType: 7
-      Path: Default Work Unit\Main_Nina
+      Path: Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585939935892371116
+    m_lastTime: -8585939891407489004
     List:
     - name: footstep_player
       guid: 19a64f56c6adc644baf64f10264e8875
@@ -80,8 +80,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\footstep_player
       maxAttenuation: 0
-      maxDuration: 0.476714
-      minDuration: 0.073053
+      maxDuration: -1
+      minDuration: -1
     - name: jump_player
       guid: 92ec2ae4a856e043b47fef69cc15449b
       id: 2584346859
@@ -92,8 +92,44 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\jump_player
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: landing_player
+      guid: e5ee7e3bd788124b8110161e7d81a603
+      id: 29299334
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: landing_player
+        ObjectType: 3
+      Path: Default Work Unit\landing_player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_birdies
+      guid: 12167c16d42e914da39113487a0e1ccb
+      id: 799891356
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_birdies
+        ObjectType: 3
+      Path: Default Work Unit\Play_birdies
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_fire
+      guid: 681e8bc088700544b76a66147290006d
+      id: 3015324718
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_fire
+        ObjectType: 3
+      Path: Default Work Unit\Play_fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -122,7 +158,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5a3b462aa791064ea0ac23e41e2a0710
     GuidInternal: 
-    m_lastTime: -8585939935891004781
+    m_lastTime: -8585939891403016098
     List:
     - name: Material
       guid: 28722df2beaab948b8de60b0888ff3bd
@@ -155,6 +191,31 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: movement_type
+      guid: 3fd7ca7d1725d3419cfd0d4684044009
+      id: 1088160865
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: movement_type
+        ObjectType: 11
+      Path: Default Work Unit\movement_type
+      values:
+      - name: Run
+        guid: 4dd7a55688464143aea10694e92b280c
+        id: 712161704
+        PathAndIcons:
+        - ElementName: Run
+          ObjectType: 10
+      - name: Walk
+        guid: 295dbac1c06c5c41832bcd23fb822568
+        id: 2108779966
+        PathAndIcons:
+        - ElementName: Walk
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -167,9 +228,5 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Game Design Course
-  - /Game Design Course/Events
-  - /Game Design Course/Events/Default Work Unit
-  - /Game Design Course/SoundBanks
-  - /Game Design Course/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

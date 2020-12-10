@@ -167,5 +167,12 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Desertification_WwiseProject
+  - /Desertification_WwiseProject/Events
+  - /Desertification_WwiseProject/Events/Default Work Unit
+  - /Desertification_WwiseProject/SoundBanks
+  - /Desertification_WwiseProject/SoundBanks/Default Work Unit
+  - /Desertification_WwiseProject/Switches
+  - /Desertification_WwiseProject/Switches/Default Work Unit
+  - /Desertification_WwiseProject/Switches/Default Work Unit/Material
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

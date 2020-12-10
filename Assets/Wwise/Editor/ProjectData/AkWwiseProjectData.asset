@@ -18,9 +18,9 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: 12b86b0dc83b024690be193fdd711d1f
+    guid: 7968a5b40caab941b078bc6e6b5b84f6
     GuidInternal: 
-    m_lastTime: -8585940689251540201
+    m_lastTime: -8585939935890994804
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -28,9 +28,9 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: 1fdc58d5e9a40042a5eeb0f59c7a4422
+    guid: 967d13d21c6cb64487cba09173d917c7
     GuidInternal: 
-    m_lastTime: -8585940689252289428
+    m_lastTime: -8585939935891892406
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e59703e19b56124bb15f19d6880c283a
     GuidInternal: 
-    m_lastTime: -8585940547136841575
+    m_lastTime: -8585939935891024728
     List:
     - name: Main_Nina
       guid: 1adb74a34af57a4db470e44edbd65ba1
@@ -66,43 +66,43 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: 85c174a6a98afb4f98744e10dd4f5dc2
+    guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585940517723421384
+    m_lastTime: -8585939935892371116
     List:
-    - name: stepSound
-      guid: af607f00345c794a89d87958d0ac7ce3
-      id: 1605335588
+    - name: footstep_player
+      guid: 19a64f56c6adc644baf64f10264e8875
+      id: 648916573
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: stepSound
+      - ElementName: footstep_player
         ObjectType: 3
-      Path: Default Work Unit\stepSound
+      Path: Default Work Unit\footstep_player
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: testSound
-      guid: 387d3403a6654d45a675371e7911ced2
-      id: 38624190
+      maxDuration: 0.476714
+      minDuration: 0.073053
+    - name: jump_player
+      guid: 92ec2ae4a856e043b47fef69cc15449b
+      id: 2584346859
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: testSound
+      - ElementName: jump_player
         ObjectType: 3
-      Path: Default Work Unit\testSound
+      Path: Default Work Unit\jump_player
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: 688169fd28a57f438f167b653da54516
+    guid: 906731d1342ad248a80d33eccced963d
     GuidInternal: 
-    m_lastTime: -8585940689252129587
+    m_lastTime: -8585939935892361003
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -110,9 +110,9 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: d2879ff9176a6149be4978d72c8634ee
+    guid: c410a93ad1f60e4fb0796a23ec3cbce2
     GuidInternal: 
-    m_lastTime: -8585940689252099628
+    m_lastTime: -8585939935891004781
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5a3b462aa791064ea0ac23e41e2a0710
     GuidInternal: 
-    m_lastTime: -8585940673354775808
+    m_lastTime: -8585939935891004781
     List:
     - name: Material
       guid: 28722df2beaab948b8de60b0888ff3bd
@@ -161,18 +161,15 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: b7d7786638f5f24c8e0ae2b18e21d713
+    guid: bf1b94ab46460c4ea3fbb281fb1f4f08
     GuidInternal: 
-    m_lastTime: -8585940689252039692
+    m_lastTime: -8585939935890994804
     List: []
   ExpandedItems:
-  - /Desertification_WwiseProject
-  - /Desertification_WwiseProject/Events
-  - /Desertification_WwiseProject/Events/Default Work Unit
-  - /Desertification_WwiseProject/SoundBanks
-  - /Desertification_WwiseProject/SoundBanks/Default Work Unit
-  - /Desertification_WwiseProject/Switches
-  - /Desertification_WwiseProject/Switches/Default Work Unit
-  - /Desertification_WwiseProject/Switches/Default Work Unit/Material
+  - /Game Design Course
+  - /Game Design Course/Events
+  - /Game Design Course/Events/Default Work Unit
+  - /Game Design Course/SoundBanks
+  - /Game Design Course/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

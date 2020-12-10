@@ -3,10 +3,13 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{E10397E5-569B-4B12-B15F-19D6880C283A}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Main_Nina" ID="{A374DB1A-F54A-4D7A-B470-E44EDBD65BA1}">
+				<SoundBank Name="Main" ID="{A374DB1A-F54A-4D7A-B470-E44EDBD65BA1}">
 					<ObjectInclusionList>
 						<ObjectRef Name="jump_player" ID="{E42AEC92-56A8-43E0-B47F-EF69CC15449B}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_fire" ID="{C08B1E68-7088-4405-B76A-66147290006D}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footstep_player" ID="{564FA619-ADC6-44C6-BAF6-4F10264E8875}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="landing_player" ID="{3B7EEEE5-88D7-4B12-8110-161E7D81A603}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_birdies" ID="{167C1612-2ED4-4D91-A391-13487A0E1CCB}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

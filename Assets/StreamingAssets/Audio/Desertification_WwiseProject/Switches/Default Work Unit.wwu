@@ -10,6 +10,12 @@
 						<Switch Name="Wood" ID="{3ED96C4B-354B-413F-B5BB-B083391C459E}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="movement_type" ID="{7DCAD73F-2517-41D3-9CFD-0D4684044009}">
+					<ChildrenList>
+						<Switch Name="Run" ID="{56A5D74D-4688-4341-AEA1-0694E92B280C}"/>
+						<Switch Name="Walk" ID="{C1BA5D29-6CC0-415C-832B-CD23FB822568}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

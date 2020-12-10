@@ -8,7 +8,7 @@
 						<Action Name="" ID="{AA30A442-55A1-4AE6-B101-2559D0DDF90E}" ShortID="483861147">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="footsteps" ID="{A54B4090-2492-47E1-8C70-2D83EF3D8B53}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+									<ObjectRef Name="footsteps_speed" ID="{A54B4090-2492-47E1-8C70-2D83EF3D8B53}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -19,7 +19,40 @@
 						<Action Name="" ID="{EC66B98B-9059-4BBD-B072-5B0D2F8ED2C1}" ShortID="437436788">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="jump" ID="{52F9F5AA-902B-4337-9208-9A7BC25E11A2}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+									<ObjectRef Name="jump sigh 1" ID="{D6CF8334-A3FC-42D4-9DA6-FFAE68A33785}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_birdies" ID="{167C1612-2ED4-4D91-A391-13487A0E1CCB}">
+					<ChildrenList>
+						<Action Name="" ID="{0DDD0CC4-0DA5-4FA9-8A42-03DE2AEF4445}" ShortID="549696972">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="birds_tree" ID="{D1E23159-6F85-40E3-9E3B-494A13222344}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_fire" ID="{C08B1E68-7088-4405-B76A-66147290006D}">
+					<ChildrenList>
+						<Action Name="" ID="{AA38804F-C8A9-47FE-A937-6C5EE9381108}" ShortID="153867825">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fire" ID="{76B39276-AE28-45D0-A569-5D77B73495CD}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="landing_player" ID="{3B7EEEE5-88D7-4B12-8110-161E7D81A603}">
+					<ChildrenList>
+						<Action Name="" ID="{3B865BE0-116A-4205-A40D-F1C869E9A3AA}" ShortID="865039763">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jump_landing" ID="{7B557695-BE5C-4D8A-8EE4-0AEC0583442A}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

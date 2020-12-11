@@ -16,13 +16,21 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1520049168">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3854678646">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="648916573" Name="footstep_player" ObjectPath="\Events\Default Work Unit\footstep_player" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.073053" DurationMax="0.476714">
 					<IncludedMemoryFiles>
+						<File Id="7516409" Language="SFX">
+							<ShortName>grass step-04.wav</ShortName>
+							<Path>SFX\grass step-04_32D2990E.wem</Path>
+						</File>
+						<File Id="12986280" Language="SFX">
+							<ShortName>grass step-05.wav</ShortName>
+							<Path>SFX\grass step-05_139F0BF0.wem</Path>
+						</File>
 						<File Id="85128389" Language="SFX">
 							<ShortName>grass step-07.wav</ShortName>
 							<Path>SFX\grass step-07_53152D31.wem</Path>
@@ -33,7 +41,7 @@
 						</File>
 						<File Id="162822346" Language="SFX">
 							<ShortName>Sand step 10.wav</ShortName>
-							<Path>SFX\Sand step 10_8624B35E.wem</Path>
+							<Path>SFX\Sand step 10_3D54B324.wem</Path>
 						</File>
 						<File Id="168148704" Language="SFX">
 							<ShortName>grass step-01.wav</ShortName>
@@ -41,11 +49,15 @@
 						</File>
 						<File Id="204727976" Language="SFX">
 							<ShortName>Sand step 6.wav</ShortName>
-							<Path>SFX\Sand step 6_A701DE19.wem</Path>
+							<Path>SFX\Sand step 6_3DFC9E1C.wem</Path>
 						</File>
 						<File Id="239972912" Language="SFX">
 							<ShortName>heavy-wood-footstep-2.wav</ShortName>
 							<Path>SFX\heavy-wood-footstep-2_16C8F5B2.wem</Path>
+						</File>
+						<File Id="242566275" Language="SFX">
+							<ShortName>grass step-02.wav</ShortName>
+							<Path>SFX\grass step-02_8ECCB913.wem</Path>
 						</File>
 						<File Id="254538116" Language="SFX">
 							<ShortName>grass step-02.wav</ShortName>
@@ -53,23 +65,31 @@
 						</File>
 						<File Id="315962130" Language="SFX">
 							<ShortName>Sand step 8.wav</ShortName>
-							<Path>SFX\Sand step 8_ED6C2913.wem</Path>
+							<Path>SFX\Sand step 8_6009002F.wem</Path>
 						</File>
 						<File Id="322667961" Language="SFX">
 							<ShortName>Sand step 11.wav</ShortName>
 							<Path>SFX\Sand step 11_10C4C929.wem</Path>
 						</File>
+						<File Id="350086354" Language="SFX">
+							<ShortName>grass step-01.wav</ShortName>
+							<Path>SFX\grass step-01_45D57C4F.wem</Path>
+						</File>
 						<File Id="440843160" Language="SFX">
 							<ShortName>Sand step 14.wav</ShortName>
-							<Path>SFX\Sand step 14_15D74F4C.wem</Path>
+							<Path>SFX\Sand step 14_25C36413.wem</Path>
 						</File>
 						<File Id="455258014" Language="SFX">
 							<ShortName>grass step-03.wav</ShortName>
 							<Path>SFX\grass step-03_12B5336D.wem</Path>
 						</File>
+						<File Id="459567128" Language="SFX">
+							<ShortName>grass step-07.wav</ShortName>
+							<Path>SFX\grass step-07_EC61013E.wem</Path>
+						</File>
 						<File Id="589286132" Language="SFX">
 							<ShortName>Sand step 9.wav</ShortName>
-							<Path>SFX\Sand step 9_034859C1.wem</Path>
+							<Path>SFX\Sand step 9_B0953499.wem</Path>
 						</File>
 						<File Id="598338715" Language="SFX">
 							<ShortName>Sand step 9.wav</ShortName>
@@ -105,15 +125,23 @@
 						</File>
 						<File Id="881410630" Language="SFX">
 							<ShortName>Sand step 11.wav</ShortName>
-							<Path>SFX\Sand step 11_A05E3964.wem</Path>
+							<Path>SFX\Sand step 11_DDFD889E.wem</Path>
 						</File>
 						<File Id="916921858" Language="SFX">
 							<ShortName>Sand step 10.wav</ShortName>
 							<Path>SFX\Sand step 10_10C4C929.wem</Path>
 						</File>
+						<File Id="971452186" Language="SFX">
+							<ShortName>grass step-03.wav</ShortName>
+							<Path>SFX\grass step-03_C4B6EF03.wem</Path>
+						</File>
+						<File Id="982013661" Language="SFX">
+							<ShortName>grass step-06.wav</ShortName>
+							<Path>SFX\grass step-06_315E83C5.wem</Path>
+						</File>
 						<File Id="1007513046" Language="SFX">
 							<ShortName>Sand step 7.wav</ShortName>
-							<Path>SFX\Sand step 7_7EEA424D.wem</Path>
+							<Path>SFX\Sand step 7_AF7F5CFC.wem</Path>
 						</File>
 						<File Id="1070376903" Language="SFX">
 							<ShortName>grass step-05.wav</ShortName>
@@ -161,13 +189,13 @@
 							<Children>
 								<SwitchContainer SwitchValue="{412F4861-536B-489B-8207-AA1D646AFB3A}">
 									<Media>
-										<File Id="168148704"/>
-										<File Id="254538116"/>
-										<File Id="455258014"/>
-										<File Id="756503453"/>
-										<File Id="1070376903"/>
-										<File Id="835251329"/>
-										<File Id="85128389"/>
+										<File Id="350086354"/>
+										<File Id="242566275"/>
+										<File Id="971452186"/>
+										<File Id="7516409"/>
+										<File Id="12986280"/>
+										<File Id="982013661"/>
+										<File Id="459567128"/>
 									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{C4C4DADF-2846-4E98-B775-D539FB9E2F7D}">

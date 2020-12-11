@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20ac631d9311a7547980de23285a67bc, type: 3}
+  m_Script: {fileID: 11500000, guid: f01a3840492cd994a9b8ee39f75767b7, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 7968a5b40caab941b078bc6e6b5b84f6
     GuidInternal: 
-    m_lastTime: -8585955478569045215
+    m_lastTime: -8585939935890994804
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 967d13d21c6cb64487cba09173d917c7
     GuidInternal: 
-    m_lastTime: -8585955478569294546
+    m_lastTime: -8585939935891892406
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e59703e19b56124bb15f19d6880c283a
     GuidInternal: 
-    m_lastTime: -8585940673358782773
+    m_lastTime: -8585939891403026092
     List:
     - name: Main
       guid: 1adb74a34af57a4db470e44edbd65ba1
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585940673359012161
+    m_lastTime: -8585939891407489004
     List:
     - name: footstep_player
       guid: 19a64f56c6adc644baf64f10264e8875
@@ -80,8 +80,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\footstep_player
       maxAttenuation: 0
-      maxDuration: 0.673678
-      minDuration: 0.105946
+      maxDuration: -1
+      minDuration: -1
     - name: jump_player
       guid: 92ec2ae4a856e043b47fef69cc15449b
       id: 2584346859
@@ -92,8 +92,44 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\jump_player
       maxAttenuation: 0
-      maxDuration: 1.457984
-      minDuration: 0.95843
+      maxDuration: -1
+      minDuration: -1
+    - name: landing_player
+      guid: e5ee7e3bd788124b8110161e7d81a603
+      id: 29299334
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: landing_player
+        ObjectType: 3
+      Path: Default Work Unit\landing_player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_birdies
+      guid: 12167c16d42e914da39113487a0e1ccb
+      id: 799891356
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_birdies
+        ObjectType: 3
+      Path: Default Work Unit\Play_birdies
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_fire
+      guid: 681e8bc088700544b76a66147290006d
+      id: 3015324718
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_fire
+        ObjectType: 3
+      Path: Default Work Unit\Play_fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -102,7 +138,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 906731d1342ad248a80d33eccced963d
     GuidInternal: 
-    m_lastTime: -8585955478569354267
+    m_lastTime: -8585939935892361003
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -112,7 +148,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c410a93ad1f60e4fb0796a23ec3cbce2
     GuidInternal: 
-    m_lastTime: -8585955478569234707
+    m_lastTime: -8585939935891004781
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +158,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5a3b462aa791064ea0ac23e41e2a0710
     GuidInternal: 
-    m_lastTime: -8585940673358573327
+    m_lastTime: -8585939891403016098
     List:
     - name: Material
       guid: 28722df2beaab948b8de60b0888ff3bd
@@ -155,6 +191,31 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: movement_type
+      guid: 3fd7ca7d1725d3419cfd0d4684044009
+      id: 1088160865
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: movement_type
+        ObjectType: 11
+      Path: Default Work Unit\movement_type
+      values:
+      - name: Run
+        guid: 4dd7a55688464143aea10694e92b280c
+        id: 712161704
+        PathAndIcons:
+        - ElementName: Run
+          ObjectType: 10
+      - name: Walk
+        guid: 295dbac1c06c5c41832bcd23fb822568
+        id: 2108779966
+        PathAndIcons:
+        - ElementName: Walk
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -163,13 +224,9 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: bf1b94ab46460c4ea3fbb281fb1f4f08
     GuidInternal: 
-    m_lastTime: -8585955478569663245
+    m_lastTime: -8585939935890994804
     List: []
   ExpandedItems:
   - /Game Design Course
-  - /Game Design Course/Events
-  - /Game Design Course/Events/Default Work Unit
-  - /Game Design Course/SoundBanks
-  - /Game Design Course/SoundBanks/Default Work Unit
-  autoPopulateEnabled: 0
+  autoPopulateEnabled: 1
   CurrentPluginConfig: 

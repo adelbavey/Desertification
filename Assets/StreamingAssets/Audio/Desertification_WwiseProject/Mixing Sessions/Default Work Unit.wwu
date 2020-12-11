@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C973505F-B272-4B54-8B44-03519F9901F1}" SchemaVersion="97">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{C973505F-B272-4B54-8B44-03519F9901F1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C973505F-B272-4B54-8B44-03519F9901F1}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="sandsteps" ID="{FFB0E02F-97EE-4725-BEB2-81AEF19C8C86}">
+					<ObjectList>
+						<ObjectRef Name="Sand" ID="{146E9E9B-F2F3-4328-B30B-987669C27A08}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

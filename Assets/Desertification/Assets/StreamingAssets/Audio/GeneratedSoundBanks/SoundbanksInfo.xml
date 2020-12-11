@@ -16,12 +16,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1969068349">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1520049168">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="648916573" Name="footstep_player" ObjectPath="\Events\Default Work Unit\footstep_player" DurationType="OneShot" DurationMin="0.073053" DurationMax="0.476714">
+				<Event Id="648916573" Name="footstep_player" ObjectPath="\Events\Default Work Unit\footstep_player" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.073053" DurationMax="0.476714">
 					<IncludedMemoryFiles>
 						<File Id="85128389" Language="SFX">
 							<ShortName>grass step-07.wav</ShortName>

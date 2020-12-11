@@ -92,10 +92,12 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
         {
             velocityZ += Time.deltaTime * acceleration;
         }
-        /*if (backwardPressed && velocityZ > -currentMaxVelocity)
-        {
-            velocityZ -= Time.deltaTime * acceleration;
-        }*/
+  
+        //If running in superspeed, turns should be very limited with respect to velocityZ,
+        //lower velocityZ, higer turning speed;
+        //Should max be default
+
+        float superConstant = acceleration/velocityZ;
 
         if (leftPressed && velocityX > -currentMaxVelocity)
         {
@@ -160,7 +162,7 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
         /***********************/
 
         //Lock Left
-        if (leftPressed && runPressed && velocityX < -currentMaxVelocity)
+        if (leftPressed && runPressed && velocityX < -currentMaxVelocity )
         {
             velocityX = -currentMaxVelocity;
         }

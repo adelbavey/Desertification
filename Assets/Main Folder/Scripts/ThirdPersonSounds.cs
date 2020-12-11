@@ -11,7 +11,7 @@ public class ThirdPersonSounds : MonoBehaviour
 
     private bool jump;
     public AK.Wwise.Event FootStepEvent;
-    public AK.Wwise.Switch MySwitch;
+    //public AK.Wwise.Switch MySwitch;
 
     // Start is called before the first frame update
     void Start()
@@ -20,13 +20,9 @@ public class ThirdPersonSounds : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void FootStepPlay(){
-        MySwitch.SetValue(gameObject);
+        //MySwitch.SetValue(gameObject);
         //AkSoundEngine.PostEvent("footstep_player", gameObject);
         FootStepEvent.Post(gameObject);
     }

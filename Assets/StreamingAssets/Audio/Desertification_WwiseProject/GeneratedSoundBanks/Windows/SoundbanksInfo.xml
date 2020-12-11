@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>G:\Documents\KTH\DH2650\Git\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>G:\Documents\KTH\DH2650\Git\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>G:\Documents\KTH\DH2650\Git\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>G:\Documents\KTH\DH2650\Git\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3288028956">
+		<SoundBank Id="3161908922" Language="SFX" Hash="840622544">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -234,7 +234,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="799891356" Name="Play_birdies" ObjectPath="\Events\Default Work Unit\Play_birdies" MaxAttenuation="100.000000" DurationType="Infinite">
+				<Event Id="799891356" Name="Play_birdies" ObjectPath="\Events\Default Work Unit\Play_birdies" MaxAttenuation="15.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="124450399" Language="SFX">
 							<ShortName>birds.wav</ShortName>
@@ -250,7 +250,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Play_fire" MaxAttenuation="100.000000" DurationType="Infinite">
+				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Play_fire" MaxAttenuation="15.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="980904400" Language="SFX">
 							<ShortName>bonfire.wav</ShortName>

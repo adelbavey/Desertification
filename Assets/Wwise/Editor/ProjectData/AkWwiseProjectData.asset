@@ -228,5 +228,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Game Design Course
+  - /Game Design Course/Switches
+  - /Game Design Course/Switches/Default Work Unit
+  - /Game Design Course/Switches/Default Work Unit/Material
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

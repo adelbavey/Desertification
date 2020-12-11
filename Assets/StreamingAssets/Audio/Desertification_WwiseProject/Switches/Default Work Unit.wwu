@@ -8,6 +8,7 @@
 						<Switch Name="Sand" ID="{C4C4DADF-2846-4E98-B775-D539FB9E2F7D}"/>
 						<Switch Name="Grass" ID="{412F4861-536B-489B-8207-AA1D646AFB3A}"/>
 						<Switch Name="Wood" ID="{3ED96C4B-354B-413F-B5BB-B083391C459E}"/>
+						<Switch Name="Golv" ID="{560EF518-C63D-45E1-BA69-40E3DCC5C710}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="movement_type" ID="{7DCAD73F-2517-41D3-9CFD-0D4684044009}">

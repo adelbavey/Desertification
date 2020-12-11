@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Run
   id: 712161704
   guid: 56A5D74D-4688-4341-AEA1-0694E92B280C
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 35910c067e01a3f4181f119038008806,
+    type: 2}

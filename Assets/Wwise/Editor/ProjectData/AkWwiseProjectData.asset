@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 7968a5b40caab941b078bc6e6b5b84f6
     GuidInternal: 
-    m_lastTime: -8585939935890994804
+    m_lastTime: -8585939754505264525
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 967d13d21c6cb64487cba09173d917c7
     GuidInternal: 
-    m_lastTime: -8585939935891892406
+    m_lastTime: -8585939754508226587
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e59703e19b56124bb15f19d6880c283a
     GuidInternal: 
-    m_lastTime: -8585939891403026092
+    m_lastTime: -8585939754505324366
     List:
     - name: Main
       guid: 1adb74a34af57a4db470e44edbd65ba1
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585939891407489004
+    m_lastTime: -8585939754509598314
     List:
     - name: footstep_player
       guid: 19a64f56c6adc644baf64f10264e8875
@@ -80,8 +80,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\footstep_player
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.476714
+      minDuration: 0.073053
     - name: jump_player
       guid: 92ec2ae4a856e043b47fef69cc15449b
       id: 2584346859
@@ -92,8 +92,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\jump_player
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.212817
+      minDuration: 0.178544
     - name: landing_player
       guid: e5ee7e3bd788124b8110161e7d81a603
       id: 29299334
@@ -104,8 +104,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\landing_player
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.288885
+      minDuration: 0.386886
     - name: Play_birdies
       guid: 12167c16d42e914da39113487a0e1ccb
       id: 799891356
@@ -115,7 +115,7 @@ MonoBehaviour:
       - ElementName: Play_birdies
         ObjectType: 3
       Path: Default Work Unit\Play_birdies
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: Play_fire
@@ -127,7 +127,7 @@ MonoBehaviour:
       - ElementName: Play_fire
         ObjectType: 3
       Path: Default Work Unit\Play_fire
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
@@ -138,7 +138,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 906731d1342ad248a80d33eccced963d
     GuidInternal: 
-    m_lastTime: -8585939935892361003
+    m_lastTime: -8585939754509538473
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -148,7 +148,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c410a93ad1f60e4fb0796a23ec3cbce2
     GuidInternal: 
-    m_lastTime: -8585939935891004781
+    m_lastTime: -8585939754505304419
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -158,7 +158,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5a3b462aa791064ea0ac23e41e2a0710
     GuidInternal: 
-    m_lastTime: -8585939891403016098
+    m_lastTime: -8585939754505284378
     List:
     - name: Material
       guid: 28722df2beaab948b8de60b0888ff3bd
@@ -224,12 +224,14 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: bf1b94ab46460c4ea3fbb281fb1f4f08
     GuidInternal: 
-    m_lastTime: -8585939935890994804
+    m_lastTime: -8585939754505274498
     List: []
   ExpandedItems:
   - /Game Design Course
+  - /Game Design Course/Events
+  - /Game Design Course/Events/Default Work Unit
+  - /Game Design Course/SoundBanks
+  - /Game Design Course/SoundBanks/Default Work Unit
   - /Game Design Course/Switches
-  - /Game Design Course/Switches/Default Work Unit
-  - /Game Design Course/Switches/Default Work Unit/Material
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

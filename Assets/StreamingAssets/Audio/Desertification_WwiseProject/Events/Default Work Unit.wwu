@@ -80,6 +80,24 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_background" ID="{2A653231-7145-4E7C-8E7B-B94EE8199A3E}">
+					<ChildrenList>
+						<Action Name="" ID="{12CF24A0-4A84-4DB7-9B6D-D5D9F2422543}" ShortID="771211070">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="desert" ID="{42621915-F7A6-4C0B-8E78-CF5A050DA638}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{15FD98A6-BF88-4499-9F25-13F011EB4BF7}" ShortID="308220219">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="m_placeholder" ID="{DAEF2B81-6AC7-4989-AD5C-65459B8F6825}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

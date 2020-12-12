@@ -742,15 +742,42 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="w_golv" ID="{738261D7-36CC-4750-AA61-FE3D2B301767}" ShortID="842474899">
+										<Sound Name="stone step" ID="{25505FD4-04CB-4EB1-BD81-926AE6A4C43B}" ShortID="548015378">
 											<PropertyList>
-												<Property Name="Pitch" Type="int32">
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>-530</Value>
+														<Value>42</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>57</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9A4FEEB1-FE3E-4D21-B3FE-2C8903412FF4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="76"/>
+																	<Property Name="Min" Type="Real64" Value="-76"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="steps_attenuation" ID="{CEECB6FF-656D-402C-9D82-0EE7A1BB6606}" WorkUnitID="{1B449F24-E0BC-4862-A44E-BF064F998CF7}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
 												</Reference>
@@ -759,21 +786,23 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="hop1" ID="{6F1388D1-AF9D-4C86-9668-AA6488279520}">
+												<AudioFileSource Name="heavy-footstep-wood-3" ID="{09A2CD04-7D1F-480D-AA07-C8125B3263C7}">
 													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0576647097195042"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0337961668685739"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.114012362936042"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.240350386730035"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0428788867145032"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.107091603764793"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>hop1.wav</AudioFile>
+													<AudioFile>heavy-footstep-wood-3.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="643055640"/>
+														<MediaID ID="1072923057"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="hop1" ID="{6F1388D1-AF9D-4C86-9668-AA6488279520}" Platform="Linked"/>
+												<ActiveSource Name="heavy-footstep-wood-3" ID="{09A2CD04-7D1F-480D-AA07-C8125B3263C7}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1571,15 +1600,45 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="r_golv" ID="{0511CFB7-CDE2-4E9B-8C25-5C85E200F8C7}" ShortID="890118651">
+										<Sound Name="stone step" ID="{B2364F80-5CC3-4DD8-B4D1-597AE04B558F}" ShortID="1002973814">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>41</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>57</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
-														<Value>880</Value>
+														<Value>280</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{19330B4D-53D2-423B-A8B2-AFEE69FE78B1}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="76"/>
+																	<Property Name="Min" Type="Real64" Value="-76"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="steps_attenuation" ID="{CEECB6FF-656D-402C-9D82-0EE7A1BB6606}" WorkUnitID="{1B449F24-E0BC-4862-A44E-BF064F998CF7}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
 												</Reference>
@@ -1588,16 +1647,23 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="hop1" ID="{7569FDCF-8EE8-4C21-A3B0-EBDFBE373AE3}">
+												<AudioFileSource Name="heavy-footstep-wood-3" ID="{EFE8B506-8EC1-4B33-9A82-36FF50D96735}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0576647097195042"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0337961668685739"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0428788867145032"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.107091603764793"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>hop1.wav</AudioFile>
+													<AudioFile>heavy-footstep-wood-3.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="166585137"/>
+														<MediaID ID="1072923057"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="hop1" ID="{7569FDCF-8EE8-4C21-A3B0-EBDFBE373AE3}" Platform="Linked"/>
+												<ActiveSource Name="heavy-footstep-wood-3" ID="{EFE8B506-8EC1-4B33-9A82-36FF50D96735}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -2005,6 +2071,11 @@
 					<ChildrenList>
 						<Sound Name="landing_sand" ID="{68AA2B17-4057-490B-8675-F2010D6C60EF}" ShortID="630348389">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>42</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
 										<Value>42</Value>
@@ -2014,6 +2085,17 @@
 									<ValueList>
 										<Value>-80</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{061FED4D-E924-44E9-955B-A5C6DD17A8C7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="101"/>
+													<Property Name="Min" Type="Real64" Value="-152"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2051,6 +2133,11 @@
 						<Sound Name="landing_grass" ID="{8E9BF3E1-A518-4AF1-84EE-5DEE0A095E7E}" ShortID="440236069">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>33</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
 										<Value>28</Value>
@@ -2115,6 +2202,47 @@
 								<ActiveSource Name="impact-wood" ID="{0738D9D1-F494-4CBF-8073-9CE998ED1C84}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="landing_stone" ID="{198EC35A-948B-4D63-96C0-85D08F8DB7EE}" ShortID="516010577">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>31</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="heavy-footstep-wood-3" ID="{8FA818E5-CBAA-4604-AB4F-E7D495A54C04}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0576647097195042"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0337961668685739"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0428788867145032"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.107091603764793"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>heavy-footstep-wood-3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1072923057"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="heavy-footstep-wood-3" ID="{8FA818E5-CBAA-4604-AB4F-E7D495A54C04}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
@@ -2125,10 +2253,19 @@
 								<ItemRef Name="landing_sand" ID="{68AA2B17-4057-490B-8675-F2010D6C60EF}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
+								<ItemRef Name="landing_stone" ID="{198EC35A-948B-4D63-96C0-85D08F8DB7EE}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="landing_grass" ID="{8E9BF3E1-A518-4AF1-84EE-5DEE0A095E7E}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Golv" ID="{560EF518-C63D-45E1-BA69-40E3DCC5C710}"/>
+								<ItemList>
+									<ItemRef Name="landing_stone" ID="{198EC35A-948B-4D63-96C0-85D08F8DB7EE}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="Wood" ID="{3ED96C4B-354B-413F-B5BB-B083391C459E}"/>
 								<ItemList>
@@ -2226,6 +2363,231 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="water" ID="{2BE64DBA-C4EF-4BB3-AB6B-D59B23CBDC7E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<BlendContainer Name="back" ID="{9DE4A372-C3CF-4BA6-9506-AE69D5E23A46}" ShortID="1019312861">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+						</Reference>
+					</ReferenceList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{6D1638BD-A279-4C31-B4D6-DADBA0ED07BD}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+								<CustomState Name="" ID="{705E3F6A-6BE2-429B-BF8F-E82044A3A55B}" ShortID="963904414"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+								<CustomState Name="" ID="{0D14B954-36A1-4C37-85F7-D85675721A68}" ShortID="406739601"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<BlendTrackList>
+						<BlendTrack Name="Backtrack" ID="{49DA33A4-170A-4C86-BE7A-9FDB506E78EE}" ShortID="204607844"/>
+					</BlendTrackList>
+				</BlendContainer>
+				<RandomSequenceContainer Name="desert" ID="{42621915-F7A6-4C0B-8E78-CF5A050DA638}" ShortID="60069945">
+					<PropertyList>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="desert_wind" ID="{9C775AE0-2E71-4D32-AD7D-55BAE2BEA4D0}" ShortID="451483159">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="desert wind" ID="{01C87671-F354-4BD8-B18A-9DA293EFBB6A}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="18.3262785388128"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="10.2956621004566"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.35374429223744"/>
+										<Property Name="TrimEnd" Type="Real64" Value="110.369497716895"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>desert wind.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="435774179"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="desert wind" ID="{01C87671-F354-4BD8-B18A-9DA293EFBB6A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="desert soundscape" ID="{C4F2707D-E3BA-4D57-B093-5F946E396767}" ShortID="846138555">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>34</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>11</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wind desert sound" ID="{31505A4A-FA14-4790-B37B-27BFAE8E8564}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="8.89379213042237"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="10.907480914669"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.36299236586758"/>
+										<Property Name="TrimEnd" Type="Real64" Value="86.0851955265411"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Wind desert sound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1003527813"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wind desert sound" ID="{31505A4A-FA14-4790-B37B-27BFAE8E8564}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="desert_breeze" ID="{FBE76DD7-5530-4286-860E-71242DA74795}" ShortID="970978820">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sandy-breeze-foley" ID="{3256DF58-3549-4A5E-A619-018961B93CFC}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.333047556922313"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.85955545460193"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sandy-breeze-foley.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="679506357"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sandy-breeze-foley" ID="{3256DF58-3549-4A5E-A619-018961B93CFC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{6D1638BD-A279-4C31-B4D6-DADBA0ED07BD}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+								<CustomState Name="" ID="{9A6F2B92-0E77-4A24-866D-A22728098537}" ShortID="118900646">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+								<CustomState Name="" ID="{9603A24C-8B2D-41DD-B38E-320F58E1BDDE}" ShortID="943748850">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</RandomSequenceContainer>
+				<Sound Name="m_placeholder" ID="{DAEF2B81-6AC7-4989-AD5C-65459B8F6825}" ShortID="153674543">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="placeholder music" ID="{2EF54F25-61BF-49E1-8CAF-6DF6CB3B220B}">
+							<Language>SFX</Language>
+							<AudioFile>placeholder music.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="414953811"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{6D1638BD-A279-4C31-B4D6-DADBA0ED07BD}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+								<CustomState Name="" ID="{F08F3DB9-F279-490F-BB41-8068AB5B0DB4}" ShortID="157041287">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-16"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+								<CustomState Name="" ID="{D4324DE0-9561-45E1-8E20-DB9A369D7DEC}" ShortID="63334566"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="placeholder music" ID="{2EF54F25-61BF-49E1-8CAF-6DF6CB3B220B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

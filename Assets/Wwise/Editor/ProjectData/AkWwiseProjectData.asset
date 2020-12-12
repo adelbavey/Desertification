@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585938770762208319
+    m_lastTime: -8585938046792782535
     List:
     - name: footstep_player
       guid: 19a64f56c6adc644baf64f10264e8875
@@ -105,7 +105,7 @@ MonoBehaviour:
       Path: Default Work Unit\landing_player
       maxAttenuation: 0
       maxDuration: 1.288885
-      minDuration: 0.386886
+      minDuration: 0.064213
     - name: pick_up_item_player
       guid: 2e0fbd0965b2834c8d1b945b1933d5d2
       id: 1154788184
@@ -115,6 +115,18 @@ MonoBehaviour:
       - ElementName: pick_up_item_player
         ObjectType: 3
       Path: Default Work Unit\pick_up_item_player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_background
+      guid: 3132652a45717c4e8e7bb94ee8199a3e
+      id: 3196207338
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_background
+        ObjectType: 3
+      Path: Default Work Unit\Play_background
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -172,8 +184,39 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c410a93ad1f60e4fb0796a23ec3cbce2
     GuidInternal: 
-    m_lastTime: -8585939148592276801
-    List: []
+    m_lastTime: -8585938046792393195
+    List:
+    - name: GameState
+      guid: bd38166d79a2314cb4d6dadba0ed07bd
+      id: 4091656514
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameState
+        ObjectType: 9
+      Path: Default Work Unit\GameState
+      values:
+      - name: InGame
+        guid: d84e74e86201a0489041d7db16d47e72
+        id: 984691642
+        PathAndIcons:
+        - ElementName: InGame
+          ObjectType: 8
+      - name: MainMenu
+        guid: 6f46fa4704206a4b979590a09b390360
+        id: 3604647259
+        PathAndIcons:
+        - ElementName: MainMenu
+          ObjectType: 8
+      - name: None
+        guid: abb8309157869c43a715a80c1f80d57e
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -258,6 +301,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Game Design Course
+  - /Game Design Course/Events
+  - /Game Design Course/Events/Default Work Unit
   - /Game Design Course/Switches
   - /Game Design Course/Switches/Default Work Unit
   - /Game Design Course/Switches/Default Work Unit/Material

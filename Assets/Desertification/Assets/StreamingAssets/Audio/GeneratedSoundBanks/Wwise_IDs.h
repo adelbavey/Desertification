@@ -20,6 +20,22 @@ namespace AK
         static const AkUniqueID PLAY_FIRE = 3015324718U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace GAMESTATE
+        {
+            static const AkUniqueID GROUP = 4091656514U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INGAME = 984691642U;
+                static const AkUniqueID MAINMENU = 3604647259U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace GAMESTATE
+
+    } // namespace STATES
+
     namespace SWITCHES
     {
         namespace MATERIAL

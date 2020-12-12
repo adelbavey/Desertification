@@ -6,6 +6,7 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Nina\Documents\GameDesign\"/>
 				<Property Name="Event Action List\{09BD0F2E-B265-4C83-8D1B-945B1933D5D2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{167C1612-2ED4-4D91-A391-13487A0E1CCB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2A653231-7145-4E7C-8E7B-B94EE8199A3E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3B7EEEE5-88D7-4B12-8110-161E7D81A603}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3CFC8650-68DF-4137-B38C-4EDBCC5160E7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{564FA619-ADC6-44C6-BAF6-4F10264E8875}\x64_Expand States" Type="string" Value=""/>
@@ -13,6 +14,7 @@
 				<Property Name="Event Action List\{AD715119-F254-4F0B-B915-7697E9199A41}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C08B1E68-7088-4405-B76A-66147290006D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E42AEC92-56A8-43E0-B47F-EF69CC15449B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E9E74922-ABE4-432A-A393-447F28B769F8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -86,7 +88,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_0" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_0" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="kZJOBAWlk0amlpDO+7G5yw=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="XtE30+vLCEKwY0/TDvHknbHiurdaubREk6VEAT4UZ4SRkk4EBaWTRqaWkM77sbnLSsdHKfoN+ku6TfbkSWY6ZEGQSDIWEg1Mkg15SuKQ/gDDghAAPiOjTrGCv4r02V3B"/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_0" Type="string" Value="E7+Gq2d9A0Cv9WIw4e8TOg=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="E7+Gq2d9A0Cv9WIw4e8TOg=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_0" Type="string" Value=""/>

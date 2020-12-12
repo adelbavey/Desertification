@@ -11,6 +11,7 @@ public class ThirdPersonSounds : MonoBehaviour
 
     private bool jump;
     public AK.Wwise.Event FootStepEvent;
+    public AK.Wwise.Event JumpLandingEvent;
     //public AK.Wwise.Switch MyMateral;
 
     // Start is called before the first frame update
@@ -33,5 +34,15 @@ public class ThirdPersonSounds : MonoBehaviour
 
     public void JumpPlay(){
         AkSoundEngine.PostEvent("jump_player", gameObject);
+    }
+
+    public void JumpLandingPlay()
+    {
+        //MySwitch.SetValue(gameObject);
+        //AkSoundEngine.PostEvent("footstep_player", gameObject);
+        //MyMovement.SetValue(gameObject);
+
+        //PlayerManagerN.my_obj.GetMaterial().SetValue(gameObject);
+        JumpLandingEvent.Post(gameObject);
     }
 }

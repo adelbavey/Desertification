@@ -15,6 +15,7 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
     public float maximumWalkVelocity = 0.5f;
     public float maximumRunVelocity = 2.0f;
 
+    public float maximumSuperVelocity = 5.0f;
     public float speed = 1.0f;
     /****/
     public float rotationalSpeed = 10.0f;
@@ -70,18 +71,33 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
         bool rightPressed = Input.GetKey(KeyCode.D);
         bool runPressed = Input.GetKey(KeyCode.LeftShift);
         bool jumpPressed = Input.GetKey(KeyCode.Space);
+        bool superRunPressed = Input.GetKey(KeyCode.Mouse0);
 
         //Set current maxVelocity
-        float currentMaxVelocity = runPressed ? maximumRunVelocity : maximumWalkVelocity;
+        float currentMaxVelocity;
+
+        if(runPressed){
+            if(superRunPressed){
+                currentMaxVelocity = maximumSuperVelocity;
+            }else{
+                currentMaxVelocity = maximumRunVelocity;
+            }
+            
+        }else{
+            currentMaxVelocity = maximumWalkVelocity;
+        }
+
 
         if (forwardPressed && velocityZ < currentMaxVelocity)
         {
             velocityZ += Time.deltaTime * acceleration;
         }
-        /*if (backwardPressed && velocityZ > -currentMaxVelocity)
-        {
-            velocityZ -= Time.deltaTime * acceleration;
-        }*/
+  
+        //If running in superspeed, turns should be very limited with respect to velocityZ,
+        //lower velocityZ, higer turning speed;
+        //Should max be default
+
+        float superConstant = acceleration/velocityZ;
 
         if (leftPressed && velocityX > -currentMaxVelocity)
         {
@@ -146,7 +162,7 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
         /***********************/
 
         //Lock Left
-        if (leftPressed && runPressed && velocityX < -currentMaxVelocity)
+        if (leftPressed && runPressed && velocityX < -currentMaxVelocity )
         {
             velocityX = -currentMaxVelocity;
         }
@@ -190,6 +206,14 @@ public class TwoDimensionalAnimatorStateController : MonoBehaviour
         {
             velocityX = currentMaxVelocity;
         }
+
+
+        //super run
+
+        if(forwardPressed && velocityX > (maximumRunVelocity - 0.05) && !rightPressed && !leftPressed){
+
+        }
+
 
 
         //Jumping

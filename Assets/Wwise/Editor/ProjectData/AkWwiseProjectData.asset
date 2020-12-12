@@ -158,7 +158,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5a3b462aa791064ea0ac23e41e2a0710
     GuidInternal: 
-    m_lastTime: -8585939754505284378
+    m_lastTime: -8585939105190512431
     List:
     - name: Material
       guid: 28722df2beaab948b8de60b0888ff3bd
@@ -170,6 +170,12 @@ MonoBehaviour:
         ObjectType: 11
       Path: Default Work Unit\Material
       values:
+      - name: Golv
+        guid: 18f50e563dc6e145ba6940e3dcc5c710
+        id: 651855293
+        PathAndIcons:
+        - ElementName: Golv
+          ObjectType: 10
       - name: Grass
         guid: 61482f416b539b488207aa1d646afb3a
         id: 4248645337
@@ -228,10 +234,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Game Design Course
-  - /Game Design Course/Events
-  - /Game Design Course/Events/Default Work Unit
-  - /Game Design Course/SoundBanks
-  - /Game Design Course/SoundBanks/Default Work Unit
   - /Game Design Course/Switches
+  - /Game Design Course/Switches/Default Work Unit
+  - /Game Design Course/Switches/Default Work Unit/movement_type
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

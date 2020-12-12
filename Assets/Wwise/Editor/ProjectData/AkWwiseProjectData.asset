@@ -258,10 +258,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Game Design Course
-  - /Game Design Course/SoundBanks
-  - /Game Design Course/SoundBanks/Default Work Unit
   - /Game Design Course/Switches
   - /Game Design Course/Switches/Default Work Unit
+  - /Game Design Course/Switches/Default Work Unit/Material
   - /Game Design Course/Switches/Default Work Unit/movement_type
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

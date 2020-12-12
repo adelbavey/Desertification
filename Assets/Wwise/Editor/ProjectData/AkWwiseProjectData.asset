@@ -79,9 +79,9 @@ MonoBehaviour:
       - ElementName: footstep_player
         ObjectType: 3
       Path: Default Work Unit\footstep_player
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: 0.476714
-      minDuration: 0.073053
+      minDuration: 0.043458
     - name: jump_player
       guid: 92ec2ae4a856e043b47fef69cc15449b
       id: 2584346859
@@ -127,7 +127,7 @@ MonoBehaviour:
       - ElementName: Play_birdies
         ObjectType: 3
       Path: Default Work Unit\Play_birdies
-      maxAttenuation: 30
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: Play_fire
@@ -139,7 +139,7 @@ MonoBehaviour:
       - ElementName: Play_fire
         ObjectType: 3
       Path: Default Work Unit\Play_fire
-      maxAttenuation: 30
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: Play_splash
@@ -258,6 +258,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Game Design Course
+  - /Game Design Course/SoundBanks
+  - /Game Design Course/SoundBanks/Default Work Unit
   - /Game Design Course/Switches
   - /Game Design Course/Switches/Default Work Unit
   - /Game Design Course/Switches/Default Work Unit/movement_type

@@ -22,6 +22,30 @@
 							<Time>1</Time>
 							<IsShared>false</IsShared>
 						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
+							<EndState Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
+							<EndState Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+							<EndState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+							<EndState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
 					</TransitionList>
 				</StateGroup>
 			</ChildrenList>

@@ -24,6 +24,10 @@ public class ThirdPersonSounds : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update()
+    {
+        AkSoundEngine.SetState("GameState", "InGame");
+    }
 
     public void FootStepPlay(){
         //MySwitch.SetValue(gameObject);

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8815072235756480015}
   - component: {fileID: 5619004608881060266}
   - component: {fileID: 7646621382128934240}
+  - component: {fileID: 7797294724685774126}
   m_Layer: 0
   m_Name: Log_desert
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8151161085682793653}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 1.8530067}
   m_LocalScale: {x: 75, y: 75, z: 75}
   m_Children: []
@@ -80,3 +81,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7797294724685774126
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8151161085682793653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6692743545704626728, guid: dabfd56e8d82b614899971656bcaec1c, type: 3}

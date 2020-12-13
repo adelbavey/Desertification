@@ -5,15 +5,18 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{A374DB1A-F54A-4D7A-B470-E44EDBD65BA1}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Stop_desert_back" ID="{3F11872C-889B-4163-B756-1CE1D08379A9}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_splash" ID="{9D625DE1-2576-43BC-AB9B-0AC354B6702D}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="jump_player" ID="{E42AEC92-56A8-43E0-B47F-EF69CC15449B}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_fire" ID="{C08B1E68-7088-4405-B76A-66147290006D}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footstep_player" ID="{564FA619-ADC6-44C6-BAF6-4F10264E8875}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_background_forest" ID="{39E71145-9755-4832-8934-6D8BC6BD2D62}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_oasis_water" ID="{80FECBCD-D38C-4840-98F4-05DA48971256}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="landing_player" ID="{3B7EEEE5-88D7-4B12-8110-161E7D81A603}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_forest_back" ID="{619B03B1-CF7A-4C71-8DAF-D2EC24A0E2A0}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="pick_up_item_player" ID="{09BD0F2E-B265-4C83-8D1B-945B1933D5D2}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_birdies" ID="{167C1612-2ED4-4D91-A391-13487A0E1CCB}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_background" ID="{2A653231-7145-4E7C-8E7B-B94EE8199A3E}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_background_desert" ID="{2A653231-7145-4E7C-8E7B-B94EE8199A3E}" WorkUnitID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

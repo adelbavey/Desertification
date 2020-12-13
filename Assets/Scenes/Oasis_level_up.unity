@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 752.7054, g: 710.9961, b: 828.359, a: 1}
+  m_IndirectSpecularColor: {r: 809.4107, g: 817.2184, b: 1086.7312, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2468,7 +2468,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424067256}
-  m_LocalRotation: {x: 0.09966062, y: 0.000105129795, z: -0.000010525147, w: 0.9950215}
+  m_LocalRotation: {x: 0.09966062, y: 0.0001051298, z: -0.000010525147, w: 0.9950215}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6870,6 +6870,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1371927062}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1028343141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028343140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b21cc55b8459445a7d60a42bc12afd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Material:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 39fafdec2a67cc448bd3c638a9870bc8,
+      type: 2}
 --- !u!4 &1028343143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3069989802117361881, guid: 6f671be38a1f2854fad36f25bb542d6c,
@@ -18341,11 +18360,11 @@ GameObject:
   - component: {fileID: 919132147996923918}
   - component: {fileID: 919132147996923920}
   - component: {fileID: 919132147996923921}
-  - component: {fileID: 919132147996923926}
   - component: {fileID: 919132147996923924}
   - component: {fileID: 919132147996923922}
   - component: {fileID: 919132147996923925}
   - component: {fileID: 919132147996923923}
+  - component: {fileID: 919132147996923926}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -19243,7 +19262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91f7a871f101a7b4db7246e0d791b5cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7f422d6
+  triggerList: 
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -19251,7 +19270,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 812ac633c916c354b8a4fb6f23c14867,
+    WwiseObjectReference: {fileID: 11400000, guid: 19b41294b80364740b2dbd34deaa8627,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -19262,7 +19281,7 @@ MonoBehaviour:
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
   MultiPositionType: 1
-  multiPositionTypeLabel: 2
+  multiPositionTypeLabel: 0
   LargeModePositions:
   - {fileID: 0}
   - {fileID: 0}

@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1728365574">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2378115011">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -285,6 +285,34 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1154788184" Name="pick_up_item_player" ObjectPath="\Events\Default Work Unit\pick_up_item_player" DurationType="OneShot" DurationMin="1.258562" DurationMax="1.258562">
+					<IncludedMemoryFiles>
+						<File Id="611716305" Language="SFX">
+							<ShortName>pick up.wav</ShortName>
+							<Path>SFX\pick up_71096DB6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3196207338" Name="Play_background" ObjectPath="\Events\Default Work Unit\Play_background" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="414953811" Language="SFX">
+							<ShortName>placeholder music.wav</ShortName>
+							<Path>SFX\placeholder music_D79FB2B7.wem</Path>
+						</File>
+						<File Id="435774179" Language="SFX">
+							<ShortName>desert wind.wav</ShortName>
+							<Path>SFX\desert wind_F72B2FD2.wem</Path>
+						</File>
+						<File Id="679506357" Language="SFX">
+							<ShortName>sandy-breeze-foley.wav</ShortName>
+							<Path>SFX\sandy-breeze-foley_4E8AC459.wem</Path>
+						</File>
+						<File Id="1003527813" Language="SFX">
+							<ShortName>Wind desert sound.wav</ShortName>
+							<Path>SFX\Wind desert sound_1A727161.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="799891356" Name="Play_birdies" ObjectPath="\Events\Default Work Unit\Play_birdies" MaxAttenuation="15.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="124450399" Language="SFX">
@@ -306,6 +334,22 @@
 						<File Id="980904400" Language="SFX">
 							<ShortName>bonfire.wav</ShortName>
 							<Path>SFX\bonfire_B0953375.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3133890889" Name="Play_oasis_water" ObjectPath="\Events\Default Work Unit\Play_oasis_water" DurationType="OneShot" DurationMin="31.866781" DurationMax="31.866781">
+					<IncludedMemoryFiles>
+						<File Id="924314933" Language="SFX">
+							<ShortName>water.wav</ShortName>
+							<Path>SFX\water_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3948925255" Name="Play_splash" ObjectPath="\Events\Default Work Unit\Play_splash" DurationType="OneShot" DurationMin="0.924812" DurationMax="0.924812">
+					<IncludedMemoryFiles>
+						<File Id="644711480" Language="SFX">
+							<ShortName>splash 2.wav</ShortName>
+							<Path>SFX\splash 2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

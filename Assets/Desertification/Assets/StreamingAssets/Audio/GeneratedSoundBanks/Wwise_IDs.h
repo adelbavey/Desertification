@@ -16,8 +16,12 @@ namespace AK
         static const AkUniqueID FOOTSTEP_PLAYER = 648916573U;
         static const AkUniqueID JUMP_PLAYER = 2584346859U;
         static const AkUniqueID LANDING_PLAYER = 29299334U;
+        static const AkUniqueID PICK_UP_ITEM_PLAYER = 1154788184U;
+        static const AkUniqueID PLAY_BACKGROUND = 3196207338U;
         static const AkUniqueID PLAY_BIRDIES = 799891356U;
         static const AkUniqueID PLAY_FIRE = 3015324718U;
+        static const AkUniqueID PLAY_OASIS_WATER = 3133890889U;
+        static const AkUniqueID PLAY_SPLASH = 3948925255U;
     } // namespace EVENTS
 
     namespace STATES

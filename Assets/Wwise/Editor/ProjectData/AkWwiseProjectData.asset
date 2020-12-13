@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e59703e19b56124bb15f19d6880c283a
     GuidInternal: 
-    m_lastTime: -8585939148592296854
+    m_lastTime: -8585937383774103617
     List:
     - name: Main
       guid: 1adb74a34af57a4db470e44edbd65ba1
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585938046792782535
+    m_lastTime: -8585937384462645299
     List:
     - name: footstep_player
       guid: 19a64f56c6adc644baf64f10264e8875
@@ -116,8 +116,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\pick_up_item_player
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.258562
+      minDuration: 1.258562
     - name: Play_background
       guid: 3132652a45717c4e8e7bb94ee8199a3e
       id: 3196207338
@@ -154,6 +154,18 @@ MonoBehaviour:
       maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
+    - name: Play_oasis_water
+      guid: cdcbfe808cd3404898f405da48971256
+      id: 3133890889
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_oasis_water
+        ObjectType: 3
+      Path: Default Work Unit\Play_oasis_water
+      maxAttenuation: 0
+      maxDuration: 31.866781
+      minDuration: 31.866781
     - name: Play_splash
       guid: e15d629d7625bc43ab9b0ac354b6702d
       id: 3948925255
@@ -164,8 +176,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Play_splash
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.924812
+      minDuration: 0.924812
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

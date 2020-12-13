@@ -2,8 +2,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	29299334	landing_player			\Default Work Unit\landing_player	
 	648916573	footstep_player			\Default Work Unit\footstep_player	
 	799891356	Play_birdies			\Default Work Unit\Play_birdies	
+	1154788184	pick_up_item_player			\Default Work Unit\pick_up_item_player	
 	2584346859	jump_player			\Default Work Unit\jump_player	
 	3015324718	Play_fire			\Default Work Unit\Play_fire	
+	3133890889	Play_oasis_water			\Default Work Unit\Play_oasis_water	
+	3196207338	Play_background			\Default Work Unit\Play_background	
+	3948925255	Play_splash			\Default Work Unit\Play_splash	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1088160865	movement_type			\Default Work Unit\movement_type	
@@ -16,6 +20,18 @@ Switch	ID	Name	Switch Group			Notes
 	803837735	Sand	Material			
 	2058049674	Wood	Material			
 	4248645337	Grass	Material			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	4091656514	GameState			\Default Work Unit\GameState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	GameState			
+	984691642	InGame	GameState			
+	3604647259	MainMenu	GameState			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	157041287	InGame	GameState	\Actor-Mixer Hierarchy\Default Work Unit\m_placeholder		
+	943748850	MainMenu	GameState	\Actor-Mixer Hierarchy\Default Work Unit\desert		
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	778930571	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\birds_tree\Silence\Wwise Silence	
@@ -37,6 +53,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	322667961	Sand step 11	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\Sand step 11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_walk_material\Sand\Sand step 11		43260
 	350086354	grass step-01	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\grass step-01_4DAACAEF.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_run_material\Grass\grass step-01		23842
 	355797022	landing_sand	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\impact_sand_ECFC115A.wem		\Actor-Mixer Hierarchy\Default Work Unit\jump_landing\landing_sand		65228
+	414953811	m_placeholder	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\placeholder music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\m_placeholder		9930064
+	435774179	desert_wind	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\desert wind_F72B2FD2.wem		\Actor-Mixer Hierarchy\Default Work Unit\desert\desert_wind		20163088
 	438517892	landing_grass	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\landing-on-grass_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\jump_landing\landing_grass		229628
 	440843160	Sand step 14	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\Sand step 14_3A638324.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_run_material\Sand\Sand step 14		12080
 	455258014	grass step-03	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\grass step-03_12B5336D.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_walk_material\Grass\grass step-03		28682
@@ -44,7 +62,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	552238236	landing_wood	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\impact-wood_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\jump_landing\landing_wood		87780
 	589286132	Sand step 9	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\Sand step 9_1332B9A8.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_run_material\Sand\Sand step 9		8384
 	598338715	Sand step 9	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\Sand step 9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_walk_material\Sand\Sand step 9		15940
+	611716305	pick up	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\pick up_71096DB6.wem		\Actor-Mixer Hierarchy\Default Work Unit\pick up		222076
+	644711480	splash	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\splash 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\splash		221632
 	678914834	Wood step 1	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\heavy-footstep_DD93BAF6.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_walk_material\Wood\Wood step 1		15884
+	679506357	desert_breeze	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\sandy-breeze-foley_4E8AC459.wem		\Actor-Mixer Hierarchy\Default Work Unit\desert\desert_breeze		974940
 	713290009	birdies_02	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\birds_761A1AFC.wem		\Actor-Mixer Hierarchy\Default Work Unit\birds_tree\birds\birdies_02		212048
 	721102396	Sand step 8	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\Sand step 8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_walk_material\Sand\Sand step 8		24062
 	756503453	grass step-04	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\grass step-04_42C1EFF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_walk_material\Grass\grass step-04		31480
@@ -55,10 +76,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	835251329	grass step-06	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\grass step-06_209C52AC.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_walk_material\Grass\grass step-06		34168
 	881410630	Sand step 11	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\Sand step 11_D246765C.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_run_material\Sand\Sand step 11		18408
 	916921858	Sand step 10	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\Sand step 10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_walk_material\Sand\Sand step 10		22952
+	924314933	oasis_water	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\water_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\oasis_water		6118484
 	971452186	grass step-03	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\grass step-03_D47378AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_run_material\Grass\grass step-03		24702
 	980904400	fire	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\bonfire_B0953375.wem		\Actor-Mixer Hierarchy\Default Work Unit\fire		12343984
 	982013661	grass step-06	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\grass step-06_BA12BFAE.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_run_material\Grass\grass step-06		21688
+	1003527813	desert soundscape	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\Wind desert sound_1A727161.wem		\Actor-Mixer Hierarchy\Default Work Unit\desert\desert soundscape		15690724
 	1007513046	Sand step 7	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\Sand step 7_943D3D74.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_run_material\Sand\Sand step 7		10096
 	1070376903	grass step-05	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\grass step-05_74AC3B29.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_walk_material\Grass\grass step-05		36322
-	1072923057	Wood step 3	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\heavy-footstep-wood-3_0468A176.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_speed\footstep_walk_material\Wood\Wood step 3		11392
+	1072923057	landing_stone	C:\Users\Nina\Desertification\Assets\StreamingAssets\Audio\Desertification_WwiseProject\.cache\Windows\SFX\heavy-footstep-wood-3_0468A176.wem		\Actor-Mixer Hierarchy\Default Work Unit\jump_landing\landing_stone		11392
 

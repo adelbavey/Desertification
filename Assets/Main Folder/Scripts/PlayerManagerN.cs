@@ -15,5 +15,11 @@ public class PlayerManagerN : Singleton<PlayerManagerN>
 
     public static MaterialChecker my_obj;
 
+    void Start()
+    {
+
+    }
+
 
 }
+

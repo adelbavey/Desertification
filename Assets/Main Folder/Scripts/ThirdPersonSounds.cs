@@ -13,7 +13,6 @@ public class ThirdPersonSounds : MonoBehaviour
     public AK.Wwise.Event FootStepEvent;
     public AK.Wwise.Event JumpLandingEvent;
 
-    //public AK.Wwise.Switch MyMateral;
 
     // Start is called before the first frame update
 
@@ -21,12 +20,13 @@ public class ThirdPersonSounds : MonoBehaviour
     {
         m_Animator = GetComponent<Animator>();
         AkSoundEngine.SetState("GameState", "InGame");
+        AkSoundEngine.PostEvent("Play_background", gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-        AkSoundEngine.SetState("GameState", "InGame");
+        
     }
 
     public void FootStepPlay(){

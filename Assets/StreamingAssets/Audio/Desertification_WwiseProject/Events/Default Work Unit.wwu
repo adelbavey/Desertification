@@ -58,6 +58,46 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="pick_up_item_player" ID="{09BD0F2E-B265-4C83-8D1B-945B1933D5D2}">
+					<ChildrenList>
+						<Action Name="" ID="{4C215C40-C141-43D7-91B1-920013BF90AB}" ShortID="792166443">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pick up" ID="{2C8C0075-EE46-4EFB-AC08-E59CB8BC766B}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_splash" ID="{9D625DE1-2576-43BC-AB9B-0AC354B6702D}">
+					<ChildrenList>
+						<Action Name="" ID="{4F284023-F99C-4772-9586-9066D3069A2F}" ShortID="198854505">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="splash" ID="{EA778A85-BF42-4489-A85B-AE4CA1AA3365}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_background" ID="{2A653231-7145-4E7C-8E7B-B94EE8199A3E}">
+					<ChildrenList>
+						<Action Name="" ID="{12CF24A0-4A84-4DB7-9B6D-D5D9F2422543}" ShortID="771211070">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="desert" ID="{42621915-F7A6-4C0B-8E78-CF5A050DA638}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{15FD98A6-BF88-4499-9F25-13F011EB4BF7}" ShortID="308220219">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="m_placeholder" ID="{DAEF2B81-6AC7-4989-AD5C-65459B8F6825}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

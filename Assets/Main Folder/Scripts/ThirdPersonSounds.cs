@@ -11,26 +11,44 @@ public class ThirdPersonSounds : MonoBehaviour
 
     private bool jump;
     public AK.Wwise.Event FootStepEvent;
-    public AK.Wwise.Switch MyMateral;
-    public AK.Wwise.Switch MyMovement;
+    public AK.Wwise.Event JumpLandingEvent;
+
+    //public AK.Wwise.Switch MyMateral;
 
     // Start is called before the first frame update
+
     void Start()
     {
         m_Animator = GetComponent<Animator>();
+        AkSoundEngine.SetState("GameState", "InGame");
     }
 
     // Update is called once per frame
+    void Update()
+    {
+        AkSoundEngine.SetState("GameState", "InGame");
+    }
 
-    void FootStepPlay(){
+    public void FootStepPlay(){
         //MySwitch.SetValue(gameObject);
         //AkSoundEngine.PostEvent("footstep_player", gameObject);
-        MyMovement.SetValue(gameObject);
-        MyMateral.SetValue(gameObject);
+        //MyMovement.SetValue(gameObject);
+
+        PlayerManagerN.my_obj.GetMaterial().SetValue(gameObject);
         FootStepEvent.Post(gameObject);
     }
 
     public void JumpPlay(){
         AkSoundEngine.PostEvent("jump_player", gameObject);
+    }
+
+    public void JumpLandingPlay()
+    {
+        //MySwitch.SetValue(gameObject);
+        //AkSoundEngine.PostEvent("footstep_player", gameObject);
+        //MyMovement.SetValue(gameObject);
+
+        //PlayerManagerN.my_obj.GetMaterial().SetValue(gameObject);
+        JumpLandingEvent.Post(gameObject);
     }
 }

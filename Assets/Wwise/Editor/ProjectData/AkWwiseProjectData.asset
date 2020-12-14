@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e59703e19b56124bb15f19d6880c283a
     GuidInternal: 
-    m_lastTime: -8585936454595966310
+    m_lastTime: -8585936216367807567
     List:
     - name: Main
       guid: 1adb74a34af57a4db470e44edbd65ba1
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585936415277306437
+    m_lastTime: -8585936216450187750
     List:
     - name: footstep_player
       guid: 19a64f56c6adc644baf64f10264e8875
@@ -178,6 +178,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.924812
       minDuration: 0.924812
+    - name: Play_whistle
+      guid: e11b22ea10454b48b01622bbbd09f619
+      id: 2693257580
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_whistle
+        ObjectType: 3
+      Path: Default Work Unit\Play_whistle
+      maxAttenuation: 15
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -205,7 +217,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c410a93ad1f60e4fb0796a23ec3cbce2
     GuidInternal: 
-    m_lastTime: -8585936460606404493
+    m_lastTime: -8585936246011079471
     List:
     - name: GameState
       guid: bd38166d79a2314cb4d6dadba0ed07bd
@@ -334,10 +346,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Game Design Course
-  - /Game Design Course/Events
-  - /Game Design Course/Events/Default Work Unit
-  - /Game Design Course/Switches
-  - /Game Design Course/Switches/Default Work Unit
-  - /Game Design Course/Switches/Default Work Unit/Material
+  - /Game Design Course/States
+  - /Game Design Course/States/Default Work Unit
+  - /Game Design Course/States/Default Work Unit/GameState
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

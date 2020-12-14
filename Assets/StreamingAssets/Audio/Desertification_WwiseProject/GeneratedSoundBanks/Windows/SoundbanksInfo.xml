@@ -11,17 +11,17 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1125639838">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3590370046">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3863294547">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3239144251">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="648916573" Name="footstep_player" ObjectPath="\Events\Default Work Unit\footstep_player" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.043458" DurationMax="0.476714">
+				<Event Id="648916573" Name="footstep_player" ObjectPath="\Events\Default Work Unit\footstep_player" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.043458" DurationMax="0.356485">
 					<IncludedMemoryFiles>
 						<File Id="7516409" Language="SFX">
 							<ShortName>grass step-04.wav</ShortName>
@@ -34,10 +34,6 @@
 						<File Id="75593324" Language="SFX">
 							<ShortName>390764__d00121058__fx-005-footstep-stone-l.wav</ShortName>
 							<Path>SFX\390764__d00121058__fx-005-footstep-stone-l_262802CD.wem</Path>
-						</File>
-						<File Id="85128389" Language="SFX">
-							<ShortName>grass step-07.wav</ShortName>
-							<Path>SFX\grass step-07_53152D31.wem</Path>
 						</File>
 						<File Id="91654120" Language="SFX">
 							<ShortName>Sand step 6.wav</ShortName>
@@ -67,25 +63,13 @@
 							<ShortName>Sand step 8.wav</ShortName>
 							<Path>SFX\Sand step 8_5E294E96.wem</Path>
 						</File>
-						<File Id="322667961" Language="SFX">
-							<ShortName>Sand step 11.wav</ShortName>
-							<Path>SFX\Sand step 11_10C4C929.wem</Path>
-						</File>
 						<File Id="350086354" Language="SFX">
 							<ShortName>grass step-01.wav</ShortName>
 							<Path>SFX\grass step-01_4DAACAEF.wem</Path>
 						</File>
-						<File Id="440843160" Language="SFX">
-							<ShortName>Sand step 14.wav</ShortName>
-							<Path>SFX\Sand step 14_3A638324.wem</Path>
-						</File>
 						<File Id="455258014" Language="SFX">
 							<ShortName>grass step-03.wav</ShortName>
 							<Path>SFX\grass step-03_12B5336D.wem</Path>
-						</File>
-						<File Id="459567128" Language="SFX">
-							<ShortName>grass step-07.wav</ShortName>
-							<Path>SFX\grass step-07_3EAD150B.wem</Path>
 						</File>
 						<File Id="589286132" Language="SFX">
 							<ShortName>Sand step 9.wav</ShortName>
@@ -119,18 +103,6 @@
 							<ShortName>heavy-wood-footstep-2.wav</ShortName>
 							<Path>SFX\heavy-wood-footstep-2_26A22007.wem</Path>
 						</File>
-						<File Id="832719322" Language="SFX">
-							<ShortName>Sand step 14.wav</ShortName>
-							<Path>SFX\Sand step 14_10C4C929.wem</Path>
-						</File>
-						<File Id="835251329" Language="SFX">
-							<ShortName>grass step-06.wav</ShortName>
-							<Path>SFX\grass step-06_209C52AC.wem</Path>
-						</File>
-						<File Id="881410630" Language="SFX">
-							<ShortName>Sand step 11.wav</ShortName>
-							<Path>SFX\Sand step 11_D246765C.wem</Path>
-						</File>
 						<File Id="916921858" Language="SFX">
 							<ShortName>Sand step 10.wav</ShortName>
 							<Path>SFX\Sand step 10_10C4C929.wem</Path>
@@ -138,10 +110,6 @@
 						<File Id="971452186" Language="SFX">
 							<ShortName>grass step-03.wav</ShortName>
 							<Path>SFX\grass step-03_D47378AF.wem</Path>
-						</File>
-						<File Id="982013661" Language="SFX">
-							<ShortName>grass step-06.wav</ShortName>
-							<Path>SFX\grass step-06_BA12BFAE.wem</Path>
 						</File>
 						<File Id="1007513046" Language="SFX">
 							<ShortName>Sand step 7.wav</ShortName>
@@ -168,8 +136,6 @@
 										<File Id="455258014"/>
 										<File Id="756503453"/>
 										<File Id="1070376903"/>
-										<File Id="835251329"/>
-										<File Id="85128389"/>
 									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{C4C4DADF-2846-4E98-B775-D539FB9E2F7D}">
@@ -179,8 +145,6 @@
 										<File Id="721102396"/>
 										<File Id="598338715"/>
 										<File Id="916921858"/>
-										<File Id="322667961"/>
-										<File Id="832719322"/>
 									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{3ED96C4B-354B-413F-B5BB-B083391C459E}">
@@ -207,8 +171,6 @@
 										<File Id="971452186"/>
 										<File Id="7516409"/>
 										<File Id="12986280"/>
-										<File Id="982013661"/>
-										<File Id="459567128"/>
 									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{C4C4DADF-2846-4E98-B775-D539FB9E2F7D}">
@@ -218,8 +180,6 @@
 										<File Id="315962130"/>
 										<File Id="589286132"/>
 										<File Id="162822346"/>
-										<File Id="881410630"/>
-										<File Id="440843160"/>
 									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{3ED96C4B-354B-413F-B5BB-B083391C459E}">
@@ -306,6 +266,10 @@
 						<File Id="237095427" Language="SFX">
 							<ShortName>Wind desert sound.wav</ShortName>
 							<Path>SFX\Wind desert sound_167D2FD9.wem</Path>
+						</File>
+						<File Id="270152795" Language="SFX">
+							<ShortName>Dune Music Ambience.wav</ShortName>
+							<Path>SFX\Dune Music Ambience_D79FB2B7.wem</Path>
 						</File>
 						<File Id="276209704" Language="SFX">
 							<ShortName>birds.wav</ShortName>
@@ -410,6 +374,14 @@
 						<File Id="644711480" Language="SFX">
 							<ShortName>splash 2.wav</ShortName>
 							<Path>SFX\splash 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2693257580" Name="Play_whistle" ObjectPath="\Events\Default Work Unit\Play_whistle" MaxAttenuation="15.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="480876926" Language="SFX">
+							<ShortName>Man_Whistling_a_Tune_Sound_Effect.wav</ShortName>
+							<Path>SFX\Man_Whistling_a_Tune_Sound_Effect_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

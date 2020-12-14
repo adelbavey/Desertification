@@ -27,13 +27,13 @@
 						<Transition>
 							<StartState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
 							<EndState Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
-							<Time>1</Time>
+							<Time>0</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
 							<StartState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
 							<EndState Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
-							<Time>1</Time>
+							<Time>0</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
@@ -51,7 +51,7 @@
 						<Transition>
 							<StartState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
 							<EndState Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
-							<Time>1</Time>
+							<Time>0</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
@@ -64,6 +64,72 @@
 							<StartState Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
 							<EndState Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
 							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
+							<EndState Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+							<EndState Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+							<EndState Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+							<EndState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+							<EndState Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+							<EndState Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+							<EndState Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+							<EndState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+							<EndState Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+							<EndState Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+							<EndState Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+							<Time>1</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 					</TransitionList>

@@ -121,6 +121,24 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{22ACC8FC-D8A5-4B79-93A8-F61BA01C7664}" ShortID="451951628">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambiance" ID="{98DAD1E9-1DA6-4C0C-BCB1-8946C8B96B1C}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_whistle" ID="{EA221BE1-4510-484B-B016-22BBBD09F619}">
+					<ChildrenList>
+						<Action Name="" ID="{6BEFC6F0-3E7A-411A-B8B2-FB54078774B1}" ShortID="659244926">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="whistle" ID="{2353CF63-DDE6-4E0A-8BA0-421843001301}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

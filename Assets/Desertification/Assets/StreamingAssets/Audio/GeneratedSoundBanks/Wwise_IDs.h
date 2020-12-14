@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID PLAY_FIRE = 3015324718U;
         static const AkUniqueID PLAY_OASIS_WATER = 3133890889U;
         static const AkUniqueID PLAY_SPLASH = 3948925255U;
+        static const AkUniqueID PLAY_WHISTLE = 2693257580U;
     } // namespace EVENTS
 
     namespace STATES

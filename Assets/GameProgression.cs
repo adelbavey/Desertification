@@ -8,16 +8,31 @@ public class GameProgression : MonoBehaviour
 
     //List of bools;
     bool reachedOasis = false;
-    bool takenOrb;
+    bool takenOrb = false;
 
     void Start()
     {
-        
+        Debug.Log("Starting GameProgression");
     }
 
     // Update is called once per frame
     void Update()
     {
         
+
+
     }
+
+
+    void OnCollisionEnter(Collision other) {
+        //Check game collisions
+        Debug.Log(other.collider.tag);
+        Debug.Log("coll");
+        
+    }
+
+    void OnTriggerEnter(Collider other) {
+        Debug.Log(other.tag);
+    }
+
 }

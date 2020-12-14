@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="70560566">
+		<SoundBank Id="1355168291" Language="SFX" Hash="19428801">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2378115011">
+		<SoundBank Id="3161908922" Language="SFX" Hash="757732327">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -30,6 +30,10 @@
 						<File Id="12986280" Language="SFX">
 							<ShortName>grass step-05.wav</ShortName>
 							<Path>SFX\grass step-05_139F0BF0.wem</Path>
+						</File>
+						<File Id="75593324" Language="SFX">
+							<ShortName>390764__d00121058__fx-005-footstep-stone-l.wav</ShortName>
+							<Path>SFX\390764__d00121058__fx-005-footstep-stone-l_262802CD.wem</Path>
 						</File>
 						<File Id="85128389" Language="SFX">
 							<ShortName>grass step-07.wav</ShortName>
@@ -188,7 +192,7 @@
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{560EF518-C63D-45E1-BA69-40E3DCC5C710}">
 									<Media>
-										<File Id="1072923057"/>
+										<File Id="75593324"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
@@ -227,7 +231,7 @@
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{560EF518-C63D-45E1-BA69-40E3DCC5C710}">
 									<Media>
-										<File Id="1072923057"/>
+										<File Id="75593324"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
@@ -293,23 +297,87 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3196207338" Name="Play_background" ObjectPath="\Events\Default Work Unit\Play_background" DurationType="Infinite">
+				<Event Id="2935433350" Name="Play_background_desert" ObjectPath="\Events\Default Work Unit\Play_background_desert" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="414953811" Language="SFX">
-							<ShortName>placeholder music.wav</ShortName>
-							<Path>SFX\placeholder music_D79FB2B7.wem</Path>
+						<File Id="237095427" Language="SFX">
+							<ShortName>Wind desert sound.wav</ShortName>
+							<Path>SFX\Wind desert sound_167D2FD9.wem</Path>
+						</File>
+						<File Id="306647823" Language="SFX">
+							<ShortName>desert wind.wav</ShortName>
+							<Path>SFX\desert wind_EBA36A8B.wem</Path>
+						</File>
+						<File Id="378424757" Language="SFX">
+							<ShortName>desert wind.wav</ShortName>
+							<Path>SFX\desert wind_A4CBD332.wem</Path>
 						</File>
 						<File Id="435774179" Language="SFX">
 							<ShortName>desert wind.wav</ShortName>
-							<Path>SFX\desert wind_F72B2FD2.wem</Path>
+							<Path>SFX\desert wind_4E6900F0.wem</Path>
+						</File>
+						<File Id="576468165" Language="SFX">
+							<ShortName>desert wind.wav</ShortName>
+							<Path>SFX\desert wind_46415EC9.wem</Path>
+						</File>
+						<File Id="606202376" Language="SFX">
+							<ShortName>Wind desert sound.wav</ShortName>
+							<Path>SFX\Wind desert sound_3B474F37.wem</Path>
 						</File>
 						<File Id="679506357" Language="SFX">
 							<ShortName>sandy-breeze-foley.wav</ShortName>
-							<Path>SFX\sandy-breeze-foley_4E8AC459.wem</Path>
+							<Path>SFX\sandy-breeze-foley_E127382F.wem</Path>
+						</File>
+						<File Id="705391774" Language="SFX">
+							<ShortName>Wind desert sound.wav</ShortName>
+							<Path>SFX\Wind desert sound_AC363F81.wem</Path>
+						</File>
+						<File Id="863049435" Language="SFX">
+							<ShortName>Music background.wav</ShortName>
+							<Path>SFX\Music background_BCAC05B7.wem</Path>
+						</File>
+						<File Id="887569782" Language="SFX">
+							<ShortName>Wind desert sound.wav</ShortName>
+							<Path>SFX\Wind desert sound_0210522E.wem</Path>
 						</File>
 						<File Id="1003527813" Language="SFX">
 							<ShortName>Wind desert sound.wav</ShortName>
-							<Path>SFX\Wind desert sound_1A727161.wem</Path>
+							<Path>SFX\Wind desert sound_72AAFFD8.wem</Path>
+						</File>
+						<File Id="1025362906" Language="SFX">
+							<ShortName>desert wind.wav</ShortName>
+							<Path>SFX\desert wind_3BFD8599.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1898229210" Name="Play_background_forest" ObjectPath="\Events\Default Work Unit\Play_background_forest" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="124450399" Language="SFX">
+							<ShortName>birds.wav</ShortName>
+							<Path>SFX\birds_6F3652D3.wem</Path>
+						</File>
+						<File Id="276209704" Language="SFX">
+							<ShortName>birds.wav</ShortName>
+							<Path>SFX\birds_FFC92054.wem</Path>
+						</File>
+						<File Id="571308682" Language="SFX">
+							<ShortName>magpie-wingsflapping.wav</ShortName>
+							<Path>SFX\magpie-wingsflapping_1B1648CA.wem</Path>
+						</File>
+						<File Id="713290009" Language="SFX">
+							<ShortName>birds.wav</ShortName>
+							<Path>SFX\birds_761A1AFC.wem</Path>
+						</File>
+						<File Id="760415023" Language="SFX">
+							<ShortName>494745__mzimny__squirrel-chirping.wav</ShortName>
+							<Path>SFX\494745__mzimny__squirrel-chirping_28D00B93.wem</Path>
+						</File>
+						<File Id="863049435" Language="SFX">
+							<ShortName>Music background.wav</ShortName>
+							<Path>SFX\Music background_BCAC05B7.wem</Path>
+						</File>
+						<File Id="954930613" Language="SFX">
+							<ShortName>forest_breeze.wav</ShortName>
+							<Path>SFX\forest_breeze_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -353,7 +421,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2290624395" Name="Stop_desert_back" ObjectPath="\Events\Default Work Unit\Stop_desert_back" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="519513603" Name="Stop_forest_back" ObjectPath="\Events\Default Work Unit\Stop_forest_back" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="2163227897" Name="windiness" ObjectPath="\Game Parameters\Default Work Unit\windiness"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="1088160865" Name="movement_type" ObjectPath="\Switches\Default Work Unit\movement_type">
 					<Switches>

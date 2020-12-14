@@ -4606,40 +4606,6 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
-						<Sound Name="oasis_water" ID="{A3BD7739-3132-4BDF-B4B3-212876B9825D}" ShortID="152334004">
-							<PropertyList>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>25</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="water" ID="{2BE64DBA-C4EF-4BB3-AB6B-D59B23CBDC7E}">
-									<Language>SFX</Language>
-									<AudioFile>water.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="924314933"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="water" ID="{2BE64DBA-C4EF-4BB3-AB6B-D59B23CBDC7E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="splash" ID="{EA778A85-BF42-4489-A85B-AE4CA1AA3365}" ShortID="1053288142">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
@@ -4730,6 +4696,41 @@
 					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="Music background" ID="{2B19C5C8-472D-4A2F-AAB8-8C5E22F69D57}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="oasis_water" ID="{A3BD7739-3132-4BDF-B4B3-212876B9825D}" ShortID="152334004">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>25</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="water" ID="{2BE64DBA-C4EF-4BB3-AB6B-D59B23CBDC7E}">
+							<Language>SFX</Language>
+							<AudioFile>water.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="924314933"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="water" ID="{2BE64DBA-C4EF-4BB3-AB6B-D59B23CBDC7E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e59703e19b56124bb15f19d6880c283a
     GuidInternal: 
-    m_lastTime: -8585937383774103617
+    m_lastTime: -8585937291297595999
     List:
     - name: Main
       guid: 1adb74a34af57a4db470e44edbd65ba1
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585937384462645299
+    m_lastTime: -8585937290194585472
     List:
     - name: footstep_player
       guid: 19a64f56c6adc644baf64f10264e8875
@@ -118,15 +118,27 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.258562
       minDuration: 1.258562
-    - name: Play_background
+    - name: Play_background_desert
       guid: 3132652a45717c4e8e7bb94ee8199a3e
-      id: 3196207338
+      id: 2935433350
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_background
+      - ElementName: Play_background_desert
         ObjectType: 3
-      Path: Default Work Unit\Play_background
+      Path: Default Work Unit\Play_background_desert
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_background_forest
+      guid: 4511e7395597324889346d8bc6bd2d62
+      id: 1898229210
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_background_forest
+        ObjectType: 3
+      Path: Default Work Unit\Play_background_forest
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -178,6 +190,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.924812
       minDuration: 0.924812
+    - name: Stop_desert_back
+      guid: 2c87113f9b886341b7561ce1d08379a9
+      id: 2290624395
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_desert_back
+        ObjectType: 3
+      Path: Default Work Unit\Stop_desert_back
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_forest_back
+      guid: b1039b617acf714c8dafd2ec24a0e2a0
+      id: 519513603
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_forest_back
+        ObjectType: 3
+      Path: Default Work Unit\Stop_forest_back
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -186,8 +222,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 906731d1342ad248a80d33eccced963d
     GuidInternal: 
-    m_lastTime: -8585939148596191608
-    List: []
+    m_lastTime: -8585937315964052675
+    List:
+    - name: windiness
+      guid: 79f8036d3c029d418141aaddd0cd0ffc
+      id: 2163227897
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: windiness
+        ObjectType: 13
+      Path: Default Work Unit\windiness
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:

@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585938046792782535
+    m_lastTime: -8585937398894254844
     List:
     - name: footstep_player
       guid: 19a64f56c6adc644baf64f10264e8875
@@ -79,9 +79,9 @@ MonoBehaviour:
       - ElementName: footstep_player
         ObjectType: 3
       Path: Default Work Unit\footstep_player
-      maxAttenuation: 15
-      maxDuration: 0.476714
-      minDuration: 0.043458
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: jump_player
       guid: 92ec2ae4a856e043b47fef69cc15449b
       id: 2584346859
@@ -92,8 +92,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\jump_player
       maxAttenuation: 0
-      maxDuration: 0.212817
-      minDuration: 0.178544
+      maxDuration: -1
+      minDuration: -1
     - name: landing_player
       guid: e5ee7e3bd788124b8110161e7d81a603
       id: 29299334
@@ -104,8 +104,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\landing_player
       maxAttenuation: 0
-      maxDuration: 1.288885
-      minDuration: 0.064213
+      maxDuration: -1
+      minDuration: -1
     - name: pick_up_item_player
       guid: 2e0fbd0965b2834c8d1b945b1933d5d2
       id: 1154788184
@@ -139,7 +139,7 @@ MonoBehaviour:
       - ElementName: Play_birdies
         ObjectType: 3
       Path: Default Work Unit\Play_birdies
-      maxAttenuation: 15
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Play_fire
@@ -151,7 +151,7 @@ MonoBehaviour:
       - ElementName: Play_fire
         ObjectType: 3
       Path: Default Work Unit\Play_fire
-      maxAttenuation: 15
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Play_splash
@@ -184,7 +184,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c410a93ad1f60e4fb0796a23ec3cbce2
     GuidInternal: 
-    m_lastTime: -8585938000042288072
+    m_lastTime: -8585937398887318688
     List:
     - name: GameState
       guid: bd38166d79a2314cb4d6dadba0ed07bd

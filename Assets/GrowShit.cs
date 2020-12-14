@@ -17,9 +17,13 @@ public class GrowShit : MonoBehaviour
     void Update()
     {
         Vector3 temp = transform.localScale;
-        temp.x += growSize;
-        temp.y += growSize;
-        temp.z += growSize;
-        transform.localScale = temp; 
+
+        if(temp.x < 200){
+            temp.x += growSize;
+            temp.y += growSize/10;
+            temp.z += growSize;
+            transform.localScale = temp; 
+        }
+        
     }
 }

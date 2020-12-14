@@ -80,19 +80,62 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_background" ID="{2A653231-7145-4E7C-8E7B-B94EE8199A3E}">
+				<Event Name="Play_oasis_water" ID="{80FECBCD-D38C-4840-98F4-05DA48971256}">
 					<ChildrenList>
-						<Action Name="" ID="{12CF24A0-4A84-4DB7-9B6D-D5D9F2422543}" ShortID="771211070">
+						<Action Name="" ID="{9B003915-1F75-44B1-B6D2-8B2EC93F06DB}" ShortID="295217123">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="desert" ID="{42621915-F7A6-4C0B-8E78-CF5A050DA638}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+									<ObjectRef Name="oasis_water" ID="{A3BD7739-3132-4BDF-B4B3-212876B9825D}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{15FD98A6-BF88-4499-9F25-13F011EB4BF7}" ShortID="308220219">
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_background" ID="{39E71145-9755-4832-8934-6D8BC6BD2D62}">
+					<ChildrenList>
+						<Action Name="" ID="{07966C27-D294-4943-8044-B7E1E9C6B174}" ShortID="658129530">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="m_placeholder" ID="{DAEF2B81-6AC7-4989-AD5C-65459B8F6825}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+									<ObjectRef Name="forset sounds mixed" ID="{8F1A2BF2-E442-4642-8918-EDBA201A25FD}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{786687AD-E420-46A1-9700-40F8F3F198AC}" ShortID="511571606">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="music" ID="{DAEF2B81-6AC7-4989-AD5C-65459B8F6825}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{76982607-DEED-45D0-9FD9-A9F9E0B55A6F}" ShortID="804516355">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="forset breeze" ID="{43FE6EA3-441F-41F9-993D-6CE682C09DC9}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{383C4FFE-85F4-4B75-8C85-7AC2067DB32B}" ShortID="518988951">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="desert_background" ID="{C842BE64-42D4-4F8A-9108-A6733C900AC0}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{22ACC8FC-D8A5-4B79-93A8-F61BA01C7664}" ShortID="451951628">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambiance" ID="{98DAD1E9-1DA6-4C0C-BCB1-8946C8B96B1C}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_whistle" ID="{EA221BE1-4510-484B-B016-22BBBD09F619}">
+					<ChildrenList>
+						<Action Name="" ID="{6BEFC6F0-3E7A-411A-B8B2-FB54078774B1}" ShortID="659244926">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="whistle" ID="{2353CF63-DDE6-4E0A-8BA0-421843001301}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

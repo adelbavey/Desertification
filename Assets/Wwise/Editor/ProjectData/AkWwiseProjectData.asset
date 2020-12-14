@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e59703e19b56124bb15f19d6880c283a
     GuidInternal: 
-    m_lastTime: -8585939148592296854
+    m_lastTime: -8585936216367807567
     List:
     - name: Main
       guid: 1adb74a34af57a4db470e44edbd65ba1
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585937398894254844
+    m_lastTime: -8585936216450187750
     List:
     - name: footstep_player
       guid: 19a64f56c6adc644baf64f10264e8875
@@ -79,9 +79,9 @@ MonoBehaviour:
       - ElementName: footstep_player
         ObjectType: 3
       Path: Default Work Unit\footstep_player
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 15
+      maxDuration: 0.476714
+      minDuration: 0.043458
     - name: jump_player
       guid: 92ec2ae4a856e043b47fef69cc15449b
       id: 2584346859
@@ -92,8 +92,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\jump_player
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.212817
+      minDuration: 0.178544
     - name: landing_player
       guid: e5ee7e3bd788124b8110161e7d81a603
       id: 29299334
@@ -104,8 +104,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\landing_player
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.288885
+      minDuration: 0.064213
     - name: pick_up_item_player
       guid: 2e0fbd0965b2834c8d1b945b1933d5d2
       id: 1154788184
@@ -116,10 +116,10 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\pick_up_item_player
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.258562
+      minDuration: 1.258562
     - name: Play_background
-      guid: 3132652a45717c4e8e7bb94ee8199a3e
+      guid: 4511e7395597324889346d8bc6bd2d62
       id: 3196207338
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -139,7 +139,7 @@ MonoBehaviour:
       - ElementName: Play_birdies
         ObjectType: 3
       Path: Default Work Unit\Play_birdies
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: Play_fire
@@ -151,7 +151,19 @@ MonoBehaviour:
       - ElementName: Play_fire
         ObjectType: 3
       Path: Default Work Unit\Play_fire
-      maxAttenuation: 0
+      maxAttenuation: 15
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_oasis_water
+      guid: cdcbfe808cd3404898f405da48971256
+      id: 3133890889
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_oasis_water
+        ObjectType: 3
+      Path: Default Work Unit\Play_oasis_water
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: Play_splash
@@ -164,6 +176,18 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Play_splash
       maxAttenuation: 0
+      maxDuration: 0.924812
+      minDuration: 0.924812
+    - name: Play_whistle
+      guid: e11b22ea10454b48b01622bbbd09f619
+      id: 2693257580
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_whistle
+        ObjectType: 3
+      Path: Default Work Unit\Play_whistle
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
@@ -174,8 +198,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 906731d1342ad248a80d33eccced963d
     GuidInternal: 
-    m_lastTime: -8585939148596191608
-    List: []
+    m_lastTime: -8585937315964052675
+    List:
+    - name: windiness
+      guid: 79f8036d3c029d418141aaddd0cd0ffc
+      id: 2163227897
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: windiness
+        ObjectType: 13
+      Path: Default Work Unit\windiness
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -184,7 +217,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c410a93ad1f60e4fb0796a23ec3cbce2
     GuidInternal: 
-    m_lastTime: -8585937398887318688
+    m_lastTime: -8585936246011079471
     List:
     - name: GameState
       guid: bd38166d79a2314cb4d6dadba0ed07bd
@@ -196,17 +229,29 @@ MonoBehaviour:
         ObjectType: 9
       Path: Default Work Unit\GameState
       values:
-      - name: InGame
-        guid: d84e74e86201a0489041d7db16d47e72
-        id: 984691642
-        PathAndIcons:
-        - ElementName: InGame
-          ObjectType: 8
-      - name: MainMenu
+      - name: DesertMenu
         guid: 6f46fa4704206a4b979590a09b390360
-        id: 3604647259
+        id: 1129748651
         PathAndIcons:
-        - ElementName: MainMenu
+        - ElementName: DesertMenu
+          ObjectType: 8
+      - name: ForestMenu
+        guid: 5e3017125ee47648ac805d8fd0fecfe1
+        id: 728498735
+        PathAndIcons:
+        - ElementName: ForestMenu
+          ObjectType: 8
+      - name: InDesert
+        guid: df8470d15e082d4bb239a119927c4f0e
+        id: 435360103
+        PathAndIcons:
+        - ElementName: InDesert
+          ObjectType: 8
+      - name: InForest
+        guid: d84e74e86201a0489041d7db16d47e72
+        id: 2843936351
+        PathAndIcons:
+        - ElementName: InForest
           ObjectType: 8
       - name: None
         guid: abb8309157869c43a715a80c1f80d57e
@@ -301,11 +346,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Game Design Course
-  - /Game Design Course/Events
-  - /Game Design Course/Events/Default Work Unit
-  - /Game Design Course/Switches
-  - /Game Design Course/Switches/Default Work Unit
-  - /Game Design Course/Switches/Default Work Unit/Material
-  - /Game Design Course/Switches/Default Work Unit/movement_type
+  - /Game Design Course/States
+  - /Game Design Course/States/Default Work Unit
+  - /Game Design Course/States/Default Work Unit/GameState
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

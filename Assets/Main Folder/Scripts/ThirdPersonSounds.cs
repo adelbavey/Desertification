@@ -7,32 +7,24 @@ public class ThirdPersonSounds : MonoBehaviour
 
     Animator m_Animator;
 
-    //public AK.Wwise.Switch MySwtich;
 
     private bool jump;
     public AK.Wwise.Event FootStepEvent;
-    public AK.Wwise.Event JumpLandingEvent;
 
-    //public AK.Wwise.Switch MyMateral;
-
-    // Start is called before the first frame update
 
     void Start()
     {
         m_Animator = GetComponent<Animator>();
-        AkSoundEngine.SetState("GameState", "InGame");
+
+        // HELLO HELLO, these three lines should be in another script, the one that runs to main menu, so that we get windy sounds from the start
+        float wind_value = 60;
+        AkSoundEngine.SetState("GameState", "InForest");
+        AkSoundEngine.PostEvent("Play_background", gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        AkSoundEngine.SetState("GameState", "InGame");
-    }
 
     public void FootStepPlay(){
-        //MySwitch.SetValue(gameObject);
-        //AkSoundEngine.PostEvent("footstep_player", gameObject);
-        //MyMovement.SetValue(gameObject);
+        //MyMovement.SetValue(gameObject); fix movement with if loop
 
         PlayerManagerN.my_obj.GetMaterial().SetValue(gameObject);
         FootStepEvent.Post(gameObject);
@@ -43,12 +35,7 @@ public class ThirdPersonSounds : MonoBehaviour
     }
 
     public void JumpLandingPlay()
-    {
-        //MySwitch.SetValue(gameObject);
-        //AkSoundEngine.PostEvent("footstep_player", gameObject);
-        //MyMovement.SetValue(gameObject);
-
-        //PlayerManagerN.my_obj.GetMaterial().SetValue(gameObject);
-        JumpLandingEvent.Post(gameObject);
+    { 
+        AkSoundEngine.PostEvent("landing_player", gameObject);
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8974961318864605767}
   - component: {fileID: 5414079169799970274}
   - component: {fileID: 7838052360387832104}
+  - component: {fileID: 4078030406370670700}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -81,3 +82,28 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4078030406370670700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8630769801984968957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6167d22d236a7d4ba307e1aae617b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f749dfb100b18e14d953d445b71f3bec,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 

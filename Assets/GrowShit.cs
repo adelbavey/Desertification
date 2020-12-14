@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GrowShit : MonoBehaviour
 {
+    public float growSize = 0.05f;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +17,9 @@ public class GrowShit : MonoBehaviour
     void Update()
     {
         Vector3 temp = transform.localScale;
-        temp.x += 0.05f;
-        temp.y += 0.05f;
-        temp.z += 0.05f;
+        temp.x += growSize;
+        temp.y += growSize;
+        temp.z += growSize;
         transform.localScale = temp; 
     }
 }

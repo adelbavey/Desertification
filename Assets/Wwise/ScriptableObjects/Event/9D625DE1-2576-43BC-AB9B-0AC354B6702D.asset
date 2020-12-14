@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3e65ee23dffbf5409170e6802ebbd9d, type: 3}
-  m_Name: 2A653231-7145-4E7C-8E7B-B94EE8199A3E
+  m_Name: 9D625DE1-2576-43BC-AB9B-0AC354B6702D
   m_EditorClassIdentifier: 
-  objectName: Play_background_desert
-  id: 2935433350
-  guid: 2A653231-7145-4E7C-8E7B-B94EE8199A3E
+  objectName: Play_splash
+  id: 3948925255
+  guid: 9D625DE1-2576-43BC-AB9B-0AC354B6702D

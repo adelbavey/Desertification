@@ -17,14 +17,11 @@ namespace AK
         static const AkUniqueID JUMP_PLAYER = 2584346859U;
         static const AkUniqueID LANDING_PLAYER = 29299334U;
         static const AkUniqueID PICK_UP_ITEM_PLAYER = 1154788184U;
-        static const AkUniqueID PLAY_BACKGROUND_DESERT = 2935433350U;
-        static const AkUniqueID PLAY_BACKGROUND_FOREST = 1898229210U;
+        static const AkUniqueID PLAY_BACKGROUND = 3196207338U;
         static const AkUniqueID PLAY_BIRDIES = 799891356U;
         static const AkUniqueID PLAY_FIRE = 3015324718U;
         static const AkUniqueID PLAY_OASIS_WATER = 3133890889U;
         static const AkUniqueID PLAY_SPLASH = 3948925255U;
-        static const AkUniqueID STOP_DESERT_BACK = 2290624395U;
-        static const AkUniqueID STOP_FOREST_BACK = 519513603U;
     } // namespace EVENTS
 
     namespace STATES
@@ -35,8 +32,10 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID INGAME = 984691642U;
-                static const AkUniqueID MAINMENU = 3604647259U;
+                static const AkUniqueID DESERTMENU = 1129748651U;
+                static const AkUniqueID FORESTMENU = 728498735U;
+                static const AkUniqueID INDESERT = 435360103U;
+                static const AkUniqueID INFOREST = 2843936351U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace GAMESTATE

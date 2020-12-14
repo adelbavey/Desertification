@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e59703e19b56124bb15f19d6880c283a
     GuidInternal: 
-    m_lastTime: -8585937291297595999
+    m_lastTime: -8585936454595966310
     List:
     - name: Main
       guid: 1adb74a34af57a4db470e44edbd65ba1
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 13bf86ab677d0340aff56230e1ef133a
     GuidInternal: 
-    m_lastTime: -8585937290194585472
+    m_lastTime: -8585936415277306437
     List:
     - name: footstep_player
       guid: 19a64f56c6adc644baf64f10264e8875
@@ -118,27 +118,15 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.258562
       minDuration: 1.258562
-    - name: Play_background_desert
-      guid: 3132652a45717c4e8e7bb94ee8199a3e
-      id: 2935433350
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_background_desert
-        ObjectType: 3
-      Path: Default Work Unit\Play_background_desert
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_background_forest
+    - name: Play_background
       guid: 4511e7395597324889346d8bc6bd2d62
-      id: 1898229210
+      id: 3196207338
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_background_forest
+      - ElementName: Play_background
         ObjectType: 3
-      Path: Default Work Unit\Play_background_forest
+      Path: Default Work Unit\Play_background
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -175,9 +163,9 @@ MonoBehaviour:
       - ElementName: Play_oasis_water
         ObjectType: 3
       Path: Default Work Unit\Play_oasis_water
-      maxAttenuation: 0
-      maxDuration: 31.866781
-      minDuration: 31.866781
+      maxAttenuation: 30
+      maxDuration: -1
+      minDuration: -1
     - name: Play_splash
       guid: e15d629d7625bc43ab9b0ac354b6702d
       id: 3948925255
@@ -190,30 +178,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.924812
       minDuration: 0.924812
-    - name: Stop_desert_back
-      guid: 2c87113f9b886341b7561ce1d08379a9
-      id: 2290624395
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Stop_desert_back
-        ObjectType: 3
-      Path: Default Work Unit\Stop_desert_back
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Stop_forest_back
-      guid: b1039b617acf714c8dafd2ec24a0e2a0
-      id: 519513603
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Stop_forest_back
-        ObjectType: 3
-      Path: Default Work Unit\Stop_forest_back
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -241,7 +205,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c410a93ad1f60e4fb0796a23ec3cbce2
     GuidInternal: 
-    m_lastTime: -8585938000042288072
+    m_lastTime: -8585936460606404493
     List:
     - name: GameState
       guid: bd38166d79a2314cb4d6dadba0ed07bd
@@ -253,17 +217,29 @@ MonoBehaviour:
         ObjectType: 9
       Path: Default Work Unit\GameState
       values:
-      - name: InGame
-        guid: d84e74e86201a0489041d7db16d47e72
-        id: 984691642
-        PathAndIcons:
-        - ElementName: InGame
-          ObjectType: 8
-      - name: MainMenu
+      - name: DesertMenu
         guid: 6f46fa4704206a4b979590a09b390360
-        id: 3604647259
+        id: 1129748651
         PathAndIcons:
-        - ElementName: MainMenu
+        - ElementName: DesertMenu
+          ObjectType: 8
+      - name: ForestMenu
+        guid: 5e3017125ee47648ac805d8fd0fecfe1
+        id: 728498735
+        PathAndIcons:
+        - ElementName: ForestMenu
+          ObjectType: 8
+      - name: InDesert
+        guid: df8470d15e082d4bb239a119927c4f0e
+        id: 435360103
+        PathAndIcons:
+        - ElementName: InDesert
+          ObjectType: 8
+      - name: InForest
+        guid: d84e74e86201a0489041d7db16d47e72
+        id: 2843936351
+        PathAndIcons:
+        - ElementName: InForest
           ObjectType: 8
       - name: None
         guid: abb8309157869c43a715a80c1f80d57e
@@ -363,6 +339,5 @@ MonoBehaviour:
   - /Game Design Course/Switches
   - /Game Design Course/Switches/Default Work Unit
   - /Game Design Course/Switches/Default Work Unit/Material
-  - /Game Design Course/Switches/Default Work Unit/movement_type
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

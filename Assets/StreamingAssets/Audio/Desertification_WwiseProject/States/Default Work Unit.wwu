@@ -6,44 +6,64 @@
 				<StateGroup Name="GameState" ID="{6D1638BD-A279-4C31-B4D6-DADBA0ED07BD}">
 					<ChildrenList>
 						<State Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
-						<State Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
-						<State Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+						<State Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+						<State Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+						<State Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+						<State Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
-							<StartState Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
-							<EndState Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+							<StartState Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+							<EndState Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
 							<Time>2.5</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
-							<StartState Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
-							<EndState Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+							<StartState Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+							<EndState Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
 							<Time>1</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
 							<StartState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
-							<EndState Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+							<EndState Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
 							<Time>1</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
 							<StartState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
-							<EndState Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+							<EndState Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
 							<Time>1</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
-							<StartState Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+							<StartState Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
 							<EndState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
 							<Time>1</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
-							<StartState Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+							<StartState Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
 							<EndState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
 							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{9130B8AB-8657-439C-A715-A80C1F80D57E}"/>
+							<EndState Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+							<EndState Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+							<EndState Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+							<Time>2.5</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 					</TransitionList>

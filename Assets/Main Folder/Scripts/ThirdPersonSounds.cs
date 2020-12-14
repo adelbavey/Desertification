@@ -11,7 +11,6 @@ public class ThirdPersonSounds : MonoBehaviour
 
     private bool jump;
     public AK.Wwise.Event FootStepEvent;
-    public AK.Wwise.Event JumpLandingEvent;
 
     //public AK.Wwise.Switch MyMateral;
 
@@ -20,15 +19,14 @@ public class ThirdPersonSounds : MonoBehaviour
     void Start()
     {
         m_Animator = GetComponent<Animator>();
-        float windRTPC = 30;
-        AkSoundEngine.SetState("GameState", "InGame");
-        AkSoundEngine.SetRTPCValue("windiness", windRTPC);
-        AkSoundEngine.PostEvent("Play_background_desert", gameObject);
+        AkSoundEngine.SetState("GameState", "InForest");
+        AkSoundEngine.PostEvent("Play_background", gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
+
     }
 
     public void FootStepPlay(){
@@ -51,6 +49,6 @@ public class ThirdPersonSounds : MonoBehaviour
         //MyMovement.SetValue(gameObject);
 
         //PlayerManagerN.my_obj.GetMaterial().SetValue(gameObject);
-        JumpLandingEvent.Post(gameObject);
+        AkSoundEngine.PostEvent("landing_player", gameObject);
     }
 }

@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="19428801">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1125639838">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="757732327">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3863294547">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -297,11 +297,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2935433350" Name="Play_background_desert" ObjectPath="\Events\Default Work Unit\Play_background_desert" DurationType="Infinite">
+				<Event Id="3196207338" Name="Play_background" ObjectPath="\Events\Default Work Unit\Play_background" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="124450399" Language="SFX">
+							<ShortName>birds.wav</ShortName>
+							<Path>SFX\birds_6F3652D3.wem</Path>
+						</File>
 						<File Id="237095427" Language="SFX">
 							<ShortName>Wind desert sound.wav</ShortName>
 							<Path>SFX\Wind desert sound_167D2FD9.wem</Path>
+						</File>
+						<File Id="276209704" Language="SFX">
+							<ShortName>birds.wav</ShortName>
+							<Path>SFX\birds_FFC92054.wem</Path>
 						</File>
 						<File Id="306647823" Language="SFX">
 							<ShortName>desert wind.wav</ShortName>
@@ -314,6 +322,10 @@
 						<File Id="435774179" Language="SFX">
 							<ShortName>desert wind.wav</ShortName>
 							<Path>SFX\desert wind_4E6900F0.wem</Path>
+						</File>
+						<File Id="571308682" Language="SFX">
+							<ShortName>magpie-wingsflapping.wav</ShortName>
+							<Path>SFX\magpie-wingsflapping_FB9F94D1.wem</Path>
 						</File>
 						<File Id="576468165" Language="SFX">
 							<ShortName>desert wind.wav</ShortName>
@@ -331,6 +343,14 @@
 							<ShortName>Wind desert sound.wav</ShortName>
 							<Path>SFX\Wind desert sound_AC363F81.wem</Path>
 						</File>
+						<File Id="713290009" Language="SFX">
+							<ShortName>birds.wav</ShortName>
+							<Path>SFX\birds_761A1AFC.wem</Path>
+						</File>
+						<File Id="760415023" Language="SFX">
+							<ShortName>494745__mzimny__squirrel-chirping.wav</ShortName>
+							<Path>SFX\494745__mzimny__squirrel-chirping_FB75AD2D.wem</Path>
+						</File>
 						<File Id="863049435" Language="SFX">
 							<ShortName>Music background.wav</ShortName>
 							<Path>SFX\Music background_BCAC05B7.wem</Path>
@@ -339,6 +359,10 @@
 							<ShortName>Wind desert sound.wav</ShortName>
 							<Path>SFX\Wind desert sound_0210522E.wem</Path>
 						</File>
+						<File Id="954930613" Language="SFX">
+							<ShortName>forest_breeze.wav</ShortName>
+							<Path>SFX\forest_breeze_D79FB2B7.wem</Path>
+						</File>
 						<File Id="1003527813" Language="SFX">
 							<ShortName>Wind desert sound.wav</ShortName>
 							<Path>SFX\Wind desert sound_72AAFFD8.wem</Path>
@@ -346,38 +370,6 @@
 						<File Id="1025362906" Language="SFX">
 							<ShortName>desert wind.wav</ShortName>
 							<Path>SFX\desert wind_3BFD8599.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1898229210" Name="Play_background_forest" ObjectPath="\Events\Default Work Unit\Play_background_forest" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="124450399" Language="SFX">
-							<ShortName>birds.wav</ShortName>
-							<Path>SFX\birds_6F3652D3.wem</Path>
-						</File>
-						<File Id="276209704" Language="SFX">
-							<ShortName>birds.wav</ShortName>
-							<Path>SFX\birds_FFC92054.wem</Path>
-						</File>
-						<File Id="571308682" Language="SFX">
-							<ShortName>magpie-wingsflapping.wav</ShortName>
-							<Path>SFX\magpie-wingsflapping_1B1648CA.wem</Path>
-						</File>
-						<File Id="713290009" Language="SFX">
-							<ShortName>birds.wav</ShortName>
-							<Path>SFX\birds_761A1AFC.wem</Path>
-						</File>
-						<File Id="760415023" Language="SFX">
-							<ShortName>494745__mzimny__squirrel-chirping.wav</ShortName>
-							<Path>SFX\494745__mzimny__squirrel-chirping_28D00B93.wem</Path>
-						</File>
-						<File Id="863049435" Language="SFX">
-							<ShortName>Music background.wav</ShortName>
-							<Path>SFX\Music background_BCAC05B7.wem</Path>
-						</File>
-						<File Id="954930613" Language="SFX">
-							<ShortName>forest_breeze.wav</ShortName>
-							<Path>SFX\forest_breeze_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -405,11 +397,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3133890889" Name="Play_oasis_water" ObjectPath="\Events\Default Work Unit\Play_oasis_water" DurationType="OneShot" DurationMin="31.866781" DurationMax="31.866781">
+				<Event Id="3133890889" Name="Play_oasis_water" ObjectPath="\Events\Default Work Unit\Play_oasis_water" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="924314933" Language="SFX">
 							<ShortName>water.wav</ShortName>
-							<Path>SFX\water_10C4C929.wem</Path>
+							<Path>SFX\water_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -421,8 +413,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2290624395" Name="Stop_desert_back" ObjectPath="\Events\Default Work Unit\Stop_desert_back" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="519513603" Name="Stop_forest_back" ObjectPath="\Events\Default Work Unit\Stop_forest_back" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="2163227897" Name="windiness" ObjectPath="\Game Parameters\Default Work Unit\windiness"/>

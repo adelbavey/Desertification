@@ -80,24 +80,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_background_desert" ID="{2A653231-7145-4E7C-8E7B-B94EE8199A3E}">
-					<ChildrenList>
-						<Action Name="" ID="{12CF24A0-4A84-4DB7-9B6D-D5D9F2422543}" ShortID="771211070">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="desert_background" ID="{C842BE64-42D4-4F8A-9108-A6733C900AC0}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{15FD98A6-BF88-4499-9F25-13F011EB4BF7}" ShortID="308220219">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="music" ID="{DAEF2B81-6AC7-4989-AD5C-65459B8F6825}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_oasis_water" ID="{80FECBCD-D38C-4840-98F4-05DA48971256}">
 					<ChildrenList>
 						<Action Name="" ID="{9B003915-1F75-44B1-B6D2-8B2EC93F06DB}" ShortID="295217123">
@@ -109,7 +91,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_background_forest" ID="{39E71145-9755-4832-8934-6D8BC6BD2D62}">
+				<Event Name="Play_background" ID="{39E71145-9755-4832-8934-6D8BC6BD2D62}">
 					<ChildrenList>
 						<Action Name="" ID="{07966C27-D294-4943-8044-B7E1E9C6B174}" ShortID="658129530">
 							<ReferenceList>
@@ -132,61 +114,10 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_forest_back" ID="{619B03B1-CF7A-4C71-8DAF-D2EC24A0E2A0}">
-					<ChildrenList>
-						<Action Name="" ID="{3FD3D77A-FCCA-4476-B020-1BC4A9005741}" ShortID="373636580">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="music" ID="{DAEF2B81-6AC7-4989-AD5C-65459B8F6825}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{646E8E8D-C706-4F2D-B912-6BE13DEAAC94}" ShortID="447330741">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="forset sounds mixed" ID="{8F1A2BF2-E442-4642-8918-EDBA201A25FD}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{5ACEAD3A-EF53-4A26-8990-31D90F8AB239}" ShortID="1065293040">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="forset breeze" ID="{43FE6EA3-441F-41F9-993D-6CE682C09DC9}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_desert_back" ID="{3F11872C-889B-4163-B756-1CE1D08379A9}">
-					<ChildrenList>
-						<Action Name="" ID="{2D54702B-C750-4AF7-82C8-C4E546A2F297}" ShortID="13463032">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
+						<Action Name="" ID="{383C4FFE-85F4-4B75-8C85-7AC2067DB32B}" ShortID="518988951">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="desert_background" ID="{C842BE64-42D4-4F8A-9108-A6733C900AC0}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{C11B0780-5A63-4C74-BB4D-0D4D50754668}" ShortID="84779629">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="music" ID="{DAEF2B81-6AC7-4989-AD5C-65459B8F6825}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

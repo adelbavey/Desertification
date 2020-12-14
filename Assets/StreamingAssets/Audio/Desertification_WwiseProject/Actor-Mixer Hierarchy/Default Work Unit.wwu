@@ -112,7 +112,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>12</Value>
+														<Value>6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -951,7 +951,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>12</Value>
+														<Value>6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2394,6 +2394,18 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="magpie" ID="{3A332414-599A-4D0A-AA58-A90FF0A1105E}" ShortID="1047490408">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>31</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
@@ -2405,6 +2417,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="magpie-wingsflapping" ID="{C4B97085-3182-488B-9E9C-4A19C12D9EA9}">
 													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.2822830273662"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="1.63909417419936"/>
 														<Property Name="TrimEnd" Type="Real64" Value="5.99617995371664"/>
@@ -2578,6 +2591,11 @@
 										</Sound>
 										<Sound Name="ekorre" ID="{894D333C-ADEE-4E86-933F-47BADC732A5C}" ShortID="1057071105">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>42</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>6</Value>
@@ -2595,6 +2613,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="494745__mzimny__squirrel-chirping" ID="{671B0070-59A4-43F2-A658-9841D29A2D21}">
 													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.61596597086323"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.636316046966732"/>
 														<Property Name="TrimEnd" Type="Real64" Value="6.85807295064144"/>
@@ -2660,14 +2679,30 @@
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+										<StateRef Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+										<CustomState Name="" ID="{07CBF057-3477-4473-BEB3-767384EC9BAF}" ShortID="442941815">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-12"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
 										<CustomState Name="" ID="{5514229B-EA2F-47E1-BB2F-31DA167CC8DA}" ShortID="660613865"/>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+										<StateRef Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+										<CustomState Name="" ID="{57802CB0-297A-410D-8E90-30A94741743A}" ShortID="60636326">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
 										<CustomState Name="" ID="{81320C12-FB22-46E3-9941-D7A0CB491A64}" ShortID="502158244">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-12"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -2679,6 +2714,14 @@
 							</Playlist>
 						</RandomSequenceContainer>
 						<Sound Name="forset breeze" ID="{43FE6EA3-441F-41F9-993D-6CE682C09DC9}" ShortID="467655098">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
@@ -2704,12 +2747,32 @@
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+										<StateRef Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+										<CustomState Name="" ID="{FCDDD6DB-48D0-4A83-A166-F5288EE22186}" ShortID="613279847">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-5"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
 										<CustomState Name="" ID="{092AB245-0CCC-4416-9877-B87BAE8383C6}" ShortID="304665668"/>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
-										<CustomState Name="" ID="{C2442D55-93E0-49F4-942B-DE4B442715D9}" ShortID="792068830"/>
+										<StateRef Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+										<CustomState Name="" ID="{EFD492AA-7DC8-4E88-AC92-6A67BCB24185}" ShortID="191855493">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+										<CustomState Name="" ID="{C2442D55-93E0-49F4-942B-DE4B442715D9}" ShortID="792068830">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
@@ -2787,334 +2850,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="desert soundscape" ID="{C4F2707D-E3BA-4D57-B093-5F946E396767}" ShortID="846138555">
-											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>34</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>11</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-6</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Wind desert sound" ID="{31505A4A-FA14-4790-B37B-27BFAE8E8564}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="4.19518496718036"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="5.36983675799092"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="4.36299236586758"/>
-														<Property Name="TrimEnd" Type="Real64" Value="15.773895476598"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Wind desert sound.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1003527813"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{6C93A5FD-7718-42C0-B65E-A7AB78B77E40}">
-													<PropertyList>
-														<Property Name="PanX" Type="Real64" Value="-2.55351295663786E-15"/>
-														<Property Name="PanY" Type="Real64" Value="-5.55111512312578E-17"/>
-													</PropertyList>
-												</Panner>
-												<Position Name="" ID="{0992AD47-7003-4668-9A15-5C75F3DD3768}">
-													<PropertyList>
-														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-													</PropertyList>
-													<ChildrenList>
-														<Path2D Name="desert_background_Path" ID="{09079858-82ED-42EA-A7E5-3935C4C877B5}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="2211"/>
-																<Property Name="Duration" Type="Uint32" Value="10000"/>
-																<Property Name="LinearTime" Type="bool" Value="False"/>
-																<Property Name="RandomX" Type="Real64" Value="18"/>
-																<Property Name="RandomY" Type="Real64" Value="6"/>
-																<Property Name="RandomZ" Type="Real64" Value="11"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-6.96203</XPos>
-																	<YPos>28.02548</YPos>
-																	<Flags>0</Flags>
-																	<Time>3423</Time>
-																</Point>
-																<Point>
-																	<XPos>10.12659</XPos>
-																	<YPos>14.64969</YPos>
-																	<Flags>0</Flags>
-																	<Time>7142</Time>
-																</Point>
-																<Point>
-																	<XPos>-3.79747</XPos>
-																	<YPos>-7.00637</YPos>
-																	<Flags>0</Flags>
-																	<Time>9452</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="desert_background_Path_01" ID="{63C28823-A211-40E8-919C-99F6A9CD107D}">
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-12.02532</XPos>
-																	<YPos>24.84076</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>-0.63291</XPos>
-																	<YPos>3.18472</YPos>
-																	<Flags>0</Flags>
-																	<Time>3333</Time>
-																</Point>
-																<Point>
-																	<XPos>10.7595</XPos>
-																	<YPos>28.66242</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="desert_background_Path_02" ID="{B43FB391-DC4D-4D24-97D0-6800665A5976}">
-															<PointList>
-																<Point>
-																	<XPos>-6.96203</XPos>
-																	<YPos>49.36305</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>5.69619</XPos>
-																	<YPos>31.84713</YPos>
-																	<Flags>0</Flags>
-																	<Time>1250</Time>
-																</Point>
-																<Point>
-																	<XPos>-4.43038</XPos>
-																	<YPos>18.47134</YPos>
-																	<Flags>0</Flags>
-																	<Time>2500</Time>
-																</Point>
-																<Point>
-																	<XPos>-8.86076</XPos>
-																	<YPos>7.64331</YPos>
-																	<Flags>0</Flags>
-																	<Time>3750</Time>
-																</Point>
-																<Point>
-																	<XPos>8.22784</XPos>
-																	<YPos>3.82165</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-													</ChildrenList>
-												</Position>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="Wind desert sound" ID="{31505A4A-FA14-4790-B37B-27BFAE8E8564}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="desert soundscape_01" ID="{737F4885-E905-458D-B192-B34B7A38CFC6}" ShortID="645821663">
-											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>34</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>11</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-6</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Wind desert sound" ID="{CEC08D3C-A426-4007-B33E-1755075C72AD}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="3.5239553724315"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="4.0273775684932"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="19.8012730450913"/>
-														<Property Name="TrimEnd" Type="Real64" Value="30.0375243650113"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Wind desert sound.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="606202376"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{87E66BA8-E342-4955-BCB4-61876AAC00C5}">
-													<PropertyList>
-														<Property Name="PanX" Type="Real64" Value="-2.55351295663786E-15"/>
-														<Property Name="PanY" Type="Real64" Value="-5.55111512312578E-17"/>
-													</PropertyList>
-												</Panner>
-												<Position Name="" ID="{4470E618-E322-45CC-80A8-9D74414DEEAB}">
-													<PropertyList>
-														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-													</PropertyList>
-													<ChildrenList>
-														<Path2D Name="desert_background_Path" ID="{D6A8773A-9221-455E-803D-DA79A57D618B}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="2211"/>
-																<Property Name="Duration" Type="Uint32" Value="10000"/>
-																<Property Name="LinearTime" Type="bool" Value="False"/>
-																<Property Name="RandomX" Type="Real64" Value="18"/>
-																<Property Name="RandomY" Type="Real64" Value="6"/>
-																<Property Name="RandomZ" Type="Real64" Value="11"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-6.96203</XPos>
-																	<YPos>28.02548</YPos>
-																	<Flags>0</Flags>
-																	<Time>3423</Time>
-																</Point>
-																<Point>
-																	<XPos>10.12659</XPos>
-																	<YPos>14.64969</YPos>
-																	<Flags>0</Flags>
-																	<Time>7142</Time>
-																</Point>
-																<Point>
-																	<XPos>-3.79747</XPos>
-																	<YPos>-7.00637</YPos>
-																	<Flags>0</Flags>
-																	<Time>9452</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="desert_background_Path_01" ID="{C8B9488C-666C-401B-BBFB-308AEE97C989}">
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-12.02532</XPos>
-																	<YPos>24.84076</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>-0.63291</XPos>
-																	<YPos>3.18472</YPos>
-																	<Flags>0</Flags>
-																	<Time>3333</Time>
-																</Point>
-																<Point>
-																	<XPos>10.7595</XPos>
-																	<YPos>28.66242</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="desert_background_Path_02" ID="{3B474F09-6538-458F-BC5B-B934953F26FF}">
-															<PointList>
-																<Point>
-																	<XPos>-6.96203</XPos>
-																	<YPos>49.36305</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>5.69619</XPos>
-																	<YPos>31.84713</YPos>
-																	<Flags>0</Flags>
-																	<Time>1250</Time>
-																</Point>
-																<Point>
-																	<XPos>-4.43038</XPos>
-																	<YPos>18.47134</YPos>
-																	<Flags>0</Flags>
-																	<Time>2500</Time>
-																</Point>
-																<Point>
-																	<XPos>-8.86076</XPos>
-																	<YPos>7.64331</YPos>
-																	<Flags>0</Flags>
-																	<Time>3750</Time>
-																</Point>
-																<Point>
-																	<XPos>8.22784</XPos>
-																	<YPos>3.82165</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-													</ChildrenList>
-												</Position>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="Wind desert sound" ID="{CEC08D3C-A426-4007-B33E-1755075C72AD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="desert soundscape_02" ID="{2078BF0A-122B-4699-894E-E4D69645FE8E}" ShortID="45123795">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
@@ -3277,170 +3012,6 @@
 											</PositioningInfo>
 											<ActiveSourceList>
 												<ActiveSource Name="Wind desert sound" ID="{0B711337-3882-437D-9546-79C67C5D3F6E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="desert soundscape_03" ID="{2A130080-0ACB-4FE6-9AE9-D575F6271117}" ShortID="166499497">
-											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>34</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>11</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-6</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Wind desert sound" ID="{95A55EC3-BAC2-4EBF-83FF-46EDAC9559F8}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="3.18834057505707"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="2.51711098030827"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="46.8182642337329"/>
-														<Property Name="TrimEnd" Type="Real64" Value="57.0545155536528"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Wind desert sound.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="705391774"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{4FED8BC7-7C61-478C-B06C-DC8D623E6C82}">
-													<PropertyList>
-														<Property Name="PanX" Type="Real64" Value="-2.55351295663786E-15"/>
-														<Property Name="PanY" Type="Real64" Value="-5.55111512312578E-17"/>
-													</PropertyList>
-												</Panner>
-												<Position Name="" ID="{3BEF4CC3-D737-44B1-ABB0-B22DC0C52671}">
-													<PropertyList>
-														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-													</PropertyList>
-													<ChildrenList>
-														<Path2D Name="desert_background_Path" ID="{42FB5DA1-AEA6-43B7-A8BA-7F60B7B88FDC}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="2211"/>
-																<Property Name="Duration" Type="Uint32" Value="10000"/>
-																<Property Name="LinearTime" Type="bool" Value="False"/>
-																<Property Name="RandomX" Type="Real64" Value="18"/>
-																<Property Name="RandomY" Type="Real64" Value="6"/>
-																<Property Name="RandomZ" Type="Real64" Value="11"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-6.96203</XPos>
-																	<YPos>28.02548</YPos>
-																	<Flags>0</Flags>
-																	<Time>3423</Time>
-																</Point>
-																<Point>
-																	<XPos>10.12659</XPos>
-																	<YPos>14.64969</YPos>
-																	<Flags>0</Flags>
-																	<Time>7142</Time>
-																</Point>
-																<Point>
-																	<XPos>-3.79747</XPos>
-																	<YPos>-7.00637</YPos>
-																	<Flags>0</Flags>
-																	<Time>9452</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="desert_background_Path_01" ID="{F5655747-93F2-41F0-8C51-1FB298064735}">
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-12.02532</XPos>
-																	<YPos>24.84076</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>-0.63291</XPos>
-																	<YPos>3.18472</YPos>
-																	<Flags>0</Flags>
-																	<Time>3333</Time>
-																</Point>
-																<Point>
-																	<XPos>10.7595</XPos>
-																	<YPos>28.66242</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="desert_background_Path_02" ID="{0785D884-04B8-4F0F-AB9D-C8F761D2EFBC}">
-															<PointList>
-																<Point>
-																	<XPos>-6.96203</XPos>
-																	<YPos>49.36305</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>5.69619</XPos>
-																	<YPos>31.84713</YPos>
-																	<Flags>0</Flags>
-																	<Time>1250</Time>
-																</Point>
-																<Point>
-																	<XPos>-4.43038</XPos>
-																	<YPos>18.47134</YPos>
-																	<Flags>0</Flags>
-																	<Time>2500</Time>
-																</Point>
-																<Point>
-																	<XPos>-8.86076</XPos>
-																	<YPos>7.64331</YPos>
-																	<Flags>0</Flags>
-																	<Time>3750</Time>
-																</Point>
-																<Point>
-																	<XPos>8.22784</XPos>
-																	<YPos>3.82165</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-													</ChildrenList>
-												</Position>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="Wind desert sound" ID="{95A55EC3-BAC2-4EBF-83FF-46EDAC9559F8}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="desert soundscape_04" ID="{2BC97A54-F21E-49FB-A54F-7B2938ACE38B}" ShortID="25929020">
@@ -3607,18 +3178,6 @@
 												<ActiveSource Name="Wind desert sound" ID="{4F626424-9F60-4301-9CE7-03CB7F11F93C}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="desert_wind" ID="{E1A537A8-8FAA-4AF8-BE2B-925354DD102E}" ShortID="448267900">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
 										<Sound Name="desert_wind" ID="{9C775AE0-2E71-4D32-AD7D-55BAE2BEA4D0}" ShortID="451483159">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
@@ -3627,7 +3186,7 @@
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-7</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3656,19 +3215,18 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{3781EEDE-391F-4DDD-9BB7-3A6EAB04694C}">
+												<Panner Name="" ID="{9E9E99AD-66E9-4A7C-A5B6-9A9344492FED}">
 													<PropertyList>
 														<Property Name="PanX" Type="Real64" Value="-2.55351295663786E-15"/>
 														<Property Name="PanY" Type="Real64" Value="-5.55111512312578E-17"/>
 													</PropertyList>
 												</Panner>
-												<Position Name="" ID="{0D16C3B4-BDDA-40E1-971E-6080F64CB209}">
+												<Position Name="" ID="{1F1A5E98-4F13-46D3-9737-C30F912C16D6}">
 													<PropertyList>
 														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 													</PropertyList>
 													<ChildrenList>
-														<Path2D Name="desert_background_Path" ID="{CF02B2FC-B3DB-44AB-B361-D5BBA438D9A3}">
+														<Path2D Name="desert_background_Path" ID="{9C7EFC7C-69A4-4B11-9EA9-8ABEC7EB1BCA}">
 															<PropertyList>
 																<Property Name="AppendOffset" Type="Uint32" Value="2211"/>
 																<Property Name="Duration" Type="Uint32" Value="10000"/>
@@ -3685,26 +3243,26 @@
 																	<Time>0</Time>
 																</Point>
 																<Point>
-																	<XPos>-6.96203</XPos>
-																	<YPos>28.02548</YPos>
+																	<XPos>-3.79748</XPos>
+																	<YPos>41.40129</YPos>
 																	<Flags>0</Flags>
 																	<Time>3423</Time>
 																</Point>
 																<Point>
-																	<XPos>10.12659</XPos>
-																	<YPos>14.64969</YPos>
+																	<XPos>2.53166</XPos>
+																	<YPos>34.39491</YPos>
 																	<Flags>0</Flags>
 																	<Time>7142</Time>
 																</Point>
 																<Point>
-																	<XPos>-3.79747</XPos>
-																	<YPos>-7.00637</YPos>
+																	<XPos>0</XPos>
+																	<YPos>28.02548</YPos>
 																	<Flags>0</Flags>
 																	<Time>9452</Time>
 																</Point>
 															</PointList>
 														</Path2D>
-														<Path2D Name="desert_background_Path_01" ID="{69E09943-2259-44A8-B856-368D4592D3C7}">
+														<Path2D Name="desert_background_Path_01" ID="{D8970EB5-3924-43AB-B298-D596C64E2D6B}">
 															<PointList>
 																<Point>
 																	<XPos>0</XPos>
@@ -3713,54 +3271,54 @@
 																	<Time>0</Time>
 																</Point>
 																<Point>
-																	<XPos>-12.02532</XPos>
-																	<YPos>24.84076</YPos>
+																	<XPos>-4.43038</XPos>
+																	<YPos>21.0191</YPos>
 																	<Flags>0</Flags>
 																	<Time>1666</Time>
 																</Point>
 																<Point>
-																	<XPos>-0.63291</XPos>
-																	<YPos>3.18472</YPos>
+																	<XPos>3.16456</XPos>
+																	<YPos>26.75159</YPos>
 																	<Flags>0</Flags>
 																	<Time>3333</Time>
 																</Point>
 																<Point>
-																	<XPos>10.7595</XPos>
-																	<YPos>28.66242</YPos>
+																	<XPos>0</XPos>
+																	<YPos>9.55414</YPos>
 																	<Flags>0</Flags>
 																	<Time>5000</Time>
 																</Point>
 															</PointList>
 														</Path2D>
-														<Path2D Name="desert_background_Path_02" ID="{59916970-FA5D-4C80-A050-40E44F815FA6}">
+														<Path2D Name="desert_background_Path_02" ID="{A1B00C7B-F471-473B-9D50-5D008788DFFE}">
 															<PointList>
 																<Point>
-																	<XPos>-6.96203</XPos>
-																	<YPos>49.36305</YPos>
+																	<XPos>-0.63292</XPos>
+																	<YPos>41.08279</YPos>
 																	<Flags>12</Flags>
 																	<Time>0</Time>
 																</Point>
 																<Point>
-																	<XPos>5.69619</XPos>
-																	<YPos>31.84713</YPos>
+																	<XPos>4.43037</XPos>
+																	<YPos>28.66242</YPos>
 																	<Flags>0</Flags>
 																	<Time>1250</Time>
 																</Point>
 																<Point>
 																	<XPos>-4.43038</XPos>
-																	<YPos>18.47134</YPos>
+																	<YPos>19.10828</YPos>
 																	<Flags>0</Flags>
 																	<Time>2500</Time>
 																</Point>
 																<Point>
-																	<XPos>-8.86076</XPos>
-																	<YPos>7.64331</YPos>
+																	<XPos>-3.79746</XPos>
+																	<YPos>8.9172</YPos>
 																	<Flags>0</Flags>
 																	<Time>3750</Time>
 																</Point>
 																<Point>
-																	<XPos>8.22784</XPos>
-																	<YPos>3.82165</YPos>
+																	<XPos>0</XPos>
+																	<YPos>1.27388</YPos>
 																	<Flags>0</Flags>
 																	<Time>5000</Time>
 																</Point>
@@ -3773,6 +3331,171 @@
 												<ActiveSource Name="desert wind" ID="{01C87671-F354-4BD8-B18A-9DA293EFBB6A}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="desert_wind_02" ID="{8523933C-34F0-4903-BF8C-066A813B2DDE}" ShortID="153299851">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="desert wind" ID="{E6E86E0B-BDB7-4D29-9794-6F4CF9F4947B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.02956621004569"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.47095890410957"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="17.7085388127854"/>
+														<Property Name="TrimEnd" Type="Real64" Value="27.5923744292238"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>desert wind.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="306647823"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{828F940F-DF98-49DA-A693-BFA6A2504377}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="-2.55351295663786E-15"/>
+														<Property Name="PanY" Type="Real64" Value="-5.55111512312578E-17"/>
+													</PropertyList>
+												</Panner>
+												<Position Name="" ID="{9F0F1FEB-47AC-4ADE-B07F-15ADB0B93132}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="desert_background_Path" ID="{26BE3A07-1B3E-4B0E-8BA3-45771FFB7226}">
+															<PropertyList>
+																<Property Name="AppendOffset" Type="Uint32" Value="2211"/>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="18"/>
+																<Property Name="RandomY" Type="Real64" Value="6"/>
+																<Property Name="RandomZ" Type="Real64" Value="11"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-3.79748</XPos>
+																	<YPos>41.40129</YPos>
+																	<Flags>0</Flags>
+																	<Time>3423</Time>
+																</Point>
+																<Point>
+																	<XPos>2.53166</XPos>
+																	<YPos>34.39491</YPos>
+																	<Flags>0</Flags>
+																	<Time>7142</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>28.02548</YPos>
+																	<Flags>0</Flags>
+																	<Time>9452</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="desert_background_Path_01" ID="{B7977767-D7D0-4E98-850F-7F11091B241C}">
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-4.43038</XPos>
+																	<YPos>21.0191</YPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>3.16456</XPos>
+																	<YPos>26.75159</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>9.55414</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="desert_background_Path_02" ID="{9C639160-5414-48E9-8D7A-D8E18C23F5BE}">
+															<PointList>
+																<Point>
+																	<XPos>-0.63292</XPos>
+																	<YPos>41.08279</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>4.43037</XPos>
+																	<YPos>28.66242</YPos>
+																	<Flags>0</Flags>
+																	<Time>1250</Time>
+																</Point>
+																<Point>
+																	<XPos>-4.43038</XPos>
+																	<YPos>19.10828</YPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>-3.79746</XPos>
+																	<YPos>8.9172</YPos>
+																	<Flags>0</Flags>
+																	<Time>3750</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>1.27388</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="desert wind" ID="{E6E86E0B-BDB7-4D29-9794-6F4CF9F4947B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="desert_wind" ID="{E1A537A8-8FAA-4AF8-BE2B-925354DD102E}" ShortID="448267900">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
 										<Sound Name="desert_wind_01" ID="{F02D8CEA-C2AA-475C-9C3F-C3A502DCBD95}" ShortID="213030234">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
@@ -3925,160 +3648,6 @@
 											</PositioningInfo>
 											<ActiveSourceList>
 												<ActiveSource Name="desert wind" ID="{9C180ECF-D801-4844-857D-D944EF6E2A3D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="desert_wind_02" ID="{8523933C-34F0-4903-BF8C-066A813B2DDE}" ShortID="153299851">
-											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-7</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="desert wind" ID="{E6E86E0B-BDB7-4D29-9794-6F4CF9F4947B}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.02956621004569"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="2.47095890410957"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="17.7085388127854"/>
-														<Property Name="TrimEnd" Type="Real64" Value="27.5923744292238"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>desert wind.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="306647823"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{BAF966CC-86A7-4FAA-BFA1-E866EAB011E2}">
-													<PropertyList>
-														<Property Name="PanX" Type="Real64" Value="-2.55351295663786E-15"/>
-														<Property Name="PanY" Type="Real64" Value="-5.55111512312578E-17"/>
-													</PropertyList>
-												</Panner>
-												<Position Name="" ID="{2B2B28A3-3F1C-46F8-B7FF-01F714D486A5}">
-													<PropertyList>
-														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-													</PropertyList>
-													<ChildrenList>
-														<Path2D Name="desert_background_Path" ID="{60A7E3CC-2904-4F14-A9CB-18C1F16F43A1}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="2211"/>
-																<Property Name="Duration" Type="Uint32" Value="10000"/>
-																<Property Name="LinearTime" Type="bool" Value="False"/>
-																<Property Name="RandomX" Type="Real64" Value="18"/>
-																<Property Name="RandomY" Type="Real64" Value="6"/>
-																<Property Name="RandomZ" Type="Real64" Value="11"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-6.96203</XPos>
-																	<YPos>28.02548</YPos>
-																	<Flags>0</Flags>
-																	<Time>3423</Time>
-																</Point>
-																<Point>
-																	<XPos>10.12659</XPos>
-																	<YPos>14.64969</YPos>
-																	<Flags>0</Flags>
-																	<Time>7142</Time>
-																</Point>
-																<Point>
-																	<XPos>-3.79747</XPos>
-																	<YPos>-7.00637</YPos>
-																	<Flags>0</Flags>
-																	<Time>9452</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="desert_background_Path_01" ID="{7DE3ACF6-3517-4732-823A-B8F1D31E46BE}">
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-12.02532</XPos>
-																	<YPos>24.84076</YPos>
-																	<Flags>0</Flags>
-																	<Time>1666</Time>
-																</Point>
-																<Point>
-																	<XPos>-0.63291</XPos>
-																	<YPos>3.18472</YPos>
-																	<Flags>0</Flags>
-																	<Time>3333</Time>
-																</Point>
-																<Point>
-																	<XPos>10.7595</XPos>
-																	<YPos>28.66242</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="desert_background_Path_02" ID="{414B5EEC-1A9B-446D-B39D-2A0BE9D3B943}">
-															<PointList>
-																<Point>
-																	<XPos>-6.96203</XPos>
-																	<YPos>49.36305</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>5.69619</XPos>
-																	<YPos>31.84713</YPos>
-																	<Flags>0</Flags>
-																	<Time>1250</Time>
-																</Point>
-																<Point>
-																	<XPos>-4.43038</XPos>
-																	<YPos>18.47134</YPos>
-																	<Flags>0</Flags>
-																	<Time>2500</Time>
-																</Point>
-																<Point>
-																	<XPos>-8.86076</XPos>
-																	<YPos>7.64331</YPos>
-																	<Flags>0</Flags>
-																	<Time>3750</Time>
-																</Point>
-																<Point>
-																	<XPos>8.22784</XPos>
-																	<YPos>3.82165</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-													</ChildrenList>
-												</Position>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="desert wind" ID="{E6E86E0B-BDB7-4D29-9794-6F4CF9F4947B}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="desert_wind_03" ID="{C74B3395-D2C9-4E7F-8FCC-A6BE8D8B5996}" ShortID="806699833">
@@ -4389,6 +3958,495 @@
 												<ActiveSource Name="desert wind" ID="{9811E119-E73B-4C17-87BC-68C330B474CF}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="desert soundscape" ID="{C4F2707D-E3BA-4D57-B093-5F946E396767}" ShortID="846138555">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>34</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>11</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wind desert sound" ID="{31505A4A-FA14-4790-B37B-27BFAE8E8564}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="4.19518496718036"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.36983675799092"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.36299236586758"/>
+														<Property Name="TrimEnd" Type="Real64" Value="15.773895476598"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Wind desert sound.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1003527813"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{C8C4797D-8D50-4360-AB68-1B78B2F47BF6}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="-2.55351295663786E-15"/>
+														<Property Name="PanY" Type="Real64" Value="-5.55111512312578E-17"/>
+													</PropertyList>
+												</Panner>
+												<Position Name="" ID="{A1867FAC-0F1C-400E-BC1F-57121F768659}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="desert_background_Path" ID="{36899575-B88E-4243-A13D-37548090075B}">
+															<PropertyList>
+																<Property Name="AppendOffset" Type="Uint32" Value="2211"/>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="18"/>
+																<Property Name="RandomY" Type="Real64" Value="6"/>
+																<Property Name="RandomZ" Type="Real64" Value="11"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-3.79748</XPos>
+																	<YPos>41.40129</YPos>
+																	<Flags>0</Flags>
+																	<Time>3423</Time>
+																</Point>
+																<Point>
+																	<XPos>2.53166</XPos>
+																	<YPos>34.39491</YPos>
+																	<Flags>0</Flags>
+																	<Time>7142</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>28.02548</YPos>
+																	<Flags>0</Flags>
+																	<Time>9452</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="desert_background_Path_01" ID="{892E3E7E-D212-4567-AAF4-EB8C61954405}">
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-4.43038</XPos>
+																	<YPos>21.0191</YPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>3.16456</XPos>
+																	<YPos>26.75159</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>9.55414</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="desert_background_Path_02" ID="{B8FFE572-2016-40ED-9728-0B9F7342A081}">
+															<PointList>
+																<Point>
+																	<XPos>-0.63292</XPos>
+																	<YPos>41.08279</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>4.43037</XPos>
+																	<YPos>28.66242</YPos>
+																	<Flags>0</Flags>
+																	<Time>1250</Time>
+																</Point>
+																<Point>
+																	<XPos>-4.43038</XPos>
+																	<YPos>19.10828</YPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>-3.79746</XPos>
+																	<YPos>8.9172</YPos>
+																	<Flags>0</Flags>
+																	<Time>3750</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>1.27388</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Wind desert sound" ID="{31505A4A-FA14-4790-B37B-27BFAE8E8564}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="desert soundscape_01" ID="{737F4885-E905-458D-B192-B34B7A38CFC6}" ShortID="645821663">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>34</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>11</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wind desert sound" ID="{CEC08D3C-A426-4007-B33E-1755075C72AD}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="3.5239553724315"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.0273775684932"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="19.8012730450913"/>
+														<Property Name="TrimEnd" Type="Real64" Value="30.0375243650113"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Wind desert sound.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="606202376"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{7BFC2B27-D122-43D2-81A3-30496B1B0B11}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="-2.55351295663786E-15"/>
+														<Property Name="PanY" Type="Real64" Value="-5.55111512312578E-17"/>
+													</PropertyList>
+												</Panner>
+												<Position Name="" ID="{EC10DDBA-B342-4687-ABF5-C332CEFE52F3}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="desert_background_Path" ID="{EBD87C69-32E3-49D7-8875-6FDD0A715478}">
+															<PropertyList>
+																<Property Name="AppendOffset" Type="Uint32" Value="2211"/>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="18"/>
+																<Property Name="RandomY" Type="Real64" Value="6"/>
+																<Property Name="RandomZ" Type="Real64" Value="11"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-3.79748</XPos>
+																	<YPos>41.40129</YPos>
+																	<Flags>0</Flags>
+																	<Time>3423</Time>
+																</Point>
+																<Point>
+																	<XPos>2.53166</XPos>
+																	<YPos>34.39491</YPos>
+																	<Flags>0</Flags>
+																	<Time>7142</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>28.02548</YPos>
+																	<Flags>0</Flags>
+																	<Time>9452</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="desert_background_Path_01" ID="{F22C01CE-15C6-4DBB-BFDD-DD989957A8D5}">
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-4.43038</XPos>
+																	<YPos>21.0191</YPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>3.16456</XPos>
+																	<YPos>26.75159</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>9.55414</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="desert_background_Path_02" ID="{15B5A099-7BA1-4533-B8F3-8B9EBBD4EC24}">
+															<PointList>
+																<Point>
+																	<XPos>-0.63292</XPos>
+																	<YPos>41.08279</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>4.43037</XPos>
+																	<YPos>28.66242</YPos>
+																	<Flags>0</Flags>
+																	<Time>1250</Time>
+																</Point>
+																<Point>
+																	<XPos>-4.43038</XPos>
+																	<YPos>19.10828</YPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>-3.79746</XPos>
+																	<YPos>8.9172</YPos>
+																	<Flags>0</Flags>
+																	<Time>3750</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>1.27388</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Wind desert sound" ID="{CEC08D3C-A426-4007-B33E-1755075C72AD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="desert soundscape_03" ID="{2A130080-0ACB-4FE6-9AE9-D575F6271117}" ShortID="166499497">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>34</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>11</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wind desert sound" ID="{95A55EC3-BAC2-4EBF-83FF-46EDAC9559F8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="3.18834057505707"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.51711098030827"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="46.8182642337329"/>
+														<Property Name="TrimEnd" Type="Real64" Value="57.0545155536528"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Wind desert sound.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="705391774"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{6813B4AA-814E-4C18-BA47-5C94E0A03D82}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="-2.55351295663786E-15"/>
+														<Property Name="PanY" Type="Real64" Value="-5.55111512312578E-17"/>
+													</PropertyList>
+												</Panner>
+												<Position Name="" ID="{EA04AA2F-851A-4259-A539-361B19C52344}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="desert_background_Path" ID="{7901EEEF-9CFA-4A43-B9E1-1A8354428722}">
+															<PropertyList>
+																<Property Name="AppendOffset" Type="Uint32" Value="2211"/>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="18"/>
+																<Property Name="RandomY" Type="Real64" Value="6"/>
+																<Property Name="RandomZ" Type="Real64" Value="11"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-3.79748</XPos>
+																	<YPos>41.40129</YPos>
+																	<Flags>0</Flags>
+																	<Time>3423</Time>
+																</Point>
+																<Point>
+																	<XPos>2.53166</XPos>
+																	<YPos>34.39491</YPos>
+																	<Flags>0</Flags>
+																	<Time>7142</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>28.02548</YPos>
+																	<Flags>0</Flags>
+																	<Time>9452</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="desert_background_Path_01" ID="{85A7D71C-8F3D-4FD0-A188-336D03428103}">
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-4.43038</XPos>
+																	<YPos>21.0191</YPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>3.16456</XPos>
+																	<YPos>26.75159</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>9.55414</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="desert_background_Path_02" ID="{974A3358-0FF4-4A86-AF10-FF447B53B3A9}">
+															<PointList>
+																<Point>
+																	<XPos>-0.63292</XPos>
+																	<YPos>41.08279</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>4.43037</XPos>
+																	<YPos>28.66242</YPos>
+																	<Flags>0</Flags>
+																	<Time>1250</Time>
+																</Point>
+																<Point>
+																	<XPos>-4.43038</XPos>
+																	<YPos>19.10828</YPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>-3.79746</XPos>
+																	<YPos>8.9172</YPos>
+																	<Flags>0</Flags>
+																	<Time>3750</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>1.27388</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Wind desert sound" ID="{95A55EC3-BAC2-4EBF-83FF-46EDAC9559F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
@@ -4513,14 +4571,30 @@
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
-										<CustomState Name="" ID="{35BBCEDC-AB28-4E4D-BA7E-E07DD5EB0668}" ShortID="917620113"/>
+										<StateRef Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+										<CustomState Name="" ID="{604FE837-DA89-4686-A884-04C8EA6A9B95}" ShortID="753318615">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+										<StateRef Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+										<CustomState Name="" ID="{35BBCEDC-AB28-4E4D-BA7E-E07DD5EB0668}" ShortID="917620113">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+										<CustomState Name="" ID="{BEA0BEED-828E-4478-A106-5740340A6278}" ShortID="904305144"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
 										<CustomState Name="" ID="{2AF77FFA-27D4-4F13-B2D7-60EF463E17C1}" ShortID="714072151">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-6"/>
+												<Property Name="Volume" Type="Real64" Value="-13"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -4545,17 +4619,17 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>0</YPos>
+																<YPos>2.09471</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>6.41361</XPos>
-																<YPos>3.15914</YPos>
+																<XPos>6.28272</XPos>
+																<YPos>6.68931</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>89.39791</XPos>
-																<YPos>4.33152</YPos>
+																<XPos>89.65969</XPos>
+																<YPos>7.00134</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -4580,23 +4654,23 @@
 											<CrossfadingInfo>
 												<LeftEdgePos>0</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>29.727437390925</RightEdgePos>
+												<RightEdgePos>14.0206311082025</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
 										<BlendTrackAssoc>
 											<ItemRef Name="desert_wind" ID="{E1A537A8-8FAA-4AF8-BE2B-925354DD102E}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>9.63375785340313</LeftEdgePos>
+												<LeftEdgePos>0.0005</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>84.2149096858639</RightEdgePos>
+												<RightEdgePos>76.0997264397906</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
 										<BlendTrackAssoc>
 											<ItemRef Name="desert soundscape" ID="{8BA902D6-5072-4AB6-B564-B3ED7E91BB67}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>76.2041884816754</LeftEdgePos>
+												<LeftEdgePos>72.2774869109948</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
 												<RightEdgePos>100</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
@@ -4606,35 +4680,6 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
-						<Sound Name="splash" ID="{EA778A85-BF42-4489-A85B-AE4CA1AA3365}" ShortID="1053288142">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>530</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="splash 2" ID="{C0B3807A-A0B7-4D45-80D3-1FDA369F3818}">
-									<Language>SFX</Language>
-									<AudioFile>splash 2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="644711480"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="splash 2" ID="{C0B3807A-A0B7-4D45-80D3-1FDA369F3818}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Sound Name="music" ID="{DAEF2B81-6AC7-4989-AD5C-65459B8F6825}" ShortID="153674543">
@@ -4647,7 +4692,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>5</Value>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -4681,15 +4726,27 @@
 						</StateGroupList>
 						<CustomStateList>
 							<CustomState>
-								<StateRef Name="InGame" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
+								<StateRef Name="ForestMenu" ID="{1217305E-E45E-4876-AC80-5D8FD0FECFE1}"/>
+								<CustomState Name="" ID="{E506DB99-EF4C-4D68-9FC5-BCC9A7EFF871}" ShortID="549064712"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="InForest" ID="{E8744ED8-0162-48A0-9041-D7DB16D47E72}"/>
 								<CustomState Name="" ID="{F08F3DB9-F279-490F-BB41-8068AB5B0DB4}" ShortID="157041287">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-7"/>
+										<Property Name="Volume" Type="Real64" Value="-9"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="MainMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
+								<StateRef Name="InDesert" ID="{D17084DF-085E-4B2D-B239-A119927C4F0E}"/>
+								<CustomState Name="" ID="{C6B20E88-039C-40C9-B379-AB1AC4841B8D}" ShortID="693693996">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-9"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="DesertMenu" ID="{47FA466F-2004-4B6A-9795-90A09B390360}"/>
 								<CustomState Name="" ID="{D4324DE0-9561-45E1-8E20-DB9A369D7DEC}" ShortID="63334566"/>
 							</CustomState>
 						</CustomStateList>
@@ -4700,19 +4757,18 @@
 				</Sound>
 				<Sound Name="oasis_water" ID="{A3BD7739-3132-4BDF-B4B3-212876B9825D}" ShortID="152334004">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
 								<Value>25</Value>
 							</ValueList>
 						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-5</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="water_attenuation" ID="{A4F757D0-DE4C-4C10-AB94-0CD0E6E43DEA}" WorkUnitID="{1B449F24-E0BC-4862-A44E-BF064F998CF7}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
 						</Reference>
@@ -4731,6 +4787,35 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="water" ID="{2BE64DBA-C4EF-4BB3-AB6B-D59B23CBDC7E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="splash" ID="{EA778A85-BF42-4489-A85B-AE4CA1AA3365}" ShortID="1053288142">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>530</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C866E725-B713-4CB4-88E0-49A541D2538A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2137D96-6C1C-44B6-87CB-A09173D917C7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="splash 2" ID="{C0B3807A-A0B7-4D45-80D3-1FDA369F3818}">
+							<Language>SFX</Language>
+							<AudioFile>splash 2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="644711480"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="splash 2" ID="{C0B3807A-A0B7-4D45-80D3-1FDA369F3818}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -5,6 +5,8 @@ using UnityEngine;
 public class SunRise : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject lightSource;
+
     void Start()
     {
         
@@ -13,7 +15,7 @@ public class SunRise : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 currentRot = transform.rotation.eulerAngles;
+        Vector3 currentRot = lightSource.transform.rotation.eulerAngles;
         Debug.Log(currentRot);
         if(currentRot.x <= 25.0f || currentRot.x > 335){
             currentRot.x -= 0.05f;
@@ -21,7 +23,7 @@ public class SunRise : MonoBehaviour
         
 
         Quaternion rot = Quaternion.Euler(currentRot);
-        transform.rotation = rot;
+        lightSource.transform.rotation = rot;
 
     }
 }

@@ -56,6 +56,10 @@ namespace SpeedTutorMainMenuSystem
         #endregion
 
         #region Initialisation - Button Selection & Menu Order
+
+        //extra
+        private bool pressedStart = false;
+
         private void Start()
         {
             menuNumber = 1;
@@ -70,8 +74,34 @@ namespace SpeedTutorMainMenuSystem
             confirmationMenu.SetActive(false);
         }
 
+        public IEnumerator FadeTextToFullAlpha(float t, Text i)
+        {
+            i.color = new Color(i.color.r, i.color.g, i.color.b, 0);
+            while (i.color.a < 1.0f)
+            {
+                i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a + (Time.deltaTime / t));
+                yield return null;
+            }
+        }
+
+        public IEnumerator FadeTextToZeroAlpha(float t, Text i)
+        {
+            i.color = new Color(i.color.r, i.color.g, i.color.b, 1);
+            while (i.color.a > 0.0f)
+            {
+                i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a - (Time.deltaTime / t));
+                yield return null;
+            }
+        }
         private void Update()
         {
+
+            if (menuNumber == 7)
+            {
+
+            }
+
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (menuNumber == 2 || menuNumber == 7 || menuNumber == 8)
@@ -152,8 +182,12 @@ namespace SpeedTutorMainMenuSystem
 
             if (buttonType == "NewGame")
             {
+
                 menuDefaultCanvas.SetActive(false);
-                newGameDialog.SetActive(true);
+                //newGameDialog.SetActive(true);
+                //So the player can read
+                //yield return new WaitForSeconds(10);
+                pressedStart = true;
                 menuNumber = 7;
             }
         }
@@ -248,6 +282,12 @@ namespace SpeedTutorMainMenuSystem
         {
             if (ButtonType == "Yes")
             {
+                //Turns off UI
+
+
+
+
+
                 SceneManager.LoadScene(_newGameButtonLevel);
             }
 

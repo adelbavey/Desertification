@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -60,9 +60,22 @@ namespace SpeedTutorMainMenuSystem
         //extra
         private bool pressedStart = false;
 
+        public AK.Wwise.Event Wind;
+        public GameObject lightSource;
+
+        bool triggerQuote = false;
+
         private void Start()
         {
             menuNumber = 1;
+
+            //new
+            //AkSoundEngine.PostEvent("Play_background", gameObject);
+            //float wind_value = 10;
+            AkSoundEngine.SetState("GameState", "DesertMenu");
+            Wind.Post(gameObject);
+
+
         }
         #endregion
 
@@ -74,30 +87,55 @@ namespace SpeedTutorMainMenuSystem
             confirmationMenu.SetActive(false);
         }
 
-        public IEnumerator FadeTextToFullAlpha(float t, Text i)
+        public IEnumerator QuoteTime()
         {
-            i.color = new Color(i.color.r, i.color.g, i.color.b, 0);
-            while (i.color.a < 1.0f)
-            {
-                i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a + (Time.deltaTime / t));
-                yield return null;
-            }
+            
+            yield return new WaitForSeconds(10);
+            SceneManager.LoadScene(_newGameButtonLevel);
         }
+        /////
+        /* public IEnumerator FadeOutObject(){
+             while(this.GetComponent<Renderer>().material.color.a > 0){
+                 Color objectColor = this.GetComponent<Renderer>().material.color;
+                 float fadeAmount = objectColor.a - (fadeSpeed * Time.deltaTime);
+             }
 
-        public IEnumerator FadeTextToZeroAlpha(float t, Text i)
-        {
-            i.color = new Color(i.color.r, i.color.g, i.color.b, 1);
-            while (i.color.a > 0.0f)
-            {
-                i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a - (Time.deltaTime / t));
-                yield return null;
-            }
-        }
+             yield return null;
+
+         }*/
+        ////
         private void Update()
         {
 
-            if (menuNumber == 7)
+
+            if (menuNumber == 7 && pressedStart && !triggerQuote)
             {
+
+                //First we have to trigger sun
+
+                //newGameDialog.SetActive(true);
+                //StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<Text>()));
+
+                Vector3 currentRot = lightSource.transform.rotation.eulerAngles;
+                //Debug.Log(currentRot);
+                if (currentRot.x <= 25.0f || currentRot.x > 345)
+                {
+                    currentRot.x -= 0.05f;
+                    Quaternion rot = Quaternion.Euler(currentRot);
+                    lightSource.transform.rotation = rot;
+
+                }else{
+                    triggerQuote = true;
+                }
+
+
+                
+
+            }else if(menuNumber == 7 && pressedStart && triggerQuote){
+                //Add UI
+                newGameDialog.SetActive(true);
+                StartCoroutine(QuoteTime());
+                
 
             }
 
@@ -288,7 +326,7 @@ namespace SpeedTutorMainMenuSystem
 
 
 
-                SceneManager.LoadScene(_newGameButtonLevel);
+                //SceneManager.LoadScene(_newGameButtonLevel);
             }
 
             if (ButtonType == "No")

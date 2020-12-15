@@ -12,10 +12,5 @@ public class Sound_Start : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-     if(Input.GetKey(KeyCode.G)){
-            AkSoundEngine.PostEvent("footstep_player", gameObject);   
-        }    
-    }
+
 }

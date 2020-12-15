@@ -14,13 +14,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Oasis_Current.unity
     guid: 7397a21873027a24c8b56b5c9a42a183
-  - enabled: 0
+  - enabled: 1
     path: Assets/Main Folder/Imported assets/SpeedTutor_Full_Menu_System/Scenes/MainMenu.unity
     guid: e84c9862265a1104a9d724503d4111aa
-  - enabled: 0
-    path: Assets/Main Folder/Imported assets/SpeedTutor_Full_Menu_System/Scenes/Level1_Demo.unity
-    guid: a29848c6cbdc245439fd7641ab34b8bc
   - enabled: 1
     path: Assets/Scenes/Oasis_level_up.unity
     guid: 45c17ff3c57e3634fb7af0cfe7668d00
+  - enabled: 0
+    path: Assets/Main Folder/Imported assets/SpeedTutor_Full_Menu_System/Scenes/Level1_Demo.unity
+    guid: a29848c6cbdc245439fd7641ab34b8bc
   m_configObjects: {}

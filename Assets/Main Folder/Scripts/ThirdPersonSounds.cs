@@ -17,8 +17,8 @@ public class ThirdPersonSounds : MonoBehaviour
         m_Animator = GetComponent<Animator>();
 
         // HELLO HELLO, these three lines should be in another script, the one that runs to main menu, so that we get windy sounds from the start
-        float wind_value = 60;
-        AkSoundEngine.SetState("GameState", "InForest");
+        //float wind_value = 60;
+        AkSoundEngine.SetState("GameState", "DesertMenu");
         AkSoundEngine.PostEvent("Play_background", gameObject);
     }
 

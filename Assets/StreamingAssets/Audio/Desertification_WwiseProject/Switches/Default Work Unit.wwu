@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2A463B5A-91A7-4E06-A0AC-23E41E2A0710}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{2A463B5A-91A7-4E06-A0AC-23E41E2A0710}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Material" ID="{F22D7228-AABE-48B9-B8DE-60B0888FF3BD}">
+					<ChildrenList>
+						<Switch Name="Sand" ID="{C4C4DADF-2846-4E98-B775-D539FB9E2F7D}"/>
+						<Switch Name="Grass" ID="{412F4861-536B-489B-8207-AA1D646AFB3A}"/>
+						<Switch Name="Wood" ID="{3ED96C4B-354B-413F-B5BB-B083391C459E}"/>
+						<Switch Name="Golv" ID="{560EF518-C63D-45E1-BA69-40E3DCC5C710}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="movement_type" ID="{7DCAD73F-2517-41D3-9CFD-0D4684044009}">
+					<ChildrenList>
+						<Switch Name="Run" ID="{56A5D74D-4688-4341-AEA1-0694E92B280C}"/>
+						<Switch Name="Walk" ID="{C1BA5D29-6CC0-415C-832B-CD23FB822568}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

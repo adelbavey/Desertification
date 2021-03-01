@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{AB86BF13-7D67-4003-AFF5-6230E1EF133A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="footstep_player" ID="{564FA619-ADC6-44C6-BAF6-4F10264E8875}">
+					<ChildrenList>
+						<Action Name="" ID="{AA30A442-55A1-4AE6-B101-2559D0DDF90E}" ShortID="483861147">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="footsteps_speed" ID="{A54B4090-2492-47E1-8C70-2D83EF3D8B53}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="jump_player" ID="{E42AEC92-56A8-43E0-B47F-EF69CC15449B}">
+					<ChildrenList>
+						<Action Name="" ID="{EC66B98B-9059-4BBD-B072-5B0D2F8ED2C1}" ShortID="437436788">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jump sigh 1" ID="{D6CF8334-A3FC-42D4-9DA6-FFAE68A33785}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_birdies" ID="{167C1612-2ED4-4D91-A391-13487A0E1CCB}">
+					<ChildrenList>
+						<Action Name="" ID="{0DDD0CC4-0DA5-4FA9-8A42-03DE2AEF4445}" ShortID="549696972">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="birds_tree" ID="{D1E23159-6F85-40E3-9E3B-494A13222344}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_fire" ID="{C08B1E68-7088-4405-B76A-66147290006D}">
+					<ChildrenList>
+						<Action Name="" ID="{AA38804F-C8A9-47FE-A937-6C5EE9381108}" ShortID="153867825">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fire" ID="{76B39276-AE28-45D0-A569-5D77B73495CD}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="landing_player" ID="{3B7EEEE5-88D7-4B12-8110-161E7D81A603}">
+					<ChildrenList>
+						<Action Name="" ID="{3B865BE0-116A-4205-A40D-F1C869E9A3AA}" ShortID="865039763">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jump_landing" ID="{7B557695-BE5C-4D8A-8EE4-0AEC0583442A}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="pick_up_item_player" ID="{09BD0F2E-B265-4C83-8D1B-945B1933D5D2}">
+					<ChildrenList>
+						<Action Name="" ID="{4C215C40-C141-43D7-91B1-920013BF90AB}" ShortID="792166443">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pick up" ID="{2C8C0075-EE46-4EFB-AC08-E59CB8BC766B}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_splash" ID="{9D625DE1-2576-43BC-AB9B-0AC354B6702D}">
+					<ChildrenList>
+						<Action Name="" ID="{4F284023-F99C-4772-9586-9066D3069A2F}" ShortID="198854505">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="splash" ID="{EA778A85-BF42-4489-A85B-AE4CA1AA3365}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_oasis_water" ID="{80FECBCD-D38C-4840-98F4-05DA48971256}">
+					<ChildrenList>
+						<Action Name="" ID="{9B003915-1F75-44B1-B6D2-8B2EC93F06DB}" ShortID="295217123">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="oasis_water" ID="{A3BD7739-3132-4BDF-B4B3-212876B9825D}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_background" ID="{39E71145-9755-4832-8934-6D8BC6BD2D62}">
+					<ChildrenList>
+						<Action Name="" ID="{07966C27-D294-4943-8044-B7E1E9C6B174}" ShortID="658129530">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="forset sounds mixed" ID="{8F1A2BF2-E442-4642-8918-EDBA201A25FD}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{786687AD-E420-46A1-9700-40F8F3F198AC}" ShortID="511571606">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="music" ID="{DAEF2B81-6AC7-4989-AD5C-65459B8F6825}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{76982607-DEED-45D0-9FD9-A9F9E0B55A6F}" ShortID="804516355">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="forset breeze" ID="{43FE6EA3-441F-41F9-993D-6CE682C09DC9}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{383C4FFE-85F4-4B75-8C85-7AC2067DB32B}" ShortID="518988951">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="desert_background" ID="{C842BE64-42D4-4F8A-9108-A6733C900AC0}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{22ACC8FC-D8A5-4B79-93A8-F61BA01C7664}" ShortID="451951628">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambiance" ID="{98DAD1E9-1DA6-4C0C-BCB1-8946C8B96B1C}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_whistle" ID="{EA221BE1-4510-484B-B016-22BBBD09F619}">
+					<ChildrenList>
+						<Action Name="" ID="{6BEFC6F0-3E7A-411A-B8B2-FB54078774B1}" ShortID="659244926">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="whistle" ID="{2353CF63-DDE6-4E0A-8BA0-421843001301}" WorkUnitID="{044E9291-A505-4693-A696-90CEFBB1B9CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

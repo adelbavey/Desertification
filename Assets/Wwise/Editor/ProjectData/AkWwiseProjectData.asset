@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01a3840492cd994a9b8ee39f75767b7, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 7968a5b40caab941b078bc6e6b5b84f6
+    GuidInternal: 
+    m_lastTime: -8585939148592227026
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 967d13d21c6cb64487cba09173d917c7
+    GuidInternal: 
+    m_lastTime: -8585939148594775417
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: e59703e19b56124bb15f19d6880c283a
+    GuidInternal: 
+    m_lastTime: -8585936172331336489
+    List:
+    - name: Main
+      guid: 1adb74a34af57a4db470e44edbd65ba1
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 13bf86ab677d0340aff56230e1ef133a
+    GuidInternal: 
+    m_lastTime: -8585936172395273713
+    List:
+    - name: footstep_player
+      guid: 19a64f56c6adc644baf64f10264e8875
+      id: 648916573
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: footstep_player
+        ObjectType: 3
+      Path: Default Work Unit\footstep_player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: jump_player
+      guid: 92ec2ae4a856e043b47fef69cc15449b
+      id: 2584346859
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: jump_player
+        ObjectType: 3
+      Path: Default Work Unit\jump_player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: landing_player
+      guid: e5ee7e3bd788124b8110161e7d81a603
+      id: 29299334
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: landing_player
+        ObjectType: 3
+      Path: Default Work Unit\landing_player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: pick_up_item_player
+      guid: 2e0fbd0965b2834c8d1b945b1933d5d2
+      id: 1154788184
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: pick_up_item_player
+        ObjectType: 3
+      Path: Default Work Unit\pick_up_item_player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_background
+      guid: 4511e7395597324889346d8bc6bd2d62
+      id: 3196207338
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_background
+        ObjectType: 3
+      Path: Default Work Unit\Play_background
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_birdies
+      guid: 12167c16d42e914da39113487a0e1ccb
+      id: 799891356
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_birdies
+        ObjectType: 3
+      Path: Default Work Unit\Play_birdies
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_fire
+      guid: 681e8bc088700544b76a66147290006d
+      id: 3015324718
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_fire
+        ObjectType: 3
+      Path: Default Work Unit\Play_fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_oasis_water
+      guid: cdcbfe808cd3404898f405da48971256
+      id: 3133890889
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_oasis_water
+        ObjectType: 3
+      Path: Default Work Unit\Play_oasis_water
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_splash
+      guid: e15d629d7625bc43ab9b0ac354b6702d
+      id: 3948925255
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_splash
+        ObjectType: 3
+      Path: Default Work Unit\Play_splash
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_whistle
+      guid: e11b22ea10454b48b01622bbbd09f619
+      id: 2693257580
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_whistle
+        ObjectType: 3
+      Path: Default Work Unit\Play_whistle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 906731d1342ad248a80d33eccced963d
+    GuidInternal: 
+    m_lastTime: -8585936172394049388
+    List:
+    - name: windiness
+      guid: 79f8036d3c029d418141aaddd0cd0ffc
+      id: 2163227897
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: windiness
+        ObjectType: 13
+      Path: Default Work Unit\windiness
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: c410a93ad1f60e4fb0796a23ec3cbce2
+    GuidInternal: 
+    m_lastTime: -8585936172331316509
+    List:
+    - name: GameState
+      guid: bd38166d79a2314cb4d6dadba0ed07bd
+      id: 4091656514
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameState
+        ObjectType: 9
+      Path: Default Work Unit\GameState
+      values:
+      - name: DesertMenu
+        guid: 6f46fa4704206a4b979590a09b390360
+        id: 1129748651
+        PathAndIcons:
+        - ElementName: DesertMenu
+          ObjectType: 8
+      - name: ForestMenu
+        guid: 5e3017125ee47648ac805d8fd0fecfe1
+        id: 728498735
+        PathAndIcons:
+        - ElementName: ForestMenu
+          ObjectType: 8
+      - name: InDesert
+        guid: df8470d15e082d4bb239a119927c4f0e
+        id: 435360103
+        PathAndIcons:
+        - ElementName: InDesert
+          ObjectType: 8
+      - name: InForest
+        guid: d84e74e86201a0489041d7db16d47e72
+        id: 2843936351
+        PathAndIcons:
+        - ElementName: InForest
+          ObjectType: 8
+      - name: None
+        guid: abb8309157869c43a715a80c1f80d57e
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 5a3b462aa791064ea0ac23e41e2a0710
+    GuidInternal: 
+    m_lastTime: -8585939100366360086
+    List:
+    - name: Material
+      guid: 28722df2beaab948b8de60b0888ff3bd
+      id: 3865314626
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Material
+        ObjectType: 11
+      Path: Default Work Unit\Material
+      values:
+      - name: Golv
+        guid: 18f50e563dc6e145ba6940e3dcc5c710
+        id: 651855293
+        PathAndIcons:
+        - ElementName: Golv
+          ObjectType: 10
+      - name: Grass
+        guid: 61482f416b539b488207aa1d646afb3a
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Grass
+          ObjectType: 10
+      - name: Sand
+        guid: dfdac4c44628984eb775d539fb9e2f7d
+        id: 803837735
+        PathAndIcons:
+        - ElementName: Sand
+          ObjectType: 10
+      - name: Wood
+        guid: 4b6cd93e4b353f41b5bbb083391c459e
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: movement_type
+      guid: 3fd7ca7d1725d3419cfd0d4684044009
+      id: 1088160865
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: movement_type
+        ObjectType: 11
+      Path: Default Work Unit\movement_type
+      values:
+      - name: Run
+        guid: 4dd7a55688464143aea10694e92b280c
+        id: 712161704
+        PathAndIcons:
+        - ElementName: Run
+          ObjectType: 10
+      - name: Walk
+        guid: 295dbac1c06c5c41832bcd23fb822568
+        id: 2108779966
+        PathAndIcons:
+        - ElementName: Walk
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: bf1b94ab46460c4ea3fbb281fb1f4f08
+    GuidInternal: 
+    m_lastTime: -8585939148592246984
+    List: []
+  ExpandedItems:
+  - /Game Design Course
+  - /Game Design Course/Events
+  - /Game Design Course/Events/Default Work Unit
+  - /Game Design Course/States
+  - /Game Design Course/States/Default Work Unit
+  - /Game Design Course/States/Default Work Unit/GameState
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
